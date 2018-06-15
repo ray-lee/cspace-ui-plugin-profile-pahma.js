@@ -12,4 +12,9 @@ export default {
 
   'footer.feedback': 'Contact UC Berkeley CollectionSpace support',
   'footer.feedbackUrl': 'mailto:cspace-support@lists.berkeley.edu',
+
+  'vocab.location.local.name': 'PAHMA',
+  'vocab.location.local.collectionName': 'PAHMA Storage Locations',
+  'option.locationTermStatuses.accepted': 'active',
+  'option.locationTermStatuses.rejected': 'inactive',
 };
