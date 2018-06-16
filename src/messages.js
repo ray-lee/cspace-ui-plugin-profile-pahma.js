@@ -13,6 +13,10 @@ export default {
   'footer.feedback': 'Contact UC Berkeley CollectionSpace support',
   'footer.feedbackUrl': 'mailto:cspace-support@lists.berkeley.edu',
 
+  // contact
+
+  'field.contacts_common.addressGroup.name': 'Postal address',
+
   // location
 
   'vocab.location.local.name': 'PAHMA',
