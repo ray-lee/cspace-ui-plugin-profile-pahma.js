@@ -44,7 +44,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.locations_common.locNote.name',
+                id: 'field.locations_anthropology.locNote.name',
                 defaultMessage: 'Location note',
               },
             }),
@@ -64,7 +64,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.locations_common.moveableContainer.name',
+                id: 'field.locations_anthropology.moveableContainer.name',
                 defaultMessage: 'Moveable/container',
               },
             }),
