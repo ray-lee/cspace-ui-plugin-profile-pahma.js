@@ -32,4 +32,10 @@ export default {
   'field.organizations_common.foundingPlace.name': 'Founding place',
   'field.organizations_common.group.name': 'Cultural group',
   'field.organizations_common.contactName.name': 'Related person',
+
+  // person
+
+  'vocab.person.local.name': 'PAHMA',
+  'vocab.person.local.collectionName': 'PAHMA Persons',
+  'field.persons_common.group.name': 'Cultural group',
 };
