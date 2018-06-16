@@ -44,4 +44,11 @@ export default {
   'vocab.place.local.name': 'PAHMA',
   'vocab.place.local.collectionName': 'PAHMA Places',
   'field.places_common.historicalStatus.name': 'Current?',
+
+  // taxon
+
+  'vocab.taxon.local.name': 'PAHMA',
+  'vocab.taxon.local.collectionName': 'PAHMA Taxonomic Names',
+  'option.taxonomicStatuses.valid': 'current',
+  'option.taxonomicStatuses.invalid': 'obsolete',
 };

@@ -2,6 +2,7 @@
 /* The cspaceUIPluginProfilePAHMA global variable is set by webpack (in non-test builds). See
  * webpack.config.js. */
 
+import cspaceUIPluginRecordTaxon from 'cspace-ui-plugin-record-taxon';
 import { defineMessages } from 'react-intl';
 import logo from '../images/logo.svg';
 import messages from './messages';
@@ -26,5 +27,8 @@ module.exports = () => ({
       version: cspaceUIPluginProfilePAHMA.packageVersion,
     },
   },
-  plugins: plugins.map(plugin => plugin()),
+  plugins: [
+    cspaceUIPluginRecordTaxon(),
+    ...plugins.map(plugin => plugin()),
+  ],
 });
