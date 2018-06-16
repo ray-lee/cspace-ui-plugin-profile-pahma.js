@@ -38,4 +38,10 @@ export default {
   'vocab.person.local.name': 'PAHMA',
   'vocab.person.local.collectionName': 'PAHMA Persons',
   'field.persons_common.group.name': 'Cultural group',
+
+  // place
+
+  'vocab.place.local.name': 'PAHMA',
+  'vocab.place.local.collectionName': 'PAHMA Places',
+  'field.places_common.historicalStatus.name': 'Current?',
 };
