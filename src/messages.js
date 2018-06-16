@@ -13,8 +13,19 @@ export default {
   'footer.feedback': 'Contact UC Berkeley CollectionSpace support',
   'footer.feedbackUrl': 'mailto:cspace-support@lists.berkeley.edu',
 
+  // location
+
   'vocab.location.local.name': 'PAHMA',
   'vocab.location.local.collectionName': 'PAHMA Storage Locations',
   'option.locationTermStatuses.accepted': 'active',
   'option.locationTermStatuses.rejected': 'inactive',
+
+  // organization
+
+  'vocab.organization.local.name': 'PAHMA',
+  'vocab.organization.local.collectionName': 'PAHMA Organizations',
+  'field.organizations_common.foundingDateGroup.name': 'Founding date',
+  'field.organizations_common.foundingPlace.name': 'Founding place',
+  'field.organizations_common.group.name': 'Cultural group',
+  'field.organizations_common.contactName.name': 'Related person',
 };
