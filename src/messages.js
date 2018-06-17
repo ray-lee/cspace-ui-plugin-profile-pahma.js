@@ -13,6 +13,12 @@ export default {
   'footer.feedback': 'Contact UC Berkeley CollectionSpace support',
   'footer.feedbackUrl': 'mailto:cspace-support@lists.berkeley.edu',
 
+  // concept
+
+  'vocab.concept.activity.collectionName': 'Activities',
+  'vocab.concept.material.collectionName': 'Materials',
+  'field.concepts_common.historicalStatus.name': 'Current?',
+
   // contact
 
   'field.contacts_common.addressGroup.name': 'Postal address',
