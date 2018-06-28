@@ -61,4 +61,10 @@ export default {
   'vocab.taxon.local.collectionName': 'PAHMA Taxonomic Names',
   'option.taxonomicStatuses.valid': 'current',
   'option.taxonomicStatuses.invalid': 'obsolete',
+
+
+  // Movement
+  'field.movements_common.locationDate.name': 'Inventory/move date',
+  'field.movements_common.currentLocation.fullname': 'Storage location',
+  'inputTable.movement.currentLocation': 'Storage location',
 };
