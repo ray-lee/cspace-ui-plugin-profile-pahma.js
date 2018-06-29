@@ -34,6 +34,12 @@ export default {
 
   'field.objectexit_common.depositor.name': 'Recipient',
 
+  // Movement
+
+  'field.movements_common.locationDate.name': 'Inventory/move date',
+  'field.movements_common.currentLocation.fullName': 'Storage location',
+  'inputTable.movement.currentLocation': 'Storage location',
+
   // organization
 
   'vocab.organization.local.name': 'PAHMA',
@@ -61,10 +67,4 @@ export default {
   'vocab.taxon.local.collectionName': 'PAHMA Taxonomic Names',
   'option.taxonomicStatuses.valid': 'current',
   'option.taxonomicStatuses.invalid': 'obsolete',
-
-
-  // Movement
-  'field.movements_common.locationDate.name': 'Inventory/move date',
-  'field.movements_common.currentLocation.fullname': 'Storage location',
-  'inputTable.movement.currentLocation': 'Storage location',
 };
