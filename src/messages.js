@@ -77,6 +77,15 @@ export default {
   'record.media.name': 'Media',
   'record.media.collectionName': 'Media',
 
+  // loan in
+
+  'record.loanin.name': 'In Loan',
+  'record.loanin.collectionName': 'In Loans',
+  'field.loansin_common.borrowersContact.name': 'PAHMA contact',
+  'field.loansin_common.borrowersAuthorizer.name': 'PAHMA authorizer',
+  'field.loansin_common.loanInConditions.name': 'Loan conditions',
+  'field.loansin_common.loanInNote .name': 'Loan note',
+
   // organization
 
   'vocab.organization.local.name': 'PAHMA',
