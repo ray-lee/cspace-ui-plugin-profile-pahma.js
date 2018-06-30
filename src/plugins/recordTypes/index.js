@@ -6,6 +6,7 @@ import group from './group';
 import intake from './intake';
 import exhibition from './exhibition';
 import loanin from './loanin';
+import loanout from './loanout';
 import location from './location';
 import movement from './movement';
 import objectexit from './objectexit';
@@ -27,6 +28,7 @@ export default [
   intake,
   exhibition,
   loanin,
+  loanout,
   location,
   movement,
   objectexit,

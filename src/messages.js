@@ -48,6 +48,15 @@ export default {
 
   'field.groups_common.responsibleDepartment.name': 'Purpose',
 
+  // loan out
+
+  'record.loanout.name': 'Out Loan',
+  'record.loanout.collectionName': 'Out Loans',
+  'field.loansout_common.lendersAuthorizer.name': 'PAHMA authorizer',
+  'field.loansout_common.lendersContact.name': 'PAHMA contact',
+  'field.loansout_common.specialConditionsOfLoan.name': 'Loan conditions',
+  'field.loansout_common.loanOutNote.name': 'Loan note',
+
   // location
 
   'vocab.location.local.name': 'PAHMA',
