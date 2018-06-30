@@ -1,6 +1,7 @@
 import citation from './citation';
 import concept from './concept';
 import contact from './contact';
+import intake from './intake';
 import location from './location';
 import organization from './organization';
 import person from './person';
@@ -12,6 +13,7 @@ export default [
   citation,
   concept,
   contact,
+  intake,
   location,
   organization,
   person,
