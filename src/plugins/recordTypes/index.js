@@ -4,6 +4,7 @@ import contact from './contact';
 import location from './location';
 import movement from './movement';
 import objectexit from './objectexit';
+import media from './media';
 import organization from './organization';
 import person from './person';
 import place from './place';
@@ -18,6 +19,7 @@ export default [
   location,
   movement,
   objectexit,
+  media,
   organization,
   person,
   place,
