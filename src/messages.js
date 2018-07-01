@@ -59,6 +59,12 @@ export default {
   'field.loansout_common.lendersContact.name': 'PAHMA contact',
   'field.loansout_common.lendersContact.fullName': 'PAHMA contact',
 
+  // condition check
+
+  'field.conditionchecks_common.conditionCheckNote.name': 'Condition note',
+  'panel.conditioncheck.conditionCheckAndTechAssessmentInfo': 'Condition Check and Technical Assessment Information',
+  'panel.conditioncheck.objectRequirementInfo': 'Object Recommendation and Handling Information',
+
   // location
 
   'vocab.location.local.name': 'PAHMA',
