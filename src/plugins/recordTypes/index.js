@@ -3,6 +3,7 @@ import concept from './concept';
 import contact from './contact';
 import group from './group';
 import intake from './intake';
+import exhibition from './exhibition';
 import location from './location';
 import movement from './movement';
 import objectexit from './objectexit';
@@ -21,6 +22,7 @@ export default [
   contact,
   group,
   intake,
+  exhibition,
   location,
   movement,
   objectexit,
