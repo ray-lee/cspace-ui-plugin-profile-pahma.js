@@ -43,7 +43,7 @@ export default {
   'inputTable.movement.currentLocation': 'Storage location',
   'record.movement.name': 'Inventory/Movement',
   'record.movement.collectionName': 'Inventory/Movement',
-  'panel.movement.location': 'Inventory/Movement',
+  'panel.movement.location': 'Inventory/Movement Information',
 
   // organization
 
