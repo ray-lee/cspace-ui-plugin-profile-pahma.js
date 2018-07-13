@@ -4,11 +4,7 @@ export default (configContext) => {
   const {
     AutocompleteInput,
     CompoundInput,
-    DateInput,
-    HierarchyInput,
-    IDGeneratorInput,
     OptionPickerInput,
-    StructuredDateInput,
     TextInput,
     TermPickerInput,
   } = configContext.inputComponents;
@@ -16,12 +12,6 @@ export default (configContext) => {
   const {
     configKey: config,
   } = configContext.configHelpers;
-
-  const {
-    DATA_TYPE_INT,
-    DATA_TYPE_FLOAT,
-    DATA_TYPE_STRUCTURED_DATE,
-  } = configContext.dataTypes;
 
   const {
     extensions,
@@ -680,7 +670,6 @@ export default (configContext) => {
             },
           },
         },
-
         assocEventPlaces: {
           assocEventPlace: {
             [config]: {
@@ -707,6 +696,29 @@ export default (configContext) => {
             },
           },
         },
+        usageGroupList: {
+          usageGroup: {
+            usage: {
+              [config]: {
+                view: {
+                  props: {
+                    multiline: true,
+                  },
+                },
+              },
+            },
+            usageNote: {
+              [config]: {
+                view: {
+                  props: {
+                    multiline: true,
+                  },
+                },
+              },
+            },
+          },
+        },
+        // objectHistoryNote
 
         // These fields may have to be added to local, leaving it here for now
         ownershipCategory: {
@@ -752,6 +764,250 @@ export default (configContext) => {
           },
         },
       },
+      'ns2:collectionobjects_pahma': {
+        [config]: {
+          service: {
+            ns: 'http://collectionspace.org/services/collectionobject/local/pahma',
+          },
+        },
+        pahmaTmsLegacyDepartment: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.pahmaTmsLegacyDepartment.name',
+                defaultMessage: 'Legacy department',
+              },
+            }),
+            view: {
+              type: OptionPickerInput,
+              props: {
+                source: 'TEMP',
+              },
+            },
+          },
+        },
+        inventoryCount: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.inventoryCount.name',
+                defaultMessage: 'Count note',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
+          },
+        },
+        isComponent: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.isComponent.name',
+                defaultMessage: 'Is component?',
+              },
+            }),
+            view: {
+              type: OptionPickerInput,
+              props: {
+                source: 'yesNoValues',
+              },
+            },
+          },
+        },
+        pahmaEthnographicFileCodeList: {
+          [config]: {
+            repeating: true,
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.pahmaEthnographicFileCodeList.name',
+                defaultMessage: 'Ethbographic file code',
+              },
+            }),
+            view: {
+              type: CompoundInput,
+            },
+          },
+          pahmaEthnographicFileCode: {
+            [config]: {
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'concept/ethusecode',
+                },
+              },
+            },
+          },
+        },
+        pahmaAltNumGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          pahmaAltNumGroup: {
+            [config]: {
+              repeating: true,
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_pahma.pahmaAltNumGroup.name',
+                  defaultMessage: 'Alternate number',
+                },
+              }),
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            pahmaAltNum: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_pahma.pahmaAltNum.name',
+                    defaultMessage: 'Number',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_pahma.pahmaAltNum.fullName',
+                    defaultMessage: 'Alternate number',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            pahmaAltNumType: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_pahma.pahmaAltNumType.name',
+                    defaultMessage: 'Type',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_pahma.pahmaAltNumType.fullName',
+                    defaultMessage: 'Alternate number type',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'pahmaaltnumber',
+                  },
+                },
+              },
+            },
+            pahmaAltNumNote: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_pahma.pahmaAltNumNote.name',
+                    defaultMessage: 'Note',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_pahma.pahmaAltNumNote.fullName',
+                    defaultMessage: 'Alternate number note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+          },
+        },
+        portfolioSeries: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.portfolioSeries.name',
+                defaultMessage: 'R. Keeling audio series',
+              },
+            }),
+            view: {
+              type: OptionPickerInput,
+              props: {
+                source: 'TEMP',
+              },
+            },
+          },
+        },
+        pahmaTms2003DataSource: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.pahmaTms2003DataSource.name',
+                defaultMessage: 'TMS primary data source',
+              },
+            }),
+            view: {
+              type: OptionPickerInput,
+              props: {
+                source: 'TEMP',
+              },
+            },
+          },
+        },
+        pahmaCollectionList: { // FIX ME ?
+          [config]: {
+            repeating: true,
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.pahmaCollectionList.name',
+                defaultMessage: 'Collection',
+              },
+            }),
+            view: {
+              type: CompoundInput,
+            },
+          },
+          pahmaCollection: {
+            [config]: {
+              view: {
+                type: OptionPickerInput,
+                props: {
+                  source: 'TEMP',
+                },
+              },
+            },
+          },
+        },
+
+      },
+      'ns2:collectionobjects_anthropology': {
+        [config]: {
+          service: {
+            ns: 'http://collectionspace.org/services/collectionobject/domain/anthropology',
+          },
+        },
+        computedCrate: {
+          [config]: {
+            cloneable: false,
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_anthropology.name',
+                defaultMessage: 'Current box or container',
+              },
+            }),
+            searchView: {
+              type: AutocompleteInput,
+              props: {
+                source: 'location/crate',
+              },
+            },
+            view: {
+              type: AutocompleteInput,
+              props: {
+                source: 'location/crate',
+                readOnly: true,
+              },
+            },
+          },
+
+        },
+      },
+      ...extensions['ucbnh-collectionobject'].fields,
     },
   };
 };

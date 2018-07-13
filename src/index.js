@@ -3,6 +3,7 @@
  * webpack.config.js. */
 
 import cspaceUIPluginRecordTaxon from 'cspace-ui-plugin-record-taxon';
+import cspaceUIPluginExtUCBNHCollectionObject from 'cspace-ui-plugin-ext-ucbnh-collectionobject';
 import { defineMessages } from 'react-intl';
 import logo from '../images/logo.svg';
 import messages from './messages';
@@ -35,6 +36,7 @@ module.exports = () => ({
   },
   plugins: [
     cspaceUIPluginRecordTaxon(),
+    cspaceUIPluginExtUCBNHCollectionObject(),
     ...plugins.map(plugin => plugin()),
   ],
 });

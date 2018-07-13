@@ -23,6 +23,28 @@ export default {
   'field.acquisitions_common.acquisitionReason.name': 'Accession reason',
   'field.acquisitions_common.acquisitionProvisos.name': 'Accession provisos',
 
+  // collection object
+
+  'field.collectionobjects_common.objectNumber.name': 'Museum number',
+  'field.collectionobjects_common.numberOfObjects.name': 'Number of pieces',
+  'field.collectionobjects_common.comment.name': 'Object comment',
+  'field.collectionobjects_common.sex.name': 'Sex determination',
+  'field.collectionobjects_common.responsibleDepartment.name': 'Responsible collection manager',
+  'field.collectionobjects_common.phase.name': 'Phase or biological age group',
+  'field.collectionobjects_common.form.name': 'Form (as stored)',
+  'field.collectionobjects_common.contentActivity.name': 'Activity depicted',
+  'field.collectionobjects_common.contentConcept.name': 'Concept depicted',
+  'field.collectionobjects_common.contentDateGroup.name': 'Date depicted',
+  'field.collectionobjects_common.contentObjectGroup.name': 'Object depicted',
+  'field.collectionobjects_common.contentPeople.name': 'Cultural group depicted',
+  'field.collectionobjects_common.contentPerson.name': 'Person depicted',
+  'field.collectionobjects_common.contentPlace.name': 'Place depicted',
+  'field.collectionobjects_common.contentOrganization.name': 'Organization depicted',
+  'field.collectionobjects_common.contentEventNameGroup.name': 'Event depicted',
+  'field.collectionobjects_common.contentOtherGroup.name': 'Other depicted',
+  'field.collectionobjects_common.usageGroup.name': 'Context of use',
+  'field.collectionobjects_common.collection.name': 'Object type',
+
   // concept
 
   'vocab.concept.activity.collectionName': 'Activities',
