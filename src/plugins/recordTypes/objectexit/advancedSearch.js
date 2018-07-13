@@ -18,7 +18,7 @@ export default (configContext) => {
         path: 'ns2:objectexit_common/exitNumber',
       },
       {
-        op: OP_CONTAIN,
+        op: OP_EQ,
         path: 'ns2:objectexit_anthropology/newOwnerList/newOwner',
       },
       {

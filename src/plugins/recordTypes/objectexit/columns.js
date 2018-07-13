@@ -19,7 +19,7 @@ export default (configContext) => {
           },
         }),
         order: 20,
-        sortBy: 'objectexit_anthropology:newOwnerList/newOwner',
+        sortBy: 'objectexit_anthropology:newOwnerList/0',
         width: 450,
       },
     },

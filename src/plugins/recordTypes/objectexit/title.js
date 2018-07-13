@@ -15,10 +15,6 @@ export default configContext => (data) => {
   const common = getPart(data, 'objectexit_common');
   const anthro = getPart(data, 'objectexit_anthropology');
 
-  if (!common) {
-    return '';
-  }
-
   const exitNumber = common && common.get('exitNumber');
   const newOwner = anthro && getDisplayName(deepGet(anthro, ['newOwnerList', 'newOwner', 0]));
 
