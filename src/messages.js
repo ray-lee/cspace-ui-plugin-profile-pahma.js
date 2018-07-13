@@ -30,6 +30,10 @@ export default {
   'option.locationTermStatuses.accepted': 'active',
   'option.locationTermStatuses.rejected': 'inactive',
 
+  // object exit
+
+  'field.objectexit_common.depositor.name': 'Recipient',
+
   // organization
 
   'vocab.organization.local.name': 'PAHMA',
