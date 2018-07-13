@@ -38,7 +38,12 @@ export default {
 
   'field.movements_common.locationDate.name': 'Inventory/move date',
   'field.movements_common.currentLocation.fullName': 'Storage location',
+  'field.movements_common.reasonForMove.name': 'Reason',
+  'field.movements_common.movementMethod.name': 'Method',
   'inputTable.movement.currentLocation': 'Storage location',
+  'record.movement.name': 'Inventory/Movement',
+  'record.movement.collectionName': 'Inventory/Movement',
+  'panel.movement.location': 'Inventory/Movement',
 
   // organization
 

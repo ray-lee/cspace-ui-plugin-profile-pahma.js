@@ -9,7 +9,7 @@ export default () => ({
       messages: defineMessages({
         label: {
           id: 'column.movement.default.computedSummary',
-          defaultMessage: 'Summary',
+          defaultMessage: 'Date (reason)',
         },
       }),
       order: 20,

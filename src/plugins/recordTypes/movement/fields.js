@@ -20,11 +20,6 @@ export default (configContext) => {
   return {
     document: {
       'ns2:movements_common': {
-        [config]: {
-          service: {
-            ns: 'http://collectionspace.org/services/movement',
-          },
-        },
         currentLocation: {
           [config]: {
             view: {
@@ -76,6 +71,7 @@ export default (configContext) => {
           },
           locationHandler: {
             [config]: {
+              repeating: true,
               messages: defineMessages({
                 name: {
                   id: 'field.movements_anthropology.locationHandler.name',
