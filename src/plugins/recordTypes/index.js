@@ -7,6 +7,7 @@ import movement from './movement';
 import objectexit from './objectexit';
 import media from './media';
 import organization from './organization';
+import osteology from './osteology';
 import person from './person';
 import place from './place';
 import taxon from './taxon';
@@ -23,6 +24,7 @@ export default [
   objectexit,
   media,
   organization,
+  osteology,
   person,
   place,
   taxon,
