@@ -28,6 +28,7 @@ export default {
   'field.collectionobjects_common.objectNumber.name': 'Museum number',
   'field.collectionobjects_common.numberOfObjects.name': 'Number of pieces',
   'field.collectionobjects_common.comment.name': 'Object comment',
+  'field.collectionobjects_common.assocPeopleGroup.name': 'Associated cultural group (excl. production culture and culture depicted)',
   'field.collectionobjects_common.sex.name': 'Sex determination',
   'field.collectionobjects_common.responsibleDepartment.name': 'Responsible collection manager',
   'field.collectionobjects_common.phase.name': 'Phase or biological age group',
@@ -44,6 +45,10 @@ export default {
   'field.collectionobjects_common.contentOtherGroup.name': 'Other depicted',
   'field.collectionobjects_common.usageGroup.name': 'Context of use',
   'field.collectionobjects_common.collection.name': 'Object type',
+  'field.collectionobjects_common.inscriptionContentMethod.name': 'Inscription method',
+  'field.collectionobjects_common.inscriptionContentPosition.name': 'Inscription position',
+  'panel.collectionobject.content': 'Content Depicted',
+  'panel.collectionobject.reference': 'Bibliographic Reference Information',
 
   // concept
 

@@ -6,6 +6,18 @@ export default {
       id: 'panel.collectionobject.repatriation',
       defaultMessage: 'Repatriation and NAGPRA compliance information',
     },
+    cultCare: {
+      id: 'panel.collectionobject.cultCare',
+      defaultMessage: 'Cultural Care Information',
+    },
+    ownership: {
+      id: 'panel.collectionobject.ownership',
+      defaultMessage: 'Object History and Ownership Details',
+    },
+    bio: {
+      id: 'panel.collectionobject.bio',
+      defaultMessage: 'Biological Information',
+    },
   }),
   inputTable: defineMessages({
     age: {
