@@ -57,8 +57,4 @@ export default {
   'vocab.taxon.local.collectionName': 'PAHMA Taxonomic Names',
   'option.taxonomicStatuses.valid': 'current',
   'option.taxonomicStatuses.invalid': 'obsolete',
-
-  // valuation
-
-  'field.valuationcontrols_common.valuationcontrolRefNumber.name': 'Valuation control reference number',
 };
