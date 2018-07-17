@@ -18,14 +18,24 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="objectEntryInfo" collapsible>
+        <Row>
+          <Field name="entryNumber" />
+          <Field name="entryDate" />
+
+          <Field name="entryMethods">
+            <Field name="entryMethod" />
+          </Field>
+
+          <Field name="entryReason" />
+        </Row>
+
+        <Row>
+          <Field name="expectedReturnDate" subpath="ns2:intakes_pahma" />
+          <Field name="returnDate" />
+        </Row>
+
         <Cols>
           <Col>
-            <Row>
-              <Field name="entryNumber" />
-              <Field name="entryDate" />
-            </Row>
-            <Field name="expectedReturnDate" subpath="ns2:intakes_pahma" />
-
             <InputTable name="depositor">
               <Field name="depositor" />
               <Field name="depositorsRequirements" />
@@ -34,15 +44,6 @@ const template = (configContext) => {
             <Field name="currentOwner" />
           </Col>
           <Col>
-            <Row>
-              <Field name="entryMethods">
-                <Field name="entryMethod" />
-              </Field>
-
-              <Field name="entryReason" />
-            </Row>
-
-            <Field name="returnDate" />
             <Field name="entryNote" />
           </Col>
         </Cols>

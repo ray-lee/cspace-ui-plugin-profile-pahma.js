@@ -22,18 +22,6 @@ export default (configContext) => {
         path: 'ns2:intakes_common/entryDate',
       },
       {
-        op: OP_RANGE,
-        path: 'ns2:intakes_pahma/expectedReturnDate',
-      },
-      {
-        op: OP_EQ,
-        path: 'ns2:intakes_common/depositor',
-      },
-      {
-        op: OP_EQ,
-        path: 'ns2:intakes_common/currentOwner',
-      },
-      {
         op: OP_EQ,
         path: 'ns2:intakes_common/entryMethods/entryMethod',
       },
@@ -43,7 +31,19 @@ export default (configContext) => {
       },
       {
         op: OP_RANGE,
+        path: 'ns2:intakes_pahma/expectedReturnDate',
+      },
+      {
+        op: OP_RANGE,
         path: 'ns2:intakes_common/returnDate',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:intakes_common/depositor',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:intakes_common/currentOwner',
       },
       {
         op: OP_CONTAIN,
