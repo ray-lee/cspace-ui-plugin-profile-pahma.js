@@ -49,6 +49,8 @@ export default {
 
   'field.media_common.identificationNumber.name': 'Media rendition number (or Museum number)',
   'field.media_common.description.name': 'Note',
+  'record.media.name': 'Media',
+  'record.media.collectionName': 'Media',
 
   // organization
 
