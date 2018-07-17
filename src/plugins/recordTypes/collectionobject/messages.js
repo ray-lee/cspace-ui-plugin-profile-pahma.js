@@ -4,7 +4,7 @@ export default {
   panel: defineMessages({
     repatriation: {
       id: 'panel.collectionobject.repatriation',
-      defaultMessage: 'Repatriation and NAGPRA compliance information',
+      defaultMessage: 'Repatriation and NAGPRA Compliance Information',
     },
     cultCare: {
       id: 'panel.collectionobject.cultCare',

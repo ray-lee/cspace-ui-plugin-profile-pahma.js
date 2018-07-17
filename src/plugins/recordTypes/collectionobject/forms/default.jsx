@@ -181,7 +181,7 @@ const template = (configContext) => {
             <Field name="pahmaFieldCollectionPlaceList" subpath="ns2:collectionobjects_pahma">
               <Field name="pahmaFieldCollectionPlace" />
             </Field>
-             
+
             <Field name="pahmaFieldLocVerbatim" subpath="ns2:collectionobjects_pahma" />
 
             <Field name="fieldCollectionSources">
@@ -278,8 +278,7 @@ const template = (configContext) => {
           <Col>
             <Field
               name="nagpraCulturalDeterminationList"
-              subpath=
-              "ns2:collectionobjects_anthropology"
+              subpath="ns2:collectionobjects_anthropology"
             >
               <Field name="nagpraCulturalDetermination" />
             </Field>
@@ -453,80 +452,6 @@ const template = (configContext) => {
           <Field name="contentNote" />
         </Panel>
 
-        <Panel name="content" collapsible collapsed>
-          <Field name="contentDescription" />
-
-          <Row>
-            <Col>
-              <Row>
-                <Field name="contentLanguages">
-                  <Field name="contentLanguage" />
-                </Field>
-
-                <Field name="contentScripts">
-                  <Field name="contentScript" />
-                </Field>
-              </Row>
-
-              <Field name="contentActivities">
-                <Field name="contentActivity" />
-              </Field>
-
-              <Field name="contentConcepts">
-                <Field name="contentConcept" />
-              </Field>
-
-              <Field name="contentDateGroup" />
-
-              <Field name="contentPositions">
-                <Field name="contentPosition" />
-              </Field>
-
-              <Field name="contentObjectGroupList">
-                <Field name="contentObjectGroup">
-                  <Field name="contentObject" />
-                  <Field name="contentObjectType" />
-                </Field>
-              </Field>
-            </Col>
-
-            <Col>
-              <Field name="contentPeoples">
-                <Field name="contentPeople" />
-              </Field>
-
-              <Field name="contentPersons">
-                <Field name="contentPerson" />
-              </Field>
-
-              <Field name="contentPlaces">
-                <Field name="contentPlace" />
-              </Field>
-
-
-              <Field name="contentOrganizations">
-                <Field name="contentOrganization" />
-              </Field>
-
-              <Field name="contentEventNameGroupList">
-                <Field name="contentEventNameGroup">
-                  <Field name="contentEventName" />
-                  <Field name="contentEventNameType" />
-                </Field>
-              </Field>
-
-              <Field name="contentOtherGroupList">
-                <Field name="contentOtherGroup">
-                  <Field name="contentOther" />
-                  <Field name="contentOtherType" />
-                </Field>
-              </Field>
-            </Col>
-          </Row>
-
-          <Field name="contentNote" />
-        </Panel>
-
         <Panel name="textInscript" collapsible collapsed>
           <Field name="textualInscriptionGroupList">
             <Field name="textualInscriptionGroup">
@@ -576,11 +501,11 @@ const template = (configContext) => {
                   <Col>
                     <Field name="inscriptionDescriptionType" />
                   </Col>
-                  
+
                   <Col>
                     <Field name="inscriptionDescriptionMethod" />
                   </Col>
-                  
+
                   <Col>
                     <Field name="inscriptionDescriptionPosition" />
 
