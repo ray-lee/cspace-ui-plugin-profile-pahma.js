@@ -24,13 +24,19 @@ const template = (configContext) => {
         </Row>
 
         <Row>
-          <Field name="sponsors">
-            <Field name="sponsor" />
-          </Field>
+          <Cols>
+            <Col>
+              <Field name="sponsors">
+                <Field name="sponsor" />
+              </Field>
+            </Col>
 
-          <Field name="organizers">
-            <Field name="organizer" />
-          </Field>
+            <Col>
+              <Field name="organizers">
+                <Field name="organizer" />
+              </Field>
+            </Col>
+          </Cols>
         </Row>
 
         <Row>
