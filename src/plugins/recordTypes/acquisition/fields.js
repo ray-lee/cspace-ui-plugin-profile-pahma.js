@@ -166,13 +166,9 @@ export default (configContext) => {
         acquisitionDescription: {
           [config]: {
             messages: defineMessages({
-              fullName: {
-                id: 'field.acquisitions_anthropology.acquisitionDescription.fullName',
-                defaultMessage: 'Accession description',
-              },
               name: {
                 id: 'field.acquisitions_anthropology.acquisitionDescription.name',
-                defaultMessage: 'Description',
+                defaultMessage: 'Accession description',
               },
             }),
             view: {

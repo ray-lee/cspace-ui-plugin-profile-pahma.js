@@ -89,15 +89,23 @@ const template = (configContext) => {
           </Field>
         </Row>
 
-        <Field name="creditLine" />
+        <Cols>
+          <Col>
+            <Field name="creditLine" />
+          </Col>
+          <Col />
+        </Cols>
       </Panel>
 
       <Panel name="objectCollectionInformation" collapsible collapsed>
-        <Row>
-          <Field name="fieldCollectionEventNames">
-            <Field name="fieldCollectionEventName" />
-          </Field>
-        </Row>
+        <Cols>
+          <Col>
+            <Field name="fieldCollectionEventNames">
+              <Field name="fieldCollectionEventName" />
+            </Field>
+          </Col>
+          <Col />
+        </Cols>
       </Panel>
     </Field>
   );

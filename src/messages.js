@@ -18,6 +18,10 @@ export default {
   'record.aquisition.name': 'Accession',
   'record.acquisition.collectionName': 'Accessions',
   'panel.acquisition.info': 'Accession Information',
+  'field.acquisitions_common.acquisitionReferenceNumber.name': 'Accession number',
+  'field.acquisitions_common.acquisitionNote.name': 'Accession note',
+  'field.acquisitions_common.acquisitionReason.name': 'Accession reason',
+  'field.acquisitions_common.acquisitionProvisos.name': 'Accession provisos',
 
   // concept
 
