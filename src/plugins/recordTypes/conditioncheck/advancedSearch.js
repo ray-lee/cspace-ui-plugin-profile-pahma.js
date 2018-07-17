@@ -18,8 +18,8 @@ export default (configContext) => {
         path: 'ns2:conditionchecks_common/conditionCheckRefNumber',
       },
       {
-        op: OP_RANGE,
-        path: 'ns2:conditionchecks_common/conditionCheckAssessmentDate',
+        op: OP_EQ,
+        path: 'ns2:conditionchecks_common/conditionCheckGroupList/conditionCheckGroup/condition',
       },
       {
         op: OP_EQ,
@@ -30,8 +30,8 @@ export default (configContext) => {
         path: 'ns2:conditionchecks_common/nextConditionCheckDate',
       },
       {
-        op: OP_EQ,
-        path: 'ns2:conditionchecks_common/conditionCheckGroupList/conditionCheckGroup/condition',
+        op: OP_RANGE,
+        path: 'ns2:conditionchecks_common/conditionCheckAssessmentDate',
       },
       ...extensions.core.advancedSearch,
     ],
