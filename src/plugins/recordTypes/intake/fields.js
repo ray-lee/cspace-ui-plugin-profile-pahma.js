@@ -22,7 +22,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'intake-pahma',
+                source: 'pahmaIntake',
               },
             },
           },

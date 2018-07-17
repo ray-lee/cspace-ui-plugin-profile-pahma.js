@@ -32,6 +32,7 @@ export default {
   'field.intakes_common.entryNumber.name': 'Object entry number',
   'field.intakes_common.returnDate.name': 'Actual return date',
   'field.intakes_common.fieldCollectionSource.name': 'Field collection source (person or cultural group)',
+  'field.intakes_common.normalLocation.name': 'Home location',
 
   // location
 

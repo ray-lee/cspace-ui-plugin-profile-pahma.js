@@ -54,11 +54,17 @@ const template = (configContext) => {
         <Cols>
           <Col>
             <Row>
-              <Field name="fieldCollectionDate" />
+              <Cols>
+                <Col>
+                  <Field name="fieldCollectionDate" />
+                </Col>
 
-              <Field name="fieldCollectionMethods">
-                <Field name="fieldCollectionMethod" />
-              </Field>
+                <Col>
+                  <Field name="fieldCollectionMethods">
+                    <Field name="fieldCollectionMethod" />
+                  </Field>
+                </Col>
+              </Cols>
             </Row>
             <Field name="fieldCollectionNumber" />
             <Field name="fieldCollectionNote" />
