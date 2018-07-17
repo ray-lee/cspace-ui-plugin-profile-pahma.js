@@ -32,7 +32,7 @@ export default (configContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'TEMP',
+                  source: 'pahmaResponsibleDepartments',
                 },
               },
             },
@@ -52,7 +52,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'TEMP',
+                source: 'pahmaRecordStatuses',
               },
             },
           },
@@ -77,7 +77,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaTitleTypes',
                   },
                 },
               },
@@ -90,7 +90,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaObjectNameCurrencies',
                   },
                 },
               },
@@ -100,7 +100,7 @@ export default (configContext) => {
                 defaultValue: 'whole',
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaObjectNameLevels',
                   },
                 },
               },
@@ -109,7 +109,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaObjectNameSystems',
                   },
                 },
               },
@@ -119,7 +119,7 @@ export default (configContext) => {
                 defaultValue: 'simple',
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaObjectNameTypes',
                   },
                 },
               },
@@ -136,7 +136,7 @@ export default (configContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'TEMP',
+                  source: 'pahmaObjectStatuses',
                 },
               },
             },
@@ -146,7 +146,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'TEMP',
+                source: 'pahmaSexCategories',
               },
             },
           },
@@ -155,7 +155,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'TEMP',
+                source: 'pahmaPhases',
               },
             },
           },
@@ -165,7 +165,7 @@ export default (configContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'TEMP',
+                  source: 'pahmaForms',
                 },
               },
             },
@@ -203,7 +203,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaTechnicalAttributes',
                   },
                 },
               },
@@ -212,7 +212,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaTechnicalAttributeMeasurementTypes',
                   },
                 },
               },
@@ -221,7 +221,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaTechnicalMeasurementUnits',
                   },
                 },
               },
@@ -253,7 +253,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaContentObjectTypes',
                   },
                 },
               },
@@ -303,7 +303,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaContentEventNameTypes',
                   },
                 },
               },
@@ -342,7 +342,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaInscriptionScriptTypes',
                   },
                 },
               },
@@ -394,7 +394,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'TEMP', //pahmaInscriptionTypes
+                    source: 'pahmaInscriptionDescriptionTypes', //pahmaInscriptionTypes
                   },
                 },
               },
@@ -418,7 +418,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaProdTechniqueTypes',
                   },
                 },
               },
@@ -494,7 +494,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaObjProductionOrgRoles',
                   },
                 },
               },
@@ -508,7 +508,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaAssocActivityTypes',
                   },
                 },
               },
@@ -522,7 +522,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaAssocObjectTypes',
                   },
                 },
               },
@@ -551,7 +551,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaAssocConceptTypes',
                   },
                 },
               },
@@ -575,7 +575,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'assocCulturalContextTypes',
                   },
                 },
               },
@@ -587,9 +587,9 @@ export default (configContext) => {
             assocOrganizationType: {
               [config]: {
                 view: {
-                  type: OptionPickerInput,
+                  type: TermPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'assocorgtype',
                   },
                 },
               },
@@ -613,7 +613,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaAssocPeopleTypes',
                   },
                 },
               },
@@ -663,7 +663,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'pahmaAssocEventTypes',
               },
             },
           },
@@ -699,7 +699,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaAssocDateTypes',
                   },
                 },
               },
@@ -778,7 +778,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'pahmaTmsLegacyDepartments',
               },
             },
           },
@@ -932,7 +932,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'pahmaPortfolioSeriesTypes',
               },
             },
           },
@@ -948,7 +948,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'pahmaTms2003DataSources',
               },
             },
           },
@@ -977,7 +977,7 @@ export default (configContext) => {
               view: {
                 type: OptionPickerInput,
                 props: {
-                  source: 'TEMP',
+                  source: 'pahmaCollections',
                 },
               },
             },
@@ -1076,7 +1076,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaOwnershipCategories',
                   },
                 },
               },
@@ -1116,7 +1116,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaOwnershipExchangeMethods',
                   },
                 },
               },
@@ -1234,7 +1234,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'ageEstimateQualifiers',
                   },
                 },
               },
@@ -1254,7 +1254,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'ageUnits',
                   },
                 },
               },
@@ -1344,7 +1344,7 @@ export default (configContext) => {
               view: {
                 type: OptionPickerInput,
                 props: {
-                  source: 'TEMP',
+                  source: 'pahmaNagpraCodeLegacyCategories',
                 },
               },
             },
@@ -1448,7 +1448,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaAccessRestrictionTypes',
                   },
                 },
               },
@@ -1468,7 +1468,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaAccessLevels',
                   },
                 },
               },
@@ -1574,7 +1574,7 @@ export default (configContext) => {
               view: {
                 type: OptionPickerInput,
                 props: {
-                  source: 'TEMP',
+                  source: 'nagpraInventoryNames',
                 },
               },
             },
@@ -1604,7 +1604,7 @@ export default (configContext) => {
               view: {
                 type: OptionPickerInput,
                 props: {
-                  source: 'TEMP',
+                  source: 'nagpraApplicabilityCategories',
                 },
               },
             },
