@@ -57,13 +57,19 @@ const template = (configContext) => {
 
           <Col>
             <Row>
-              <Field name="languageList">
-                <Field name="language" />
-              </Field>
+              <Cols>
+                <Col>
+                  <Field name="languageList">
+                    <Field name="language" />
+                  </Field>
+                </Col>
 
-              <Field name="typeList">
-                <Field name="type" />
-              </Field>
+                <Col>
+                  <Field name="typeList">
+                    <Field name="type" />
+                  </Field>
+                </Col>
+              </Cols>
             </Row>
 
             <Field name="coverage" />

@@ -42,7 +42,7 @@ export default (configContext) => {
         path: 'ns2:media_common/source',
       },
       {
-        op: OP_CONTAIN,
+        op: OP_EQ,
         path: 'ns2:media_common/subjectList/subject',
       },
       {

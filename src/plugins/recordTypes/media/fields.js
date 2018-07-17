@@ -5,7 +5,6 @@ export default (configContext) => {
     AutocompleteInput,
     CheckboxInput,
     TextInput,
-    OptionPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -29,13 +28,7 @@ export default (configContext) => {
         },
         title: {
           [config]: {
-            defaultValue: 'media record',
-            view: {
-              type: OptionPickerInput,
-              props: {
-                source: 'mediaTitles',
-              },
-            },
+            defaultValue: 'Media record',
           },
         },
         languageList: {
@@ -125,23 +118,6 @@ export default (configContext) => {
             }),
             view: {
               type: CheckboxInput,
-            },
-          },
-        },
-        documentationImageSearch: {
-          [config]: {
-            dataType: DATA_TYPE_BOOL,
-            messages: defineMessages({
-              name: {
-                id: 'field.media_pahma.documentationImageSearch.name',
-                defaultMessage: 'Documentation image search',
-              },
-            }),
-            view: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
             },
           },
         },
