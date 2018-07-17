@@ -8,6 +8,7 @@ import organization from './organization';
 import person from './person';
 import place from './place';
 import taxon from './taxon';
+import valuation from './valuation';
 import work from './work';
 
 export default [
@@ -21,5 +22,6 @@ export default [
   person,
   place,
   taxon,
+  valuation,
   work,
 ];
