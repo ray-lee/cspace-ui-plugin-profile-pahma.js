@@ -1,4 +1,5 @@
 import { defineMessages } from 'react-intl';
+import osteoInventoryInput from '../components/osteoInventoryInput';
 
 const messages = defineMessages({
   affirmComplete: {
@@ -12,6 +13,8 @@ const template = (configContext) => {
     FormattedMessage,
     React,
   } = configContext.lib;
+
+  const OsteoInventoryInput = osteoInventoryInput(configContext);
 
   const {
     Col,
@@ -55,7 +58,7 @@ const template = (configContext) => {
         </Field>
 
         <Panel name="inventory" collapsible collapsed>
-          {/* TODO: Inventory form */}
+          <OsteoInventoryInput />
         </Panel>
 
         <Row>
