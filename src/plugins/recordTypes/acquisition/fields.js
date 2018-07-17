@@ -24,7 +24,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'pahma-accession',
+                source: 'pahmaAccession',
               },
             },
           },
@@ -44,7 +44,7 @@ export default (configContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'person/local,person/shared,organization/local,organization/shared,concept/local',
+                  source: 'person/local,person/shared,organization/local,organization/shared,concept/ethculture',
                 },
               },
             },
@@ -56,7 +56,7 @@ export default (configContext) => {
               repeating: true,
               view: {
                 props: {
-                  source: 'person/local,person/shared,organization/local,organization/shared,concept/local',
+                  source: 'person/local,person/shared,organization/local,organization/shared,concept/ethculture',
                 },
               },
             },
@@ -123,9 +123,13 @@ export default (configContext) => {
             donor: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.acquisitions_pahma.donor.fullName',
+                    defaultMessage: 'Previous owner (donor) name',
+                  },
                   name: {
                     id: 'field.acquisitions_pahma.donor.name',
-                    defaultMessage: 'Donor',
+                    defaultMessage: 'Name',
                   },
                 }),
                 view: {
