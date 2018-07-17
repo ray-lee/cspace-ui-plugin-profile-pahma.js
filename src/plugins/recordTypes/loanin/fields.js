@@ -26,7 +26,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'pahma-loanin',
+                source: 'pahmaLoanin',
               },
             },
           },
@@ -37,20 +37,6 @@ export default (configContext) => {
               type: TermPickerInput,
               props: {
                 source: 'loanpurpose',
-              },
-            },
-          },
-        },
-        loanStatusGroupList: {
-          loanStatusGroup: {
-            loanStatus: {
-              [config]: {
-                view: {
-                  type: TermPickerInput,
-                  props: {
-                    source: 'loanoutstatus',
-                  },
-                },
               },
             },
           },
