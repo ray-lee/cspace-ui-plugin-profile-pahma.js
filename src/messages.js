@@ -17,13 +17,7 @@ export default {
 
   'record.aquisition.name': 'Accession',
   'record.acquisition.collectionName': 'Accessions',
-  'field.acquisitions_common.acquisitionReferenceNumber.name': 'Accession number',
-  'inputTable.acquisition.acquisitionAuthorizer': 'Accession authorization',
-  'panel.acquisition.priceInformation': 'Purchase price(s), if applicable',
-  'field.acquisitions_common.acquisitionReason.name': 'Accession reason',
-  'field.acquisitions_common.acquisitionNote.name': 'Accession note',
-  'field.acquisitions_common.acquisitionProvisos.name': 'Accession provisos',
-  'column.acquisition.default.acquisitionReferenceNumber': 'Accession number',
+  'panel.acquisition.info': 'Accession Information',
 
   // concept
 
