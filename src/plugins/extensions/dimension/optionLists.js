@@ -71,15 +71,15 @@ export default {
       },
       squareCentimeters: {
         id: 'option.pahmaMeasurementUnits.squareCenti',
-        defaultMessage: 'cm&#xB2; (square centimeters)',
+        defaultMessage: 'cm\xB2 (square centimeters)',
       },
       cubicCentimeters: {
         id: 'option.pahmaMeasurementUnits.cubicCentim',
-        defaultMessage: 'cm&#xB3; (cubic centimeters)',
+        defaultMessage: 'cm\xB3 (cubic centimeters)',
       },
       degrees: {
         id: 'option.pahmaMeasurementUnits.degrees',
-        defaultMessage: 'xB0; (degrees)',
+        defaultMessage: '\xB0 (degrees)',
       },
       feet: {
         id: 'option.pahmaMeasurementUnits.feet',
@@ -87,11 +87,11 @@ export default {
       },
       squareFeet: {
         id: 'option.pahmaMeasurementUnits.squareFeet',
-        defaultMessage: 'ft&#xB2; (square feet)',
+        defaultMessage: 'ft\xB2 (square feet)',
       },
       cubicFeet: {
         id: 'option.pahmaMeasurementUnits.cubicFeet',
-        defaultMessage: 'ft&#xB3; (cubic feet)',
+        defaultMessage: 'ft\xB3 (cubic feet)',
       },
       grams: {
         id: 'option.pahmaMeasurementUnits.grams',
@@ -103,11 +103,11 @@ export default {
       },
       squareInches: {
         id: 'option.pahmaMeasurementUnits.squareInche',
-        defaultMessage: 'in&#xB2; (square inches)',
+        defaultMessage: 'in\xB2 (square inches)',
       },
       cubicInches: {
         id: 'option.pahmaMeasurementUnits.cubicInches',
-        defaultMessage: 'in&#xB3; (cubic inches)',
+        defaultMessage: 'in\xB3 (cubic inches)',
       },
       kilograms: {
         id: 'option.pahmaMeasurementUnits.kilograms',
@@ -147,7 +147,7 @@ export default {
       },
       recording: {
         id: 'option.pahmaMeasurementUnits.recording',
-        defaultMessage: '&quot;recording speed&quot; (either ips, rpm, or Kroeber notes page number)',
+        defaultMessage: '"recording speed" (either ips, rpm, or Kroeber notes page number)',
       },
       rotationsPerMinute: {
         id: 'option.pahmaMeasurementUnits.rotationsPe',
