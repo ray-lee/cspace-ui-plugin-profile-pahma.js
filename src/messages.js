@@ -23,6 +23,17 @@ export default {
 
   'field.contacts_common.addressGroup.name': 'Postal address',
 
+  // intake
+
+  'record.intake.name': 'Object Entry',
+  'record.intake.collectionName': 'Object Entries',
+  'field.intakes_common.currentLocation.fullName': 'Storage location',
+  'field.intakes_common.currentLocationGroup.name': 'Storage location',
+  'field.intakes_common.entryNumber.name': 'Object entry number',
+  'field.intakes_common.returnDate.name': 'Actual return date',
+  'field.intakes_common.fieldCollectionSource.name': 'Field collection source (person or cultural group)',
+  'field.intakes_common.normalLocation.name': 'Home location',
+
   // location
 
   'vocab.location.local.name': 'PAHMA',
