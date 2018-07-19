@@ -23,6 +23,7 @@ export default (configContext) => {
             required: false,
             view: {
               type: TextInput,
+              props: null,
             },
           },
         },
