@@ -1,5 +1,6 @@
 import acquisition from './acquisition';
 import citation from './citation';
+import claim from './claim';
 import concept from './concept';
 import contact from './contact';
 import group from './group';
@@ -23,6 +24,7 @@ import conditioncheck from './conditioncheck';
 export default [
   acquisition,
   citation,
+  claim,
   concept,
   conditioncheck,
   contact,
