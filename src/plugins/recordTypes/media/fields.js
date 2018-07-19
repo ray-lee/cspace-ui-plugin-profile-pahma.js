@@ -15,6 +15,10 @@ export default (configContext) => {
     DATA_TYPE_BOOL,
   } = configContext.dataTypes;
 
+  const {
+    extensions,
+  } = configContext.config;
+
   return {
     document: {
       'ns2:media_common': {
@@ -72,6 +76,7 @@ export default (configContext) => {
             },
           },
         },
+        ...extensions.dimension.fields,
       },
       'ns2:media_pahma': {
         [config]: {
