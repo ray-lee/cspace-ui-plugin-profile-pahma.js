@@ -45,6 +45,13 @@ export default {
   'record.movement.collectionName': 'Inventory/Movement',
   'panel.movement.location': 'Inventory/Movement Information',
 
+  // media
+
+  'field.media_common.identificationNumber.name': 'Media rendition number (or Museum number)',
+  'field.media_common.description.name': 'Note',
+  'record.media.name': 'Media',
+  'record.media.collectionName': 'Media',
+
   // organization
 
   'vocab.organization.local.name': 'PAHMA',
@@ -72,4 +79,5 @@ export default {
   'vocab.taxon.local.collectionName': 'PAHMA Taxonomic Names',
   'option.taxonomicStatuses.valid': 'current',
   'option.taxonomicStatuses.invalid': 'obsolete',
+
 };
