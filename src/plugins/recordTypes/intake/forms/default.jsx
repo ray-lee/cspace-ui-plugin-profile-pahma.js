@@ -22,20 +22,23 @@ const template = (configContext) => {
           <Field name="entryNumber" />
           <Field name="entryDate" />
 
-          <Field name="entryMethods">
-            <Field name="entryMethod" />
-          </Field>
+          <Col>
+            <Field name="entryMethods">
+              <Field name="entryMethod" />
+            </Field>
+          </Col>
 
           <Field name="entryReason" />
         </Row>
 
-        <Row>
-          <Field name="expectedReturnDate" subpath="ns2:intakes_pahma" />
-          <Field name="returnDate" />
-        </Row>
 
         <Cols>
           <Col>
+            <Row>
+              <Field name="expectedReturnDate" subpath="ns2:intakes_pahma" />
+              <Field name="returnDate" />
+            </Row>
+
             <InputTable name="depositor">
               <Field name="depositor" />
               <Field name="depositorsRequirements" />
@@ -43,9 +46,8 @@ const template = (configContext) => {
 
             <Field name="currentOwner" />
           </Col>
-          <Col>
-            <Field name="entryNote" />
-          </Col>
+
+          <Field name="entryNote" />
         </Cols>
 
         <Field name="packingNote" />
@@ -55,18 +57,15 @@ const template = (configContext) => {
         <Cols>
           <Col>
             <Row>
-              <Cols>
-                <Col>
-                  <Field name="fieldCollectionDate" />
-                </Col>
+              <Field name="fieldCollectionDate" />
 
-                <Col>
-                  <Field name="fieldCollectionMethods">
-                    <Field name="fieldCollectionMethod" />
-                  </Field>
-                </Col>
-              </Cols>
+              <Col>
+                <Field name="fieldCollectionMethods">
+                  <Field name="fieldCollectionMethod" />
+                </Field>
+              </Col>
             </Row>
+
             <Field name="fieldCollectionNumber" />
             <Field name="fieldCollectionNote" />
           </Col>
