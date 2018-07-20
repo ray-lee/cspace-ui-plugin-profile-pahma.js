@@ -16,7 +16,7 @@ export default (configContext) => {
             view: {
               type: TermPickerInput,
               props: {
-                source: 'grouppurpose',
+                source: 'GroupPurpose',
               },
             },
           },

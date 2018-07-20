@@ -1,6 +1,7 @@
 import citation from './citation';
 import concept from './concept';
 import contact from './contact';
+import group from './group';
 import intake from './intake';
 import location from './location';
 import movement from './movement';
@@ -18,6 +19,7 @@ export default [
   citation,
   concept,
   contact,
+  group,
   intake,
   location,
   movement,
