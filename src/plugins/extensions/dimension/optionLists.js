@@ -1,7 +1,7 @@
 import { defineMessages } from 'react-intl';
 
 export default {
-  pahmaDimension: {
+  pahmaDimensions: {
     values: [
       'angle',
       'area',
@@ -14,13 +14,39 @@ export default {
       'length',
       'linear',
       'memorysize',
-      'recording',
+      'recording speed',
       'runningTime',
       'thickness',
       'volume',
       'weight',
       'width',
     ],
+    messages: defineMessages({
+      depth: {
+        id: 'option.pahmaDimensions.depth',
+        defaultMessage: 'depth/thickness',
+      },
+      filesize: {
+        id: 'option.pahmaDimensions.filesize',
+        defaultMessage: 'file size',
+      },
+      linear: {
+        id: 'option.pahmaDimensions.linear',
+        defaultMessage: '"linear" (coin diameter)',
+      },
+      memorysize: {
+        id: 'option.pahmaDimensions.memorysize',
+        defaultMessage: 'memory size',
+      },
+      runningTime: {
+        id: 'option.pahmaDimensions.runningTime',
+        defaultMessage: 'running time',
+      },
+      width: {
+        id: 'option.pahmaDimensions.width',
+        defaultMessage: 'width/breadth',
+      },
+    }),
   },
   pahmaMeasurementUnits: {
     values: [
@@ -47,7 +73,7 @@ export default {
       'ounces',
       'pints',
       'pixels',
-      'recording',
+      'recording speed',
       'rotationsPerMinute',
       'seconds',
       'yards',
@@ -62,7 +88,7 @@ export default {
         defaultMessage: 'CD (carats [mass])',
       },
       caratsPurity: {
-        id: 'option.pahmaMeasurementUnits.caratsPurit',
+        id: 'option.pahmaMeasurementUnits.caratsPurity',
         defaultMessage: 'ct (carats [purity])',
       },
       centimeters: {
@@ -70,16 +96,16 @@ export default {
         defaultMessage: 'cm (centimeters)',
       },
       squareCentimeters: {
-        id: 'option.pahmaMeasurementUnits.squareCenti',
-        defaultMessage: 'cm\xB2 (square centimeters)',
+        id: 'option.pahmaMeasurementUnits.squareCentimeters',
+        defaultMessage: 'cm² (square centimeters)',
       },
       cubicCentimeters: {
-        id: 'option.pahmaMeasurementUnits.cubicCentim',
-        defaultMessage: 'cm\xB3 (cubic centimeters)',
+        id: 'option.pahmaMeasurementUnits.cubicCentimeters',
+        defaultMessage: 'cm³ (cubic centimeters)',
       },
       degrees: {
         id: 'option.pahmaMeasurementUnits.degrees',
-        defaultMessage: '\xB0 (degrees)',
+        defaultMessage: '° (degrees)',
       },
       feet: {
         id: 'option.pahmaMeasurementUnits.feet',
@@ -87,11 +113,11 @@ export default {
       },
       squareFeet: {
         id: 'option.pahmaMeasurementUnits.squareFeet',
-        defaultMessage: 'ft\xB2 (square feet)',
+        defaultMessage: 'ft² (square feet)',
       },
       cubicFeet: {
         id: 'option.pahmaMeasurementUnits.cubicFeet',
-        defaultMessage: 'ft\xB3 (cubic feet)',
+        defaultMessage: 'ft³ (cubic feet)',
       },
       grams: {
         id: 'option.pahmaMeasurementUnits.grams',
@@ -102,12 +128,12 @@ export default {
         defaultMessage: 'in (inches)',
       },
       squareInches: {
-        id: 'option.pahmaMeasurementUnits.squareInche',
-        defaultMessage: 'in\xB2 (square inches)',
+        id: 'option.pahmaMeasurementUnits.squareInches',
+        defaultMessage: 'in² (square inches)',
       },
       cubicInches: {
         id: 'option.pahmaMeasurementUnits.cubicInches',
-        defaultMessage: 'in\xB3 (cubic inches)',
+        defaultMessage: 'in³ (cubic inches)',
       },
       kilograms: {
         id: 'option.pahmaMeasurementUnits.kilograms',
@@ -145,12 +171,12 @@ export default {
         id: 'option.pahmaMeasurementUnits.pixels',
         defaultMessage: 'px (pixels)',
       },
-      recording: {
-        id: 'option.pahmaMeasurementUnits.recording',
+      'recording speed': {
+        id: 'option.pahmaMeasurementUnits.recording speed',
         defaultMessage: '"recording speed" (either ips, rpm, or Kroeber notes page number)',
       },
       rotationsPerMinute: {
-        id: 'option.pahmaMeasurementUnits.rotationsPe',
+        id: 'option.pahmaMeasurementUnits.rotationsPerMinute',
         defaultMessage: 'rpm (rotations/minute)',
       },
       seconds: {
