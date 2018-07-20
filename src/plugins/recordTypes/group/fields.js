@@ -11,6 +11,11 @@ export default (configContext) => {
   return {
     document: {
       'ns2:groups_common': {
+        title: {
+          [config]: {
+            cloneable: false,
+          },
+        },
         responsibleDepartment: {
           [config]: {
             view: {
