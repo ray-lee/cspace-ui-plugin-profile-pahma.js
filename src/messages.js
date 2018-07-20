@@ -65,6 +65,10 @@ export default {
   'field.conditionchecks_common.condition.fullName': 'Condition',
   'panel.conditioncheck.objectRequirementInfo': 'Object Requirement and Handling Information',
 
+  // dimension
+
+  'field.ext.dimension.measuredPart.name': 'Part measured',
+
   // location
 
   'vocab.location.local.name': 'PAHMA',
