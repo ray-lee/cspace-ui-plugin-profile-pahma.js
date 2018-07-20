@@ -34,6 +34,10 @@ export default {
   'field.intakes_common.fieldCollectionSource.name': 'Field collection source (person or cultural group)',
   'field.intakes_common.normalLocation.name': 'Home location',
 
+  // group
+
+  'field.groups_common.responsibleDepartment.name': 'Purpose',
+
   // location
 
   'vocab.location.local.name': 'PAHMA',
