@@ -38,12 +38,6 @@ export default {
 
   'field.groups_common.responsibleDepartment.name': 'Purpose',
 
-  // exhibition
-
-  'field.exhibitions_common.workingGroup.name': 'Exhibition working group',
-  'field.exhibitions_common.title.name': 'Exhibition title',
-  'field.exhibitions_common.type.name': 'Exhibition type',
-
   // location
 
   'vocab.location.local.name': 'PAHMA',

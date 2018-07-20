@@ -17,27 +17,23 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="info" collapsible>
-        <Row>
-          <Field name="exhibitionNumber" />
-          <Field name="title" />
-          <Field name="type" />
-        </Row>
+        <Cols>
+          <Col>
+            <Field name="exhibitionNumber" />
+            <Field name="type" />
+            <Field name="title" />
+          </Col>
 
-        <Row>
-          <Cols>
-            <Col>
-              <Field name="sponsors">
-                <Field name="sponsor" />
-              </Field>
-            </Col>
+          <Col>
+            <Field name="sponsors">
+              <Field name="sponsor" />
+            </Field>
 
-            <Col>
-              <Field name="organizers">
-                <Field name="organizer" />
-              </Field>
-            </Col>
-          </Cols>
-        </Row>
+            <Field name="organizers">
+              <Field name="organizer" />
+            </Field>
+          </Col>
+        </Cols>
 
         <Row>
           <Field name="venueGroupList">
@@ -75,15 +71,19 @@ const template = (configContext) => {
           <Col>
             <Field name="planningNote" />
             <Field name="curatorialNote" />
-            <Field name="generalNote" />
           </Col>
 
           <Col>
+            <Field name="generalNote" />
             <Field name="boilerplateText" />
           </Col>
         </Cols>
 
-        <Field name="galleryRotationGroupList">
+        {/*
+          * TODO: Use the identically named fields in exhibitions_common, after data has been
+          * migrated.
+          */}
+        <Field name="galleryRotationGroupList" subpath="ns2:exhibitions_pahma">
           <Field name="galleryRotationGroup">
             <Field name="galleryRotationName" />
             <Field name="galleryRotationStartDateGroup" />
@@ -102,7 +102,11 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="planningInfo" collapsible collapsed>
-        <Field name="exhibitionSectionGroupList">
+        {/*
+          * TODO: Use the identically named fields in exhibitions_common, after data has been
+          * migrated.
+          */}
+        <Field name="exhibitionSectionGroupList" subpath="ns2:exhibitions_pahma">
           <Field name="exhibitionSectionGroup">
             <Field name="exhibitionSectionName" />
             <Field name="exhibitionSectionLocation" />
@@ -111,7 +115,11 @@ const template = (configContext) => {
           </Field>
         </Field>
 
-        <Field name="exhibitionStatusGroupList">
+        {/*
+          * TODO: Use the identically named fields in exhibitions_common, after data has been
+          * migrated.
+          */}
+        <Field name="exhibitionStatusGroupList" subpath="ns2:exhibitions_pahma">
           <Field name="exhibitionStatusGroup">
             <Field name="exhibitionStatus" />
             <Field name="exhibitionStatusDate" />
@@ -121,7 +129,11 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="exhibitedObjectInformation" collapsible collapsed>
-        <Field name="exhibitionObjectGroupList">
+        {/*
+          * TODO: Use the identically named fields in exhibitions_common, after data has been
+          * migrated.
+          */}
+        <Field name="exhibitionObjectGroupList" subpath="ns2:exhibitions_pahma">
           <Field name="exhibitionObjectGroup">
             <Field name="exhibitionObjectNumber" />
             <Field name="exhibitionObjectName" />
