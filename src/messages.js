@@ -62,7 +62,8 @@ export default {
   // condition check
 
   'field.conditionchecks_common.conditionCheckNote.name': 'Condition note',
-  'panel.conditioncheck.objectRequirementInfo': 'Object Recommendation and Handling Information',
+  'field.conditionchecks_common.condition.fullName': 'Condition',
+  'panel.conditioncheck.objectRequirementInfo': 'Object Requirement and Handling Information',
 
   // location
 
