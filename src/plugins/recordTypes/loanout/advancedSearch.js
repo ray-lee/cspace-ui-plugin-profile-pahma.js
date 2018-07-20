@@ -47,6 +47,14 @@ export default (configContext) => {
       },
       {
         op: OP_RANGE,
+        path: 'ns2:loansout_pahma/loanOutDateGroup',
+      },
+      {
+        op: OP_RANGE,
+        path: 'ns2:loansout_pahma/loanReturnDateGroup',
+      },
+      {
+        op: OP_RANGE,
         path: 'ns2:loansout_common/loanRenewalApplicationDate',
       },
       ...extensions.core.advancedSearch,
