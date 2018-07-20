@@ -41,6 +41,22 @@ export default (configContext) => {
             },
           },
         },
+        loanStatusGroupList: {
+          loanStatusGroup: {
+            loanStatus: {
+              [config]: {
+                view: {
+                  props: {
+                    // The shortid of this list was changed to loanstatus in the app layer --
+                    // in the tenant override of base-instance-vocabularies.xml -- this needs to
+                    // match.
+                    source: 'loanstatus',
+                  },
+                },
+              },
+            },
+          },
+        },
       },
       'ns2:loansin_pahma': {
         [config]: {
