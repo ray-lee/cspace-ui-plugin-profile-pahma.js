@@ -1,3 +1,4 @@
+import acquisition from './acquisition';
 import citation from './citation';
 import concept from './concept';
 import contact from './contact';
@@ -17,6 +18,7 @@ import valuation from './valuation';
 import work from './work';
 
 export default [
+  acquisition,
   citation,
   concept,
   contact,
