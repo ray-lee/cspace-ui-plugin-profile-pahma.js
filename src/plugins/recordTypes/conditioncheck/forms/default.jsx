@@ -23,11 +23,12 @@ const template = (configContext) => {
             <Field name="conservationTreatmentPriority" />
 
             <Field name="conditionCheckGroupList">
-              <Field name="conditionCheckGroup">
-                <Field name="condition" />
+              <Field name="conditionCheckGroup" tabular={false}>
+                <Field name="condition" embedded label="" />
               </Field>
             </Field>
           </Col>
+
           <Col>
             <Field name="conditionCheckAssessmentDate" />
             <Field name="nextConditionCheckDate" />
@@ -49,16 +50,17 @@ const template = (configContext) => {
             <Field name="tempRequirement" subpath="ns2:conditionchecks_anthropology" />
             <Field name="humidityRequirement" subpath="ns2:conditionchecks_anthropology" />
             <Field name="lightRequirement" subpath="ns2:conditionchecks_anthropology" />
+
             <Field name="hazardGroupList">
               <Field name="hazardGroup">
                 <Field name="hazard" />
                 <Field name="hazardNote" />
               </Field>
             </Field>
+
             <Field name="packingRecommendations" />
           </Col>
         </Cols>
-
       </Panel>
     </Field>
   );
