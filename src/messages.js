@@ -81,9 +81,12 @@ export default {
 
   'record.loanin.name': 'In Loan',
   'record.loanin.collectionName': 'In Loans',
-  'field.loansin_common.loanInNumber': 'Loan number',
+  'panel.loanin.info': 'Incoming Loan Information',
+  'field.loansin_common.loanInNumber.name': 'Loan number',
   'field.loansin_common.borrowersContact.name': 'PAHMA contact',
+  'field.loansin_common.borrowersContact.fullName': 'PAHMA contact',
   'field.loansin_common.borrowersAuthorizer.name': 'PAHMA authorizer',
+  'field.loansin_common.borrowersAuthorizer.fullName': 'PAHMA authorizer',
   'field.loansin_common.loanInConditions.name': 'Loan conditions',
   'field.loansin_common.loanInNote .name': 'Loan note',
 
