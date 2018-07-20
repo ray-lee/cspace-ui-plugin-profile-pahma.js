@@ -703,7 +703,7 @@ export default (configContext) => {
               view: {
                 type: OptionPickerInput,
                 props: {
-                  source: 'TEMP',
+                  source: 'anthroClaimTypes',
                 },
               },
             },
@@ -776,7 +776,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'pahmaInventoryNames',
                   },
                 },
               },
@@ -1384,7 +1384,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'TEMP',
+                    source: 'thirtyDayNoticeTypes',
                   },
                 },
               },
@@ -1586,12 +1586,3 @@ export default (configContext) => {
     },
   };
 };
-
-/*
-messages: defineMessages({
-  fullName: {
-    id: 'field.claims_anthropology..fullName',
-    defaultMessage: ''
-  },
-}),
-*/

@@ -5,12 +5,12 @@ export default {
     name: {
       id: 'record.claim.name',
       description: 'The name of the record type.',
-      defaultMessage: 'Claim',
+      defaultMessage: 'NAGPRA Claim',
     },
     collectionName: {
       id: 'record.claim.collectionName',
       description: 'The name of a collection of records of the type.',
-      defaultMessage: 'Claims',
+      defaultMessage: 'NAGPRA Claims',
     },
   }),
   panel: defineMessages({
