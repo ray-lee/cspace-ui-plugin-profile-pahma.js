@@ -53,7 +53,6 @@ export default (configContext) => {
         owners: {
           owner: {
             [config]: {
-              repeating: true,
               view: {
                 props: {
                   source: 'person/local,person/shared,organization/local,organization/shared,concept/ethculture',
