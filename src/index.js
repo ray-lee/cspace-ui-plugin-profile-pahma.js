@@ -14,6 +14,7 @@ module.exports = () => ({
   messages,
   autocompleteFindDelay: 1000,
   className: styles.common,
+  mediaSnapshotSort: 'primaryDisplay desc',
   prettyUrls: true,
   relationMemberPerm: 'R',
   tenantId: '15',
