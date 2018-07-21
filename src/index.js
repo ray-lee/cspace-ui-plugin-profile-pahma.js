@@ -12,6 +12,7 @@ import styles from '../styles/cspace-ui-plugin-profile/pahma.css';
 module.exports = () => ({
   logo,
   messages,
+  autocompleteFindDelay: 1000,
   className: styles.common,
   prettyUrls: true,
   relationMemberPerm: 'R',
