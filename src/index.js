@@ -15,6 +15,7 @@ module.exports = () => ({
   allowDeleteHierarchyLeaves: true,
   autocompleteFindDelay: 1000,
   className: styles.common,
+  defaultAdvancedSearchBooleanOp: 'and',
   mediaSnapshotSort: 'primaryDisplay desc',
   prettyUrls: true,
   relationMemberPerm: 'R',
