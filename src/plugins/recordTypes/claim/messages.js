@@ -26,5 +26,9 @@ export default {
       id: 'panel.claim.processing',
       defaultMessage: 'Claim Processing Information',
     },
+    tasks: {
+      id: 'panel.claim.tasks',
+      defaultMessage: 'Tasks to be completed',
+    },
   }),
 };

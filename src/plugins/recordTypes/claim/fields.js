@@ -89,10 +89,6 @@ export default (configContext) => {
             filedBy: {
               [config]: {
                 messages: defineMessages({
-                  fullName: {
-                    id: 'field.claims_common.filedBy.fullName',
-                    defaultMessage: 'Claim filed by',
-                  },
                   name: {
                     id: 'field.claims_common.filedBy.name',
                     defaultMessage: 'Filed by',
@@ -101,7 +97,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'person/local,person/shared,organization/local,organization/shared',
+                    source: 'person/local,organization/local',
                   },
                 },
               },
@@ -111,7 +107,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_common.filedOnBehalfOf.fullName',
-                    defaultMessage: 'Claim filed on behalf of',
+                    defaultMessage: 'Filed on behalf of',
                   },
                   name: {
                     id: 'field.claims_common.filedOnBehalfOf.name',
@@ -121,7 +117,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'person/local,person/shared,organization/local,organization/shared',
+                    source: 'person/local,organization/local',
                   },
                 },
               },
@@ -216,7 +212,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.dispositionPossibilitiesDiscussed.name',
+                id: 'field.claims_pahma.dispositionPossibilitiesDiscussed.name',
                 defaultMessage: 'Disposition possibilities discussed',
               },
             }),
@@ -229,7 +225,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.dispositionPossibilitiesDiscussedNote.name',
+                id: 'field.claims_pahma.dispositionPossibilitiesDiscussedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -246,7 +242,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.surroundingTribesContacted.name',
+                id: 'field.claims_pahma.surroundingTribesContacted.name',
                 defaultMessage: 'Surrounding tribes contacted',
               },
             }),
@@ -259,7 +255,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.surroundingTribesContactedNote.name',
+                id: 'field.claims_pahma.surroundingTribesContactedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -276,8 +272,8 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.workingTeamNotified.name',
-                defaultMessage: 'Institutional NAGPRA team notified',
+                id: 'field.claims_pahma.workingTeamNotified.name',
+                defaultMessage: 'PAHMA NAGPRA team notified',
               },
             }),
             view: {
@@ -289,7 +285,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.workingTeamNotifiedNote.name',
+                id: 'field.claims_pahma.workingTeamNotifiedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -306,7 +302,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.siteFileResearchCompleted.name',
+                id: 'field.claims_pahma.siteFileResearchCompleted.name',
                 defaultMessage: 'Site file research completed',
               },
             }),
@@ -319,7 +315,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.siteFileResearchCompletedNote.name',
+                id: 'field.claims_pahma.siteFileResearchCompletedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -336,7 +332,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.accessionFileResearchCompleted.name',
+                id: 'field.claims_pahma.accessionFileResearchCompleted.name',
                 defaultMessage: 'Accession file research completed',
               },
             }),
@@ -349,7 +345,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.accessionFileResearchCompletedNote.name',
+                id: 'field.claims_pahma.accessionFileResearchCompletedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -366,7 +362,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsLocatedAndCounted.name',
+                id: 'field.claims_pahma.objectsLocatedAndCounted.name',
                 defaultMessage: 'Objects located and counted',
               },
             }),
@@ -379,7 +375,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsLocatedAndCountedNote.name',
+                id: 'field.claims_pahma.objectsLocatedAndCountedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -396,7 +392,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsConsolidated.name',
+                id: 'field.claims_pahma.objectsConsolidated.name',
                 defaultMessage: 'Objects consolidated',
               },
             }),
@@ -409,7 +405,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsConsolidatedNote.name',
+                id: 'field.claims_pahma.objectsConsolidatedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -426,7 +422,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsPhotographed.name',
+                id: 'field.claims_pahma.objectsPhotographed.name',
                 defaultMessage: 'Objects photographed',
               },
             }),
@@ -439,7 +435,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsPhotographedNote.name',
+                id: 'field.claims_pahma.objectsPhotographedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -456,7 +452,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.registrationDocumentsDrafted.name',
+                id: 'field.claims_pahma.registrationDocumentsDrafted.name',
                 defaultMessage: 'Registration documents drawn up',
               },
             }),
@@ -469,7 +465,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.registrationDocumentsDraftedNote.name',
+                id: 'field.claims_pahma.registrationDocumentsDraftedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -486,7 +482,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.tribeContactedForPackingPreferences.name',
+                id: 'field.claims_pahma.tribeContactedForPackingPreferences.name',
                 defaultMessage: 'Tribe contacted for packing/storage instructions',
               },
             }),
@@ -499,7 +495,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.tribeContactedForPackingPreferencesNote.name',
+                id: 'field.claims_pahma.tribeContactedForPackingPreferencesNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -516,7 +512,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.dateArrangedForTransfer.name',
+                id: 'field.claims_pahma.dateArrangedForTransfer.name',
                 defaultMessage: 'Date arranged for pickup/transfer',
               },
             }),
@@ -529,7 +525,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.dateArrangedForTransferNote.name',
+                id: 'field.claims_pahma.dateArrangedForTransferNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -546,7 +542,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsMarkedAsDeaccessioned.name',
+                id: 'field.claims_pahma.objectsMarkedAsDeaccessioned.name',
                 defaultMessage: 'Objects marked as deaccessioned',
               },
             }),
@@ -559,7 +555,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.objectsMarkedAsDeaccessionedNote.name',
+                id: 'field.claims_pahma.objectsMarkedAsDeaccessionedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -576,7 +572,7 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.documentsArchived.name',
+                id: 'field.claims_pahma.documentsArchived.name',
                 defaultMessage: 'Claim documents archived',
               },
             }),
@@ -589,7 +585,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.claims_nagpra.documentsArchivedNote.name',
+                id: 'field.claims_pahma.documentsArchivedNote.name',
                 defaultMessage: 'Note',
               },
             }),
@@ -652,7 +648,7 @@ export default (configContext) => {
                   },
                   name: {
                     id: 'field.claims_anthropology.claimAltName.name',
-                    defaultMessage: 'Name',
+                    defaultMessage: 'Name/number',
                   },
                 }),
                 view: {
@@ -681,12 +677,6 @@ export default (configContext) => {
         },
         claimTypeList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.claims_anthropology.claimTypeList.name',
-                defaultMessage: 'Claim type',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -694,8 +684,8 @@ export default (configContext) => {
           claimType: {
             [config]: {
               messages: defineMessages({
-                fullName: {
-                  id: 'field.claims_anthropology.claimType.fullName',
+                name: {
+                  id: 'field.claims_anthropology.claimType.name',
                   defaultMessage: 'Claim type',
                 },
               }),
@@ -711,12 +701,6 @@ export default (configContext) => {
         },
         claimNoteList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.claims_anthropology.claimNoteList.name',
-                defaultMessage: 'Claim note',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -724,8 +708,8 @@ export default (configContext) => {
           claimNote: {
             [config]: {
               messages: defineMessages({
-                fullName: {
-                  id: 'field.claims_anthropology.claimNote.fullName',
+                name: {
+                  id: 'field.claims_anthropology.claimNote.name',
                   defaultMessage: 'Claim note',
                 },
               }),
@@ -811,7 +795,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.claims_anthropology.claimSiteInvolvedGroup.name',
-                  defaultMessage: 'Site involved',
+                  defaultMessage: 'Site or place involved',
                 },
               }),
               repeating: true,
@@ -933,7 +917,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.claims_anthropology.claimPeriodInvolvedGroup.name',
-                  defaultMessage: 'Time period represented',
+                  defaultMessage: 'Time period or date represented',
                 },
               }),
               repeating: true,
@@ -1006,6 +990,7 @@ export default (configContext) => {
             },
             initialResponseDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.initialResponseDate.fullName',
@@ -1064,6 +1049,7 @@ export default (configContext) => {
             },
             sentToLocalCommitteeDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.sentToLocalCommitteeDate.fullName',
@@ -1122,6 +1108,7 @@ export default (configContext) => {
             },
             sentToOversightCommitteeDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.sentToOversightCommitteeDate.fullName',
@@ -1180,6 +1167,7 @@ export default (configContext) => {
             },
             recommendationOfLocalCommitteeDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.recommendationOfLocalCommitteeDate.fullName',
@@ -1238,6 +1226,7 @@ export default (configContext) => {
             },
             sentToNationalNagpraDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.sentToNationalNagpraDate.fullName',
@@ -1296,6 +1285,7 @@ export default (configContext) => {
             },
             dateOfNationalNagpraApprovalDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.dateOfNationalNagpraApprovalDate.fullName',
@@ -1354,10 +1344,11 @@ export default (configContext) => {
             },
             dateOfThirtyDayNoticeDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.dateOfThirtyDayNoticeDate.fullName',
-                    defaultMessage: 'Start and end dates for National NAGPRA\'s 30-day notice',
+                    defaultMessage: 'Date for National NAGPRA\'s 30-day notice',
                   },
                   name: {
                     id: 'field.claims_anthropology.dateOfThirtyDayNoticeDate.name',
@@ -1371,10 +1362,11 @@ export default (configContext) => {
             },
             dateOfThirtyDayNoticeType: {
               [config]: {
+                defaultValue: 'begin',
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.dateOfThirtyDayNoticeType.fullName',
-                    defaultMessage: 'Start and end dates for National NAGPRA\'s 30-day notice type',
+                    defaultMessage: 'Date for National NAGPRA\'s 30-day notice type',
                   },
                   name: {
                     id: 'field.claims_anthropology.dateOfThirtyDayNoticeType.name',
@@ -1394,7 +1386,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.dateOfThirtyDayNoticeNote.fullName',
-                    defaultMessage: 'Start and end dates for National NAGPRA\'s 30-day notice note',
+                    defaultMessage: 'Date for National NAGPRA\'s 30-day notice note',
                   },
                   name: {
                     id: 'field.claims_anthropology.dateOfThirtyDayNoticeNote.name',
@@ -1432,6 +1424,7 @@ export default (configContext) => {
             },
             transferDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.transferDate.fullName',
@@ -1490,6 +1483,7 @@ export default (configContext) => {
             },
             recommendationOfOversightCommitteeDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.recommendationOfOversightCommitteeDate.fullName',
@@ -1548,6 +1542,7 @@ export default (configContext) => {
             },
             responseFromNationalNagpraDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.claims_anthropology.responseFromNationalNagpraDate.fullName',

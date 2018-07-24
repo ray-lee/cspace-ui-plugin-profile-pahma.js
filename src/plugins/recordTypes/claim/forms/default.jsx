@@ -8,7 +8,6 @@ const template = (configContext) => {
   const {
     Cols,
     Col,
-    Row,
     Panel,
   } = configContext.layoutComponents;
 
@@ -20,35 +19,27 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="info" collapsible>
-        <Row>
-          <Field name="claimNumber" />
-          <Field name="claimName" subpath="ns2:claims_anthropology" />
-        </Row>
-
-        <Row>
-          <Cols>
-            <Col>
-              <Field name="claimAltNameGroupList" subpath="ns2:claims_anthropology">
-                <Field name="claimAltNameGroup">
-                  <Field name="claimAltName" />
-                  <Field name="claimAltNote" />
-                </Field>
-              </Field>
-            </Col>
-
-            <Col>
-              <Field name="claimClaimantGroupList">
-                <Field name="claimClaimantGroup">
-                  <Field name="filedBy" />
-                  <Field name="filedOnBehalfOf" />
-                  <Field name="claimantNote" />
-                </Field>
-              </Field>
-            </Col>
-          </Cols>
-        </Row>
-
         <Cols>
+          <Col>
+            <Field name="claimNumber" />
+            <Field name="claimName" subpath="ns2:claims_anthropology" />
+
+            <Field name="claimAltNameGroupList" subpath="ns2:claims_anthropology">
+              <Field name="claimAltNameGroup">
+                <Field name="claimAltName" />
+                <Field name="claimAltNote" />
+              </Field>
+            </Field>
+
+            <Field name="claimClaimantGroupList">
+              <Field name="claimClaimantGroup">
+                <Field name="filedBy" />
+                <Field name="filedOnBehalfOf" />
+                <Field name="claimantNote" />
+              </Field>
+            </Field>
+          </Col>
+
           <Col>
             <Field name="claimTypeList" subpath="ns2:claims_anthropology">
               <Field name="claimType" />
@@ -60,9 +51,7 @@ const template = (configContext) => {
                 <Field name="claimReceivedNote" />
               </Field>
             </Field>
-          </Col>
 
-          <Col>
             <Field name="claimNoteList" subpath="ns2:claims_anthropology">
               <Field name="claimNote" />
             </Field>
@@ -70,7 +59,7 @@ const template = (configContext) => {
         </Cols>
       </Panel>
 
-      <Panel name="context" collapsible>
+      <Panel name="context" collapsible collapsed>
         <Cols>
           <Col>
             <Field name="claimInventoryInvolvedGroupList" subpath="ns2:claims_anthropology">
@@ -80,19 +69,19 @@ const template = (configContext) => {
               </Field>
             </Field>
 
-            <Field name="claimSiteInvolvedGroupList" subpath="ns2:claims_anthropology">
-              <Field name="claimSiteInvolvedGroup">
-                <Field name="claimSiteInvolvedName" />
-                <Field name="claimSiteInvolvedNote" />
+            <Field name="claimGroupInvolvedGroupList" subpath="ns2:claims_anthropology">
+              <Field name="claimGroupInvolvedGroup">
+                <Field name="groupInvolvedName" />
+                <Field name="groupInvolvedNote" />
               </Field>
             </Field>
           </Col>
 
           <Col>
-            <Field name="claimGroupInvolvedGroupList" subpath="ns2:claims_anthropology">
-              <Field name="claimGroupInvolvedGroup">
-                <Field name="groupInvolvedName" />
-                <Field name="groupInvolvedNote" />
+            <Field name="claimSiteInvolvedGroupList" subpath="ns2:claims_anthropology">
+              <Field name="claimSiteInvolvedGroup">
+                <Field name="claimSiteInvolvedName" />
+                <Field name="claimSiteInvolvedNote" />
               </Field>
             </Field>
 
@@ -106,7 +95,7 @@ const template = (configContext) => {
         </Cols>
       </Panel>
 
-      <Panel name="processing" collapsible>
+      <Panel name="processing" collapsible collapsed>
         <Cols>
           <Col>
             <Field name="dateOfInitialResponseGroupList" subpath="ns2:claims_anthropology">
@@ -185,65 +174,72 @@ const template = (configContext) => {
           </Col>
 
           <Col>
-            <InputTable>
-              <Field name="dispositionPossibilitiesDiscussed" subpath="ns2:claims_pahma" />
-              <Field name="dispositionPossibilitiesDiscussedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+            <Panel name="tasks">
+              <InputTable>
+                <Field name="dispositionPossibilitiesDiscussed" subpath="ns2:claims_pahma" />
+                <Field name="dispositionPossibilitiesDiscussedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="surroundingTribesContacted" subpath="ns2:claims_pahma" />
-              <Field name="surroundingTribesContactedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="surroundingTribesContacted" subpath="ns2:claims_pahma" />
+                <Field name="surroundingTribesContactedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="workingTeamNotified" subpath="ns2:claims_pahma" />
-              <Field name="workingTeamNotifiedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="workingTeamNotified" subpath="ns2:claims_pahma" />
+                <Field name="workingTeamNotifiedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="siteFileResearchCompleted" subpath="ns2:claims_pahma" />
-              <Field name="siteFileResearchCompletedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="siteFileResearchCompleted" subpath="ns2:claims_pahma" />
+                <Field name="siteFileResearchCompletedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="objectsLocatedAndCounted" subpath="ns2:claims_pahma" />
-              <Field name="objectsLocatedAndCountedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="accessionFileResearchCompleted" subpath="ns2:claims_pahma" />
+                <Field name="accessionFileResearchCompletedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="objectsConsolidated" subpath="ns2:claims_pahma" />
-              <Field name="objectsConsolidatedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="objectsLocatedAndCounted" subpath="ns2:claims_pahma" />
+                <Field name="objectsLocatedAndCountedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="objectsPhotographed" subpath="ns2:claims_pahma" />
-              <Field name="objectsPhotographedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="objectsConsolidated" subpath="ns2:claims_pahma" />
+                <Field name="objectsConsolidatedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="registrationDocumentsDrafted" subpath="ns2:claims_pahma" />
-              <Field name="registrationDocumentsDraftedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="objectsPhotographed" subpath="ns2:claims_pahma" />
+                <Field name="objectsPhotographedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="tribeContactedForPackingPreferences" subpath="ns2:claims_pahma" />
-              <Field name="tribeContactedForPackingPreferencesNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="registrationDocumentsDrafted" subpath="ns2:claims_pahma" />
+                <Field name="registrationDocumentsDraftedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="dateArrangedForTransfer" subpath="ns2:claims_pahma" />
-              <Field name="dateArrangedForTransferNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="tribeContactedForPackingPreferences" subpath="ns2:claims_pahma" />
+                <Field name="tribeContactedForPackingPreferencesNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="objectsMarkedAsDeaccessioned" subpath="ns2:claims_pahma" />
-              <Field name="objectsMarkedAsDeaccessionedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="dateArrangedForTransfer" subpath="ns2:claims_pahma" />
+                <Field name="dateArrangedForTransferNote" subpath="ns2:claims_pahma" />
+              </InputTable>
 
-            <InputTable>
-              <Field name="documentsArchived" subpath="ns2:claims_pahma" />
-              <Field name="documentsArchivedNote" subpath="ns2:claims_pahma" />
-            </InputTable>
+              <InputTable>
+                <Field name="objectsMarkedAsDeaccessioned" subpath="ns2:claims_pahma" />
+                <Field name="objectsMarkedAsDeaccessionedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
+
+              <InputTable>
+                <Field name="documentsArchived" subpath="ns2:claims_pahma" />
+                <Field name="documentsArchivedNote" subpath="ns2:claims_pahma" />
+              </InputTable>
+            </Panel>
 
             {/* <Cols> */}
             {/* <Col> */}
