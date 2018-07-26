@@ -1614,7 +1614,7 @@ export default (configContext) => {
               view: {
                 type: OptionPickerInput,
                 props: {
-                  source: 'nagpraInventoryNames',
+                  source: 'pahmaInventoryNames',
                 },
               },
             },
