@@ -33,8 +33,8 @@ const template = (configContext) => {
           <Field name="inventoryCount" subpath="ns2:collectionobjects_pahma" />
           <Field name="isComponent" subpath="ns2:collectionobjects_pahma" />
 
-          <Field name="objectStatusList">
-            <Field name="objectStatus" />
+          <Field name="pahmaObjectStatusList" subpath="ns2:collectionobjects_pahma">
+            <Field name="pahmaObjectStatus" />
           </Field>
         </Row>
 
@@ -253,7 +253,6 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="repatriation" collapsible collapsed>
-        {/* Not showing up yet */}
         <Cols>
           <Col>
             <Row>
@@ -381,16 +380,20 @@ const template = (configContext) => {
         <Panel name="content" collapsible collapsed>
           <Field name="contentDescription" />
 
-          <Row>
+          <Cols>
             <Col>
               <Row>
-                <Field name="contentLanguages">
-                  <Field name="contentLanguage" />
-                </Field>
+                <Col>
+                  <Field name="contentLanguages">
+                    <Field name="contentLanguage" />
+                  </Field>
+                </Col>
 
-                <Field name="contentScripts">
-                  <Field name="contentScript" />
-                </Field>
+                <Col>
+                  <Field name="contentScripts">
+                    <Field name="contentScript" />
+                  </Field>
+                </Col>
               </Row>
 
               <Field name="contentActivities">
@@ -447,7 +450,7 @@ const template = (configContext) => {
                 </Field>
               </Field>
             </Col>
-          </Row>
+          </Cols>
 
           <Field name="contentNote" />
         </Panel>

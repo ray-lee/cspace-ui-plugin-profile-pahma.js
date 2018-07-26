@@ -15,7 +15,35 @@ export default (configContext) => {
     value: [
       {
         op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/objectNumber',
+        path: 'ns2:collectionobjects_pahma/sortableObjectNumber',
+      },
+      {
+        op: OP_RANGE,
+        path: 'ns2:collectionobjects_pahma/sortableObjectNumber',
+      },
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_pahma/pahmaAltNumGroupList/pahmaAltNumGroup/pahmaAltNum',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_pahma/isComponent',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_pahma/pahmaObjectStatusList/pahmaObjectStatus',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/computedCurrentLocation',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_anthropology/computedCrate',
+      },
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_common/objectNameList/objectNameGroup/objectName',
       },
       {
         op: OP_EQ,
@@ -27,19 +55,59 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_common/recordStatus',
+        path: 'ns2:collectionobjects_pahma/pahmaEthnographicFileCodeList/pahmaEthnographicFileCode',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/assocPeopleGroupList/assocPeopleGroup/assocPeople',
+      },
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_common/materialGroupList/materialGroup/material',
       },
       {
         op: OP_CONTAIN,
         path: 'ns2:collectionobjects_common/titleGroupList/titleGroup/title',
       },
       {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/objectNameList/objectNameGroup/objectName',
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_pahma/portfolioSeries',
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_common/objectStatusList/objectStatus',
+        path: 'ns2:collectionobjects_pahma/pahmaCollectionList/pahmaCollection',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_pahma/pahmaTmsLegacyDepartment',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_pahma/pahmaFieldCollectionPlaceList/pahmaFieldCollectionPlace',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/fieldCollectionSources/fieldCollectionSource',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/fieldCollectors/fieldCollector',
+      },
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_common/fieldColEventNames/fieldColEventName',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_anthropology/nagpraInventoryNameList/nagpraInventoryName',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_anthropology/nagpraApplicabilityList/nagpraApplicability',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_pahma/pahmaNagpraCodeLegacyList/pahmaNagpraCodeLegacy',
       },
       {
         op: OP_EQ,
@@ -51,35 +119,7 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_common/forms/form',
-      },
-      {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/editionNumber',
-      },
-      {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/styles/style',
-      },
-      {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/materialGroupList/materialGroup/material',
-      },
-      {
-        op: OP_EQ,
-        path: 'ns2:collectionobjects_common/objectComponentGroupList/objectComponentGroup/objectComponentName',
-      },
-      {
-        op: OP_EQ,
-        path: 'ns2:collectionobjects_common/technicalAttributeGroupList/technicalAttributeGroup/technicalAttribute',
-      },
-      {
-        op: OP_EQ,
-        path: 'ns2:collectionobjects_common/nonTextualInscriptionGroupList/nonTextualInscriptionGroup/inscriptionDescriptionInscriber',
-      },
-      {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/nonTextualInscriptionGroupList/nonTextualInscriptionGroup/inscriptionDescriptionMethod',
+        path: 'ns2:collectionobjects_naturalhistory/taxonomicIdentGroupList/taxonomicIdentGroup/taxon',
       },
       {
         op: OP_RANGE,
@@ -87,29 +127,45 @@ export default (configContext) => {
       },
       {
         op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/techniqueGroupList/techniqueGroup/technique',
-      },
-      {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/objectProductionPlaceGroupList/objectProductionPlaceGroup/objectProductionPlace',
-      },
-      {
-        op: OP_CONTAIN,
         path: 'ns2:collectionobjects_common/objectProductionPeopleGroupList/objectProductionPeopleGroup/objectProductionPeople',
+      },
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_common/techniqueGroupList/techniqueGroup/technique',
       },
       {
         op: OP_EQ,
         path: 'ns2:collectionobjects_common/objectProductionPersonGroupList/objectProductionPersonGroup/objectProductionPerson',
       },
       {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_common/objectProductionPlaceGroupList/objectProductionPlaceGroup/objectProductionPlace',
+      },
+      {
         op: OP_EQ,
         path: 'ns2:collectionobjects_common/objectProductionOrganizationGroupList/objectProductionOrganizationGroup/objectProductionOrganization',
       },
       {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/fieldColEventNames/fieldColEventName',
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/assocCulturalContextGroupList/assocCulturalContextGroup/assocCulturalContext',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/assocOrganizationGroupList/assocOrganizationGroup/assocOrganization',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/assocPersonGroupList/assocPersonGroup/assocPerson',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/assocPlaceGroupList/assocPlaceGroup/assocPlace',
       },
       ...extensions.core.advancedSearch,
+      {
+        op: OP_RANGE,
+        path: 'ns2:collectionspace_core/createdAt',
+      },
     ],
   };
 };

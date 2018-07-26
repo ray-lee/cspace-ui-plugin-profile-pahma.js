@@ -130,7 +130,7 @@ export default {
       },
       artAndArchitectureThesaurus: {
         id: 'option.pahmaObjectNameSystems.artAndArchitectureThesaurus',
-        defaultMessage: 'Getty Art &amp; architecture thesaurus',
+        defaultMessage: 'Getty Art & architecture thesaurus',
       },
       giffordWorkedBone: {
         id: 'option.pahmaObjectNameSystems.giffordWorkedBone',
@@ -378,7 +378,7 @@ export default {
       'Cat. 16 - South America (except Uhle Collection)',
       'Cat. 17 - Drawings and Paintings',
       'Cat. 18 - Malaysia (incl. Indonesia, excl. Philippine Islands)',
-      'Cat. 22 - Rubbings of Greek &amp; Latin Inscriptions',
+      'Cat. 22 - Rubbings of Greek & Latin Inscriptions',
       'Cat. 23 - No provenience (most of catalog deleted)',
       'Cat. 25 - Kodachrome color transparencies',
       'Cat. 26 - Motion picture film',
@@ -1987,43 +1987,43 @@ export default {
       },
       associatedFuneraryObject: {
         id: 'option.pahmaNagpraCodeLegacyCategories.associatedFuneraryObject',
-        defaultMessage: '\&#160;&#160;1: associated funerary object (AFO)',
+        defaultMessage: '1: associated funerary object (AFO)',
       },
       unassociatedFuneraryObjectWithDesignatedBurial: {
         id: 'option.pahmaNagpraCodeLegacyCategories.unassociatedFuneraryObjectWithDesignatedBurial',
-        defaultMessage: '&#160;&#160;2: unassociated funerary object (UFO) with designated burial',
+        defaultMessage: '2: unassociated funerary object (UFO) with designated burial',
       },
       unassociatedFuneraryObjectWithUndesignatedBurial: {
         id: 'option.pahmaNagpraCodeLegacyCategories.unassociatedFuneraryObjectWithUndesignatedBurial',
-        defaultMessage: '&#160;&#160;3: unassociated funerary object (UFO) with undesignated burial',
+        defaultMessage: '3: unassociated funerary object (UFO) with undesignated burial',
       },
       unassociatedFuneraryObjectWithCemetery: {
         id: 'option.pahmaNagpraCodeLegacyCategories.unassociatedFuneraryObjectWithCemetery',
-        defaultMessage: '&#160;&#160;4: unassociated funerary object (UFO)/cemetery',
+        defaultMessage: '4: unassociated funerary object (UFO)/cemetery',
       },
       lacksClearFuneraryStatusNearCemetery: {
         id: 'option.pahmaNagpraCodeLegacyCategories.lacksClearFuneraryStatusNearCemetery',
-        defaultMessage: '&#160;&#160;5: lacks clear funerary status/near cemetery',
+        defaultMessage: '5: lacks clear funerary status/near cemetery',
       },
       needsFurtherResearch: {
         id: 'option.pahmaNagpraCodeLegacyCategories.needsFurtherResearch',
-        defaultMessage: '&#160;&#160;6: needs further research',
+        defaultMessage: '6: needs further research',
       },
       codedInError: {
         id: 'option.pahmaNagpraCodeLegacyCategories.codedInError',
-        defaultMessage: '&#160;&#160;7: coded in error',
+        defaultMessage: '7: coded in error',
       },
       needsCheckOfObject: {
         id: 'option.pahmaNagpraCodeLegacyCategories.needsCheckOfObject',
-        defaultMessage: '&#160;&#160;8: needs check of object',
+        defaultMessage: '8: needs check of object',
       },
       wasRecataloged: {
         id: 'option.pahmaNagpraCodeLegacyCategories.wasRecataloged',
-        defaultMessage: '&#160;&#160;9: was recataloged',
+        defaultMessage: '9: was recataloged',
       },
       notReportable: {
         id: 'option.pahmaNagpraCodeLegacyCategories.notReportable',
-        defaultMessage: '&#160;10: not reportable',
+        defaultMessage: '10: not reportable',
       },
       unknownMeaning777: {
         id: 'option.pahmaNagpraCodeLegacyCategories.unknownMeaning777',

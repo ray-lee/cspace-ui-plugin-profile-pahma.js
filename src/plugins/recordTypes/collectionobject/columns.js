@@ -18,16 +18,20 @@ export default (configContext) => {
         sortBy: 'collectionobjects_common:objectNumber',
         width: 200,
       },
-      title: {
+      objectName: {
         messages: defineMessages({
           label: {
-            id: 'column.collectionobject.default.title',
-            defaultMessage: 'Title',
+            id: 'column.collectionobject.default.objectName',
+            defaultMessage: 'Object name',
           },
         }),
         order: 20,
-        sortBy: 'collectionobjects_common:titleGroupList/0/title',
+        sortBy: 'collectionobjects_common:objectNameList/0/objectName',
         width: 450,
+      },
+      title: {
+        disabled: true,
+        // sortBy: 'collectionobjects_common:titleGroupList/0/title',
       },
       updatedAt: {
         formatValue: formatTimestamp,
@@ -54,15 +58,19 @@ export default (configContext) => {
         sortBy: 'collectionobjects_common:objectNumber',
         width: 200,
       },
-      title: {
+      objectName: {
         messages: defineMessages({
           label: {
-            id: 'column.collectionobject.narrow.title',
-            defaultMessage: 'Title',
+            id: 'column.collectionobject.default.objectName',
+            defaultMessage: 'Object name',
           },
         }),
         order: 20,
+        sortBy: 'collectionobjects_common:objectNameList/0/objectName',
         width: 450,
+      },
+      title: {
+        disabled: true,
       },
       updatedAt: {
         formatValue: formatTimestamp,

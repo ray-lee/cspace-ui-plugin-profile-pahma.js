@@ -15,7 +15,7 @@ export default configContext => (data) => {
   }
 
   const objectNumber = common.get('objectNumber');
-  const title = deepGet(common, ['titleGroupList', 'titleGroup', 0, 'title']);
+  const objectName = deepGet(common, ['objectNameList', 'objectNameGroup', 0, 'objectName']);
 
-  return [objectNumber, title].filter(part => !!part).join(' – ');
+  return [objectNumber, objectName].filter(part => !!part).join(' – ');
 };

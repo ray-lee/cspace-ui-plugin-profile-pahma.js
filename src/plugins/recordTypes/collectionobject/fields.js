@@ -1,4 +1,5 @@
 import { defineMessages } from 'react-intl';
+import { transformSortableObjectNumberSearch, computeSortableObjectNumber } from './utils';
 
 export default (configContext) => {
   const {
@@ -24,8 +25,15 @@ export default (configContext) => {
     DATA_TYPE_INT,
   } = configContext.dataTypes;
 
+  const {
+    Immutable,
+  } = configContext.lib;
+
   return {
     document: {
+      [config]: {
+        compute: args => computeSortableObjectNumber(args, Immutable),
+      },
       'ns2:collectionobjects_common': {
         responsibleDepartments: {
           responsibleDepartment: {
@@ -131,17 +139,6 @@ export default (configContext) => {
             },
           },
         },
-        objectStatusList: {
-          objectStatus: {
-            [config]: {
-              view: {
-                props: {
-                  source: 'pahmaObjectStatuses',
-                },
-              },
-            },
-          },
-        },
         sex: {
           [config]: {
             view: {
@@ -190,7 +187,7 @@ export default (configContext) => {
             objectComponentName: {
               [config]: {
                 view: {
-                  type: TextInput, // TO DO: Fix using deep merge
+                  type: TextInput,
                   props: null,
                 },
               },
@@ -394,7 +391,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'pahmaInscriptionDescriptionTypes', //pahmaInscriptionTypes
+                    source: 'pahmaInscriptionDescriptionTypes',
                   },
                 },
               },
@@ -767,6 +764,30 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/collectionobject/local/pahma',
           },
         },
+        pahmaObjectStatusList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          pahmaObjectStatus: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_common.pahmaObjectStatus.name',
+                  defaultMessage: 'Object status',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: OptionPickerInput,
+                props: {
+                  source: 'pahmaObjectStatuses',
+                },
+              },
+            },
+          },
+        },
         pahmaTmsLegacyDepartment: {
           [config]: {
             messages: defineMessages({
@@ -818,7 +839,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_pahma.pahmaEthnographicFileCodeList.name',
-                defaultMessage: 'Ethbographic file code',
+                defaultMessage: 'Ethnographic file code',
               },
             }),
             view: {
@@ -830,7 +851,7 @@ export default (configContext) => {
               messages: defineMessages({
                 fullName: {
                   id: 'field.collectionobjects_pahma.pahmaEthnographicFileCodeList.fullName',
-                  defaultMessage: 'Ethbographic file code',
+                  defaultMessage: 'Ethnographic file code',
                 },
               }),
               repeating: true,
@@ -1335,6 +1356,7 @@ export default (configContext) => {
           },
           pahmaNagpraCodeLegacy: {
             [config]: {
+              defaultValue: 'noCode',
               messages: defineMessages({
                 fullName: {
                   id: 'field.collectionobjects_pahma.pahmaNagpraCodeLegacy.fullName',
@@ -1347,6 +1369,23 @@ export default (configContext) => {
                   source: 'pahmaNagpraCodeLegacyCategories',
                 },
               },
+            },
+          },
+        },
+        sortableObjectNumber: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_pahma.sortableObjectNumber.name',
+                defaultMessage: 'Museum number',
+              },
+            }),
+            searchTransform: transformSortableObjectNumberSearch,
+            searchView: {
+              type: TextInput,
+            },
+            view: {
+              type: TextInput,
             },
           },
         },
@@ -1564,6 +1603,7 @@ export default (configContext) => {
           },
           nagpraInventoryName: {
             [config]: {
+              defaultValue: 'notOnAnInventory',
               messages: defineMessages({
                 fullName: {
                   id: 'field.collectionobjects_pahma.nagpraInventoryName.fullName',
@@ -1594,6 +1634,7 @@ export default (configContext) => {
           },
           nagpraApplicability: {
             [config]: {
+              defaultValue: 'nonNagpra',
               messages: defineMessages({
                 fullName: {
                   id: 'field.collectionobjects_anthropology.nagpraApplicability.fullName',
