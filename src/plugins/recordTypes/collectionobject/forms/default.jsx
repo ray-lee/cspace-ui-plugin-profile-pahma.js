@@ -21,7 +21,7 @@ const template = (configContext) => {
 
   return (
     <Field name="document">
-      <Panel name="hierarchy" collapsible>
+      <Panel name="hierarchy" collapsible collapsed>
         <Field name="relation-list-item" subpath="rel:relations-common-list" />
       </Panel>
 
@@ -33,9 +33,11 @@ const template = (configContext) => {
           <Field name="inventoryCount" subpath="ns2:collectionobjects_pahma" />
           <Field name="isComponent" subpath="ns2:collectionobjects_pahma" />
 
-          <Field name="pahmaObjectStatusList" subpath="ns2:collectionobjects_pahma">
-            <Field name="pahmaObjectStatus" />
-          </Field>
+          <Col>
+            <Field name="pahmaObjectStatusList" subpath="ns2:collectionobjects_pahma">
+              <Field name="pahmaObjectStatus" />
+            </Field>
+          </Col>
         </Row>
 
         <Cols>
@@ -47,23 +49,25 @@ const template = (configContext) => {
                 <Field name="pahmaAltNumNote" />
               </Field>
             </Field>
-            <Field name="computedCurrentLocation" />
           </Col>
 
           <Col>
             <Field name="briefDescriptions">
               <Field name="briefDescription" />
             </Field>
-
-            <Field name="computedCrate" subpath="ns2:collectionobjects_anthropology" />
           </Col>
         </Cols>
+
+        <Row>
+          <Field name="computedCurrentLocation" />
+          <Field name="computedCrate" subpath="ns2:collectionobjects_anthropology" />
+        </Row>
 
         <Field name="objectNameList">
           <Field name="objectNameGroup">
             <Field name="objectName" />
-            <Field name="objectNameCurrency" />
             <Field name="objectNameLevel" />
+            <Field name="objectNameCurrency" />
             <Field name="objectNameSystem" />
             <Field name="objectNameType" />
             <Field name="objectNameLanguage" />
@@ -153,21 +157,25 @@ const template = (configContext) => {
         <Row>
           <Field name="portfolioSeries" subpath="ns2:collectionobjects_pahma" />
 
-          <Field name="pahmaCollectionList" subpath="ns2:collectionobjects_pahma">
-            <Field name="pahmaCollection" />
-          </Field>
+          <Col>
+            <Field name="pahmaCollectionList" subpath="ns2:collectionobjects_pahma">
+              <Field name="pahmaCollection" />
+            </Field>
+          </Col>
 
           <Field name="pahmaTms2003DataSource" subpath="ns2:collectionobjects_pahma" />
         </Row>
       </Panel>
 
-      <Panel name="collect" collapsible>
+      <Panel name="collect" collapsible collapsed>
         <Cols>
           <Col>
             <Field
-              name="pahmaFieldCollectionDate"
+              name="pahmaFieldCollectionDateGroupList"
               subpath="ns2:collectionobjects_pahma"
-            />
+            >
+              <Field name="pahmaFieldCollectionDateGroup" />
+            </Field>
 
             <Field name="fieldCollectionMethods">
               <Field name="fieldCollectionMethod" />
@@ -255,15 +263,19 @@ const template = (configContext) => {
       <Panel name="repatriation" collapsible collapsed>
         <Cols>
           <Col>
-            <Row>
-              <Field name="nagpraInventoryNameList" subpath="ns2:collectionobjects_anthropology">
-                <Field name="nagpraInventoryName" />
-              </Field>
+            <Cols>
+              <Col>
+                <Field name="nagpraInventoryNameList" subpath="ns2:collectionobjects_anthropology">
+                  <Field name="nagpraInventoryName" />
+                </Field>
+              </Col>
 
-              <Field name="nagpraApplicabilityList" subpath="ns2:collectionobjects_anthropology">
-                <Field name="nagpraApplicability" />
-              </Field>
-            </Row>
+              <Col>
+                <Field name="nagpraApplicabilityList" subpath="ns2:collectionobjects_anthropology">
+                  <Field name="nagpraApplicability" />
+                </Field>
+              </Col>
+            </Cols>
 
             <Field name="pahmaNagpraCodeLegacyList" subpath="ns2:collectionobjects_pahma">
               <Field name="pahmaNagpraCodeLegacy" />
@@ -317,13 +329,17 @@ const template = (configContext) => {
           <Field name="copyNumber" />
           <Field name="editionNumber" />
 
-          <Field name="styles">
-            <Field name="style" />
-          </Field>
+          <Col>
+            <Field name="styles">
+              <Field name="style" />
+            </Field>
+          </Col>
 
-          <Field name="colors">
-            <Field name="color" />
-          </Field>
+          <Col>
+            <Field name="colors">
+              <Field name="color" />
+            </Field>
+          </Col>
         </Row>
 
         <Field name="physicalDescription" />
@@ -341,7 +357,7 @@ const template = (configContext) => {
         </Row>
 
 
-        <Panel name="bio" collapsible>
+        <Panel name="bio" collapsible collapsed>
           <Cols>
             <Col>
               <Row>
@@ -431,9 +447,12 @@ const template = (configContext) => {
                 <Field name="contentPlace" />
               </Field>
 
-
               <Field name="contentOrganizations">
                 <Field name="contentOrganization" />
+              </Field>
+
+              <Field name="contentWorks" subpath="ns2:collectionobjects_anthropology">
+                <Field name="contentWork" />
               </Field>
 
               <Field name="contentEventNameGroupList">
@@ -460,27 +479,21 @@ const template = (configContext) => {
             <Field name="textualInscriptionGroup">
               <Panel>
                 <Field name="inscriptionContent" />
-                <Cols>
-                  <Col>
-                    <Field name="inscriptionContentInscriber" />
-                    <Field name="inscriptionContentDateGroup" />
-                  </Col>
 
-                  <Col>
-                    <Field name="inscriptionContentType" />
-                    <Field name="inscriptionContentLanguage" />
-                  </Col>
+                <Row>
+                  <Field name="inscriptionContentInscriber" />
+                  <Field name="inscriptionContentType" />
+                  <Field name="inscriptionContentMethod" />
+                  <Field name="inscriptionContentPosition" />
+                </Row>
 
-                  <Col>
-                    <Field name="inscriptionContentMethod" />
-                    <Field name="inscriptionContentScript" />
-                  </Col>
+                <Row>
+                  <Field name="inscriptionContentDateGroup" />
+                  <Field name="inscriptionContentLanguage" />
+                  <Field name="inscriptionContentScript" />
+                  <Col />
+                </Row>
 
-                  <Col>
-                    <Field name="inscriptionContentPosition" />
-
-                  </Col>
-                </Cols>
                 <Field name="inscriptionContentInterpretation" />
                 <Field name="inscriptionContentTranslation" />
                 <Field name="inscriptionContentTransliteration" />
@@ -496,23 +509,17 @@ const template = (configContext) => {
                 <Field name="inscriptionDescription" />
 
                 <Row>
-                  <Col>
-                    <Field name="inscriptionDescriptionInscriber" />
-                    <Field name="inscriptionDescriptionDateGroup" />
-                  </Col>
+                  <Field name="inscriptionDescriptionInscriber" />
+                  <Field name="inscriptionDescriptionType" />
+                  <Field name="inscriptionDescriptionMethod" />
+                  <Field name="inscriptionDescriptionPosition" />
+                </Row>
 
-                  <Col>
-                    <Field name="inscriptionDescriptionType" />
-                  </Col>
-
-                  <Col>
-                    <Field name="inscriptionDescriptionMethod" />
-                  </Col>
-
-                  <Col>
-                    <Field name="inscriptionDescriptionPosition" />
-
-                  </Col>
+                <Row>
+                  <Field name="inscriptionDescriptionDateGroup" />
+                  <Col />
+                  <Col />
+                  <Col />
                 </Row>
 
                 <Field name="inscriptionDescriptionInterpretation" />
@@ -593,38 +600,40 @@ const template = (configContext) => {
             </Col>
 
             <Col>
-              <InputTable name="assocEvent">
-                <Field name="assocEventName" />
-                <Field name="assocEventNameType" />
-              </InputTable>
+              <Panel>
+                <InputTable name="assocEvent">
+                  <Field name="assocEventName" />
+                  <Field name="assocEventNameType" />
+                </InputTable>
 
-              <Field name="assocEventOrganizations">
-                <Field name="assocEventOrganization" />
-              </Field>
+                <Field name="assocEventOrganizations">
+                  <Field name="assocEventOrganization" />
+                </Field>
 
-              <Field name="assocEventPeoples">
-                <Field name="assocEventPeople" />
-              </Field>
+                <Field name="assocEventPeoples">
+                  <Field name="assocEventPeople" />
+                </Field>
 
-              <Field name="assocEventPersons">
-                <Field name="assocEventPerson" />
-              </Field>
+                <Field name="assocEventPersons">
+                  <Field name="assocEventPerson" />
+                </Field>
 
-              <Field name="assocEventPlaces">
-                <Field name="assocEventPlace" />
-              </Field>
+                <Field name="assocEventPlaces">
+                  <Field name="assocEventPlace" />
+                </Field>
 
-              <Field name="assocEventNote" />
-
+                <Field name="assocEventNote" />
+              </Panel>
             </Col>
           </Row>
         </Panel>
 
-        <Panel name="ownership" collapsible>
+        <Panel name="ownership" collapsible collapsed>
           <Field name="objectHistoryNote" />
 
           <Field name="ownershipHistoryGroupList" subpath="ns2:collectionobjects_pahma">
             <Field name="ownershipHistoryGroup" >
+              <Field name="previousOwner" />
               <Field name="ownershipDateGroup" />
               <Field name="ownershipCategory" />
               <Field name="ownershipPlace" />

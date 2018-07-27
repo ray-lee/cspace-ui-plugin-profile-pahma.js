@@ -4,18 +4,29 @@ export default configContext => (data) => {
     getPart,
   } = configContext.recordDataHelpers;
 
+  const {
+    getDisplayName,
+  } = configContext.refNameHelpers;
+
   if (!data) {
     return '';
   }
 
   const common = getPart(data, 'collectionobjects_common');
+  const naturalHistory = getPart(data, 'collectionobjects_naturalhistory');
 
-  if (!common) {
-    return '';
-  }
+  const objectNumber = common && common.get('objectNumber');
 
-  const objectNumber = common.get('objectNumber');
-  const objectName = deepGet(common, ['objectNameList', 'objectNameGroup', 0, 'objectName']);
+  const objectName = common &&
+    deepGet(common, ['objectNameList', 'objectNameGroup', 0, 'objectName']);
 
-  return [objectNumber, objectName].filter(part => !!part).join(' – ');
+  const title = common && deepGet(common, ['titleGroupList', 'titleGroup', 0, 'title']);
+
+  const taxon = naturalHistory &&
+    deepGet(naturalHistory, ['taxonomicIdentGroupList', 'taxonomicIdentGroup', 0, 'taxon']);
+
+  return (
+    [objectNumber, (objectName || title || getDisplayName(taxon))]
+      .filter(part => !!part).join(' – ')
+  );
 };

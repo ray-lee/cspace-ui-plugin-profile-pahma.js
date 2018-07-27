@@ -2,6 +2,7 @@ export default (configContext) => {
   const {
     OP_EQ,
     OP_CONTAIN,
+    OP_MATCH,
     OP_RANGE,
   } = configContext.searchOperators;
 
@@ -14,8 +15,8 @@ export default (configContext) => {
     op: defaultAdvancedSearchBooleanOp,
     value: [
       {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_pahma/sortableObjectNumber',
+        op: OP_MATCH,
+        path: 'ns2:collectionobjects_common/objectNumber',
       },
       {
         op: OP_RANGE,
@@ -62,7 +63,7 @@ export default (configContext) => {
         path: 'ns2:collectionobjects_common/assocPeopleGroupList/assocPeopleGroup/assocPeople',
       },
       {
-        op: OP_CONTAIN,
+        op: OP_EQ,
         path: 'ns2:collectionobjects_common/materialGroupList/materialGroup/material',
       },
       {
@@ -126,7 +127,7 @@ export default (configContext) => {
         path: 'ns2:collectionobjects_common/objectProductionDateGroupList/objectProductionDateGroup',
       },
       {
-        op: OP_CONTAIN,
+        op: OP_EQ,
         path: 'ns2:collectionobjects_common/objectProductionPeopleGroupList/objectProductionPeopleGroup/objectProductionPeople',
       },
       {
@@ -138,7 +139,7 @@ export default (configContext) => {
         path: 'ns2:collectionobjects_common/objectProductionPersonGroupList/objectProductionPersonGroup/objectProductionPerson',
       },
       {
-        op: OP_CONTAIN,
+        op: OP_EQ,
         path: 'ns2:collectionobjects_common/objectProductionPlaceGroupList/objectProductionPlaceGroup/objectProductionPlace',
       },
       {

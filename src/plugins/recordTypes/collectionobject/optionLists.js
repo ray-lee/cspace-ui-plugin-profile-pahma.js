@@ -1,7 +1,7 @@
 import { defineMessages } from 'react-intl';
 
 export default {
-  pahmaResponsibleDepartments: {
+  pahmaDepartments: {
     values: [
       'Natasha Johnson',
       'Leslie Freund',
@@ -12,8 +12,8 @@ export default {
     ],
     messages: defineMessages({
       'No collection manager (Registration)': {
-        id: 'option.pahmaResponsibleDepartments.No collection manager (Registration)',
-        defaultMessage: 'no collection manager (registration)',
+        id: 'option.pahmaDepartments.No collection manager (Registration)',
+        defaultMessage: 'no collection manager (Registration)',
       },
     }),
   },
@@ -31,12 +31,12 @@ export default {
         id: 'option.pahmaRecordStatuses.minimalInProgress',
         defaultMessage: 'minimal (in progress)',
       },
-      basicInProgress: {
-        id: 'option.pahmaRecordStatuses.basicInProgress',
+      basicInProgess: {
+        id: 'option.pahmaRecordStatuses.basicInProgess',
         defaultMessage: 'basic (in progress)',
       },
-      fullInProgress: {
-        id: 'option.pahmaRecordStatuses.fullInProgress',
+      fullInProgess: {
+        id: 'option.pahmaRecordStatuses.fullInProgess',
         defaultMessage: 'full/curatorial (in progress)',
       },
       full: {
@@ -76,7 +76,7 @@ export default {
       },
     }),
   },
-  pahmaObjectNameCurrencies: {
+  pahmaNameCurrencies: {
     values: [
       'current',
       'outOfDate',
@@ -84,12 +84,12 @@ export default {
     ],
     messages: defineMessages({
       outOfDate: {
-        id: 'option.pahmaObjectNameCurrencies.outOfDate',
+        id: 'option.pahmaNameCurrencies.outOfDate',
         defaultMessage: 'out of date',
       },
     }),
   },
-  pahmaObjectNameLevels: {
+  pahmaNameLevels: {
     values: [
       'whole',
       'part/fragment',
@@ -100,12 +100,12 @@ export default {
     ],
     messages: defineMessages({
       shardSherd: {
-        id: 'option.pahmaObjectNameLevels.shardSherd',
+        id: 'option.pahmaNameLevels.shardSherd',
         defaultMessage: 'shard/sherd',
       },
     }),
   },
-  pahmaObjectNameSystems: {
+  pahmaNameSystems: {
     values: [
       'aaslhNomenclature',
       'bennyhoffOlivellaBeads',
@@ -121,57 +121,56 @@ export default {
     ],
     messages: defineMessages({
       aaslhNomenclature: {
-        id: 'option.pahmaObjectNameSystems.aaslhNomenclature',
+        id: 'option.pahmaNameSystems.aaslhNomenclature',
         defaultMessage: 'AASLH nomenclature',
       },
       bennyhoffOlivellaBeads: {
-        id: 'option.pahmaObjectNameSystems.bennyhoffOlivellaBeads',
+        id: 'option.pahmaNameSystems.bennyhoffOlivellaBeads',
         defaultMessage: 'Bennyhoff Olivella bead typology',
       },
       artAndArchitectureThesaurus: {
-        id: 'option.pahmaObjectNameSystems.artAndArchitectureThesaurus',
-        defaultMessage: 'Getty Art & architecture thesaurus',
+        id: 'option.pahmaNameSystems.artAndArchitectureThesaurus',
+        defaultMessage: 'Getty Art & Architecture Thesaurus',
       },
       giffordWorkedBone: {
-        id: 'option.pahmaObjectNameSystems.giffordWorkedBone',
+        id: 'option.pahmaNameSystems.giffordWorkedBone',
         defaultMessage: 'Gifford worked bone typology',
       },
       giffordWorkedShell: {
-        id: 'option.pahmaObjectNameSystems.giffordWorkedShell',
+        id: 'option.pahmaNameSystems.giffordWorkedShell',
         defaultMessage: 'Gifford worked shell typology',
       },
       heizerProjectilePoint: {
-        id: 'option.pahmaObjectNameSystems.heizerProjectilePoint',
+        id: 'option.pahmaNameSystems.heizerProjectilePoint',
         defaultMessage: 'Heizer projectile point typology',
       },
       justiceProjectilePoint: {
-        id: 'option.pahmaObjectNameSystems.justiceProjectilePoint',
+        id: 'option.pahmaNameSystems.justiceProjectilePoint',
         defaultMessage: 'Justice projectile point typology',
       },
       meighanHistoricGlass: {
-        id: 'option.pahmaObjectNameSystems.meighanHistoricGlass',
+        id: 'option.pahmaNameSystems.meighanHistoricGlass',
         defaultMessage: 'Meighan historic glass bead typology',
       },
       pahmaObjectNames: {
-        id: 'option.pahmaObjectNameSystems.pahmaObjectNames',
+        id: 'option.pahmaNameSystems.pahmaObjectNames',
         defaultMessage: 'PAHMA object names',
       },
       treganzaClayArtifact: {
-        id: 'option.pahmaObjectNameSystems.treganzaClayArtifact',
+        id: 'option.pahmaNameSystems.treganzaClayArtifact',
         defaultMessage: 'Treganza clay artifact typology',
       },
       noSystem: {
-        id: 'option.pahmaObjectNameSystems.noSystem',
+        id: 'option.pahmaNameSystems.noSystem',
         defaultMessage: 'no system',
       },
     }),
-
   },
-  pahmaObjectNameTypes: {
+  pahmaNameTypes: {
     values: [
       'classificatory',
       'denomination',
-      'native',
+      'native name',
       'simple',
       'taxonomic',
       'typological',
@@ -218,127 +217,127 @@ export default {
     messages: defineMessages({
       AC: {
         id: 'option.pahmaTms2003DataSources.AC',
-        defaultMessage: 'Alaska commercial company',
+        defaultMessage: 'Alaska Commercial Company',
       },
       BM: {
         id: 'option.pahmaTms2003DataSources.BM',
-        defaultMessage: 'basket move project',
+        defaultMessage: 'Basket Move Project',
       },
       BS: {
         id: 'option.pahmaTms2003DataSources.BS',
-        defaultMessage: 'Barrett slide',
+        defaultMessage: 'Barrett Slide',
       },
       BY: {
         id: 'option.pahmaTms2003DataSources.BY',
-        defaultMessage: 'Bernard-Murray Tibetan collection',
+        defaultMessage: 'Bernard-Murray Tibetan Collection',
       },
       CC: {
         id: 'option.pahmaTms2003DataSources.CC',
-        defaultMessage: 'classical coin rehousing',
+        defaultMessage: 'Classical Coin Rehousing',
       },
       CD: {
         id: 'option.pahmaTms2003DataSources.CD',
-        defaultMessage: 'collections management/design department (inventory entries that matched original DD database)',
+        defaultMessage: 'Collections Management/Design Department (Inventory entries that matched original DD database)',
       },
       CM: {
         id: 'option.pahmaTms2003DataSources.CM',
-        defaultMessage: 'collections management',
+        defaultMessage: 'Collections Management',
       },
       CM_AA: {
         id: 'option.pahmaTms2003DataSources.CM_AA',
-        defaultMessage: 'collections management: AA inventory',
+        defaultMessage: 'Collections Management: AA Inventory',
       },
       CM_AO: {
         id: 'option.pahmaTms2003DataSources.CM_AO',
-        defaultMessage: 'collections management: archeology object use',
+        defaultMessage: 'Collections Management: Archaeology Object Use',
       },
       CM_BM: {
         id: 'option.pahmaTms2003DataSources.CM_BM',
-        defaultMessage: 'collections management: BLM project',
+        defaultMessage: 'Collections Management: BLM Project',
       },
       CM_BT: {
         id: 'option.pahmaTms2003DataSources.CM_BT',
-        defaultMessage: 'collections management: boxed textile move',
+        defaultMessage: 'Collections Management: Boxed Textile Move',
       },
       CM_CE: {
         id: 'option.pahmaTms2003DataSources.CM_CE',
-        defaultMessage: 'collections management: centennial exhibit',
+        defaultMessage: 'Collections Management: Centennial Exhibit',
       },
       CM_DC: {
         id: 'option.pahmaTms2003DataSources.CM_DC',
-        defaultMessage: 'collections management: duct cleaning project',
+        defaultMessage: 'Collections Management: Duct Cleaning Project',
       },
       CM_DH: {
         id: 'option.pahmaTms2003DataSources.CM_DH',
-        defaultMessage: 'collections management: Dave Hill inventory',
+        defaultMessage: 'Collections Management: Dave Hill Inventory',
       },
       CM_FA: {
         id: 'option.pahmaTms2003DataSources.CM_FA',
-        defaultMessage: 'collections management: fire alarm project',
+        defaultMessage: 'Collections Management: Fire Alarm Project',
       },
       CM_FI: {
         id: 'option.pahmaTms2003DataSources.CM_FI',
-        defaultMessage: 'collections management:  F-29 inventory',
+        defaultMessage: 'Collections Management: F-29 Inventory',
       },
       CM_OU: {
         id: 'option.pahmaTms2003DataSources.CM_OU',
-        defaultMessage: 'collections management: general object use',
+        defaultMessage: 'Collections Management: General Object Use',
       },
       CM_PL: {
         id: 'option.pahmaTms2003DataSources.CM_PL',
-        defaultMessage: 'collections management: pacific legacy',
+        defaultMessage: 'Collections Management: Pacific Legacy',
       },
       CM_RT: {
         id: 'option.pahmaTms2003DataSources.CM_RT',
-        defaultMessage: 'collections management: rolled textile move',
+        defaultMessage: 'Collections Management: Rolled Textile Move',
       },
       CM_S1: {
         id: 'option.pahmaTms2003DataSources.CM_S1',
-        defaultMessage: 'collections management: study locker 8, 9, 13 inventory',
+        defaultMessage: 'Collections Management: Study Locker 8, 9, 14 Inventory',
       },
       CM_S2: {
         id: 'option.pahmaTms2003DataSources.CM_S2',
-        defaultMessage: 'collections management: study locker 10 - 13 inventory',
+        defaultMessage: 'Collections Management: Study Locker 10 – 13 Inventory',
       },
       CM_SN: {
         id: 'option.pahmaTms2003DataSources.CM_SN',
-        defaultMessage: 'collections management: Son-299',
+        defaultMessage: 'Collections Management: Son-299',
       },
       CM_TQ: {
         id: 'option.pahmaTms2003DataSources.CM_TQ',
-        defaultMessage: 'collections management: turquoise loan',
+        defaultMessage: 'Collections Management: Turquoise Loan',
       },
       CN: {
         id: 'option.pahmaTms2003DataSources.CN',
-        defaultMessage: 'conservation',
+        defaultMessage: 'Conservation',
       },
       DD: {
         id: 'option.pahmaTms2003DataSources.DD',
-        defaultMessage: 'design department',
+        defaultMessage: 'Design Department',
       },
       FA: {
         id: 'option.pahmaTms2003DataSources.FA',
-        defaultMessage: 'fauna rehousing',
+        defaultMessage: 'Fauna Rehousing',
       },
       FL: {
         id: 'option.pahmaTms2003DataSources.FL',
-        defaultMessage: 'floppy disk',
+        defaultMessage: 'Floppy Disk',
       },
       GP: {
         id: 'option.pahmaTms2003DataSources.GP',
-        defaultMessage: 'gene prince',
+        defaultMessage: 'Gene Prince',
       },
       HI: {
         id: 'option.pahmaTms2003DataSources.HI',
-        defaultMessage: 'hearst inventory',
+        defaultMessage: 'Hearst Inventory',
       },
       KE: {
         id: 'option.pahmaTms2003DataSources.KE',
-        defaultMessage: 'Keeling binder data',
+        defaultMessage: 'Keeling Binder Data',
       },
       MO: {
         id: 'option.pahmaTms2003DataSources.MO',
-        defaultMessage: 'MOAC project',
+        defaultMessage: 'MOAC Project',
       },
       NG: {
         id: 'option.pahmaTms2003DataSources.NG',
@@ -346,15 +345,15 @@ export default {
       },
       PH: {
         id: 'option.pahmaTms2003DataSources.PH',
-        defaultMessage: 'original PHOEBE database',
+        defaultMessage: 'Original PHOEBE database',
       },
       RG: {
         id: 'option.pahmaTms2003DataSources.RG',
-        defaultMessage: 'registration',
+        defaultMessage: 'Registration',
       },
       SS: {
         id: 'option.pahmaTms2003DataSources.SS',
-        defaultMessage: 'steve shackley',
+        defaultMessage: 'Steve Shackley',
       },
     }),
   },
@@ -399,72 +398,6 @@ export default {
       'NAGPRA-associated Funerary Objects',
       'Registration',
     ],
-    messages: defineMessages({
-      'Audio recordings': {
-        id: 'option.pahmaTmsLegacyDepartments.Audio recordings',
-        defaultMessage: 'audio recordings',
-      },
-      'Cat.  4 - South America (Uhle Collection)': {
-        id: 'option.pahmaTmsLegacyDepartments.Cat.  4 - South America (Uhle Collection)',
-        defaultMessage: 'Cat.  4 - South America (Uhle collection)',
-      },
-      'Cat.  5 - Africa (except the Hearst Reisner Egyptian Collection)': {
-        id: 'option.pahmaTmsLegacyDepartments.Cat.  5 - Africa (except the Hearst Reisner Egyptian Collection)',
-        defaultMessage: 'Cat.  5 - Africa (except the Hearst Reisner Egyptian collection)',
-      },
-      'Cat.  6 - Ancient Egypt (the Hearst Reisner Egyptian Collection)': {
-        id: 'option.pahmaTmsLegacyDepartments.Cat.  6 - Ancient Egypt (the Hearst Reisner Egyptian Collection)',
-        defaultMessage: 'Cat.  6 - Ancient Egypt (the Hearst Reisner Egyptian collection)',
-      },
-      'Cat. 16 - South America (except Uhle Collection)': {
-        id: 'option.pahmaTmsLegacyDepartments.Cat. 16 - South America (except Uhle Collection)',
-        defaultMessage: 'Cat. 16 - South America (except Uhle collection)',
-      },
-      'Cat. 17 - Drawings and Paintings': {
-        id: 'option.pahmaTmsLegacyDepartments.Cat. 17 - Drawings and Paintings',
-        defaultMessage: 'Cat. 17 - drawings and paintings',
-      },
-      'Cat. 23 - No provenience (most of catalog deleted)': {
-        id: 'option.pahmaTmsLegacyDepartments.Cat. 23 - No provenience (most of catalog deleted)',
-        defaultMessage: 'Cat. 23 - no provenience (most of catalog deleted)',
-      },
-      'Cat. 26 - Motion picture film': {
-        id: 'option.pahmaTmsLegacyDepartments.Cat. 26 - Motion picture film',
-        defaultMessage: 'Cat. 26 - motion picture film',
-      },
-      'Faunal Remains': {
-        id: 'option.pahmaTmsLegacyDepartments.Faunal Remains',
-        defaultMessage: 'faunal remains',
-      },
-      'Human Remains': {
-        id: 'option.pahmaTmsLegacyDepartments.Human Remains',
-        defaultMessage: 'human remains',
-      },
-      'Loans In': {
-        id: 'option.pahmaTmsLegacyDepartments.Loans In',
-        defaultMessage: 'loans in',
-      },
-      Maps: {
-        id: 'option.pahmaTmsLegacyDepartments.Maps',
-        defaultMessage: 'maps',
-      },
-      'Mixed faunal and human remains': {
-        id: 'option.pahmaTmsLegacyDepartments.Mixed faunal and human remains',
-        defaultMessage: 'mixed faunal and human remains',
-      },
-      Mounts: {
-        id: 'option.pahmaTmsLegacyDepartments.Mounts',
-        defaultMessage: 'mounts',
-      },
-      'NAGPRA-associated Funerary Objects': {
-        id: 'option.pahmaTmsLegacyDepartments.NAGPRA-associated Funerary Objects',
-        defaultMessage: 'NAGPRA-associated funerary objects',
-      },
-      Registration: {
-        id: 'option.pahmaTmsLegacyDepartments.Registration',
-        defaultMessage: 'registration',
-      },
-    }),
   },
   pahmaCollections: {
     values: [
@@ -496,116 +429,6 @@ export default {
       'Treganza Clay Artifact Collection',
       'Uhle\'s Peruvian Collection',
     ],
-    messages: defineMessages({
-      'Albert M. Bender Collection': {
-        id: 'option.pahmaCollections.Albert M. Bender Collection',
-        defaultMessage: 'Albert M. Bender collection',
-      },
-      'Bascom Collection': {
-        id: 'option.pahmaCollections.Bascom Collection',
-        defaultMessage: 'Bascom collection',
-      },
-      'Bennyhoff Olivella Shell Bead Collection': {
-        id: 'option.pahmaCollections.Bennyhoff Olivella Shell Bead Collection',
-        defaultMessage: 'Bennyhoff Olivella shell bead collection',
-      },
-      'Bernard-Murray Collection': {
-        id: 'option.pahmaCollections.Bernard-Murray Collection',
-        defaultMessage: 'Bernard-Murray collection',
-      },
-      'California Teaching Collection': {
-        id: 'option.pahmaCollections.California Teaching Collection',
-        defaultMessage: 'California teaching collection',
-      },
-      'Collection of Photographs by Carleton E. Watkins, ca. 1874-1890': {
-        id: 'option.pahmaCollections.Collection of Photographs by Carleton E. Watkins, ca. 1874-1890',
-        defaultMessage: 'collection of photographs by Carleton E. Watkins, ca. 1874-1890',
-      },
-      'Early Man Cast Points Collection': {
-        id: 'option.pahmaCollections.Early Man Cast Points Collection',
-        defaultMessage: 'early man cast points collection',
-      },
-      'Edra Moore Central California Archaeology Type Collection': {
-        id: 'option.pahmaCollections.Edra Moore Central California Archaeology Type Collection',
-        defaultMessage: 'Edra Moore Central California archaeology type collection',
-      },
-      'Edra Moore Study Collection': {
-        id: 'option.pahmaCollections.Edra Moore Study Collection',
-        defaultMessage: 'Edra Moore study collection',
-      },
-      'Gifford Type Specimen Collection: California bones': {
-        id: 'option.pahmaCollections.Gifford Type Specimen Collection: California bones',
-        defaultMessage: 'Gifford type specimen collection: california bones',
-      },
-      'Gifford Type Specimen Collection: Shell': {
-        id: 'option.pahmaCollections.Gifford Type Specimen Collection: Shell',
-        defaultMessage: 'Gifford type specimen collection: shell',
-      },
-      'Great Basin Teaching Kit': {
-        id: 'option.pahmaCollections.Great Basin Teaching Kit',
-        defaultMessage: 'Great Basin teaching kit',
-      },
-      'Harner\'s Study Collection': {
-        id: 'option.pahmaCollections.Harner\'s Study Collection',
-        defaultMessage: 'Harner\'s study collection',
-      },
-      'Juvenile Osteological Growth Series': {
-        id: 'option.pahmaCollections.Juvenile Osteological Growth Series',
-        defaultMessage: 'juvenile osteological growth Series',
-      },
-      'Malcolm Rogers ceramic type collection': {
-        id: 'option.pahmaCollections.Malcolm Rogers ceramic type collection',
-        defaultMessage: 'Malcolm Rogers ceramic type collection',
-      },
-      'Meighan Historic Glass Bead Collection': {
-        id: 'option.pahmaCollections.Meighan Historic Glass Bead Collection',
-        defaultMessage: 'Meighan Historic glass bead collection',
-      },
-      'Mossman-Vitale Collection': {
-        id: 'option.pahmaCollections.Mossman-Vitale Collection',
-        defaultMessage: 'Mossman-Vitale collection',
-      },
-      'Niloufer Ichaporia (Hirschmann) collection': {
-        id: 'option.pahmaCollections.Niloufer Ichaporia (Hirschmann) collection',
-        defaultMessage: 'Niloufer Ichaporia (Hirschmann) collection',
-      },
-      'Paleopathology Collection': {
-        id: 'option.pahmaCollections.Paleopathology Collection',
-        defaultMessage: 'Paleopathology collection',
-      },
-      'Panama Pacific International Exposition Collection': {
-        id: 'option.pahmaCollections.Panama Pacific International Exposition Collection',
-        defaultMessage: 'Panama Pacific International exposition collection',
-      },
-      'Pilling Historic Artifact Collection': {
-        id: 'option.pahmaCollections.Pilling Historic Artifact Collection',
-        defaultMessage: 'pilling historic artifact collection',
-      },
-      'Reisner\'s Egyptian Collection': {
-        id: 'option.pahmaCollections.Reisner\'s Egyptian Collection',
-        defaultMessage: 'Reisner\'s Egyptian collection',
-      },
-      'Richard Lerner collection': {
-        id: 'option.pahmaCollections.Richard Lerner collection',
-        defaultMessage: 'Richard Lerner collection',
-      },
-      'Ronald Maduro collection': {
-        id: 'option.pahmaCollections.Ronald Maduro collection',
-        defaultMessage: 'Ronald Maduro collection',
-      },
-      'Southwest Type Sherd Collection, Corrugated': {
-        id: 'option.pahmaCollections.Southwest Type Sherd Collection, Corrugated',
-        defaultMessage: 'southwest type sherd collection, corrugated',
-      },
-      'Treganza Clay Artifact Collection': {
-        id: 'option.pahmaCollections.Treganza Clay Artifact Collection',
-        defaultMessage: 'Treganza clay artifact collection',
-      },
-      'Uhle\'s Peruvian Collection': {
-        id: 'option.pahmaCollections.Uhle\'s Peruvian Collection',
-        defaultMessage: 'Uhle\'s Peruvian collection',
-      },
-    }),
   },
   pahmaObjectStatuses: {
     values: [
@@ -643,7 +466,7 @@ export default {
       'transferred',
     ],
   },
-  pahmaPortfolioSeriesTypes: {
+  pahmaPortfolioSeries: {
     values: [
       '1',
       '2',
@@ -780,536 +603,536 @@ export default {
     ],
     messages: defineMessages({
       1: {
-        id: 'option.pahmaPortfolioSeriesTypes.1',
-        defaultMessage: 'Keeling series 1: Yuki (1902)',
+        id: 'option.pahmaPortfolioSeries.1',
+        defaultMessage: 'Keeling Series 1: Yuki (1902)',
       },
       2: {
-        id: 'option.pahmaPortfolioSeriesTypes.2',
-        defaultMessage: 'Keeling series 2: Costanoan (1902)',
+        id: 'option.pahmaPortfolioSeries.2',
+        defaultMessage: 'Keeling Series 2: Costanoan (1902)',
       },
       3: {
-        id: 'option.pahmaPortfolioSeriesTypes.3',
-        defaultMessage: 'Keeling series 3: Yurok (1902)',
+        id: 'option.pahmaPortfolioSeries.3',
+        defaultMessage: 'Keeling Series 3: Yurok (1902)',
       },
       4: {
-        id: 'option.pahmaPortfolioSeriesTypes.4',
-        defaultMessage: 'Keeling series 4: Tule river Yokuts (1903)',
+        id: 'option.pahmaPortfolioSeries.4',
+        defaultMessage: 'Keeling Series 4: Tule River Yokuts (1903)',
       },
       '5A': {
-        id: 'option.pahmaPortfolioSeriesTypes.5A',
-        defaultMessage: 'Keeling series 5A: Mohave (1903)— recordings of Jo Nelson (Mohave) collected by A.L. Kroeber in November 1903',
+        id: 'option.pahmaPortfolioSeries.5A',
+        defaultMessage: 'Keeling Series 5A: Mohave (1903)— Recordings of Jo Nelson (Mohave) collected by A.L. Kroeber in November 1903',
       },
       '5B': {
-        id: 'option.pahmaPortfolioSeriesTypes.5B',
-        defaultMessage: 'Keeling series 5B: Mohave (1903)— recordings of Ashpashakam (Mohave) collected by A.L. Kroeber in November 1905',
+        id: 'option.pahmaPortfolioSeries.5B',
+        defaultMessage: 'Keeling Series 5B: Mohave (1903)— Recordings of Ashpashakam (Mohave) collected by A.L. Kroeber in November 1905',
       },
       6: {
-        id: 'option.pahmaPortfolioSeriesTypes.6',
-        defaultMessage: 'Keeling series 6: Yurok (1906)',
+        id: 'option.pahmaPortfolioSeries.6',
+        defaultMessage: 'Keeling Series 6: Yurok (1906)',
       },
       7: {
-        id: 'option.pahmaPortfolioSeriesTypes.7',
-        defaultMessage: 'Keeling series 7: Luiseño (1906)',
+        id: 'option.pahmaPortfolioSeries.7',
+        defaultMessage: 'Keeling Series 7: Luiseño (1906)',
       },
       8: {
-        id: 'option.pahmaPortfolioSeriesTypes.8',
-        defaultMessage: 'Keeling series 8: Southern Pomo (1906)',
+        id: 'option.pahmaPortfolioSeries.8',
+        defaultMessage: 'Keeling Series 8: Southern Pomo (1906)',
       },
       9: {
-        id: 'option.pahmaPortfolioSeriesTypes.9',
-        defaultMessage: 'Keeling series 9: Yurok (1907)',
+        id: 'option.pahmaPortfolioSeries.9',
+        defaultMessage: 'Keeling Series 9: Yurok (1907)',
       },
       10: {
-        id: 'option.pahmaPortfolioSeriesTypes.10',
-        defaultMessage: 'Keeling series 10: Diegueño (1907)',
+        id: 'option.pahmaPortfolioSeries.10',
+        defaultMessage: 'Keeling Series 10: Diegueño (1907)',
       },
       11: {
-        id: 'option.pahmaPortfolioSeriesTypes.11',
-        defaultMessage: 'Keeling series 11: Yurok (1907)',
+        id: 'option.pahmaPortfolioSeries.11',
+        defaultMessage: 'Keeling Series 11: Yurok (1907)',
       },
       '12A': {
-        id: 'option.pahmaPortfolioSeriesTypes.12A',
-        defaultMessage: 'Keeling series 12A: Mohave (1908)— Mohave songs of the Ahta ("Cane") cycle, sung by Chiyerekavasuk ("Slue Bird") and collected by A.L. Kroeber in February 1908',
+        id: 'option.pahmaPortfolioSeries.12A',
+        defaultMessage: 'Keeling Series 12A: Mohave (1908)— Mohave songs of the Ahta ("Cane") cycle, sung by Chiyerekavasuk ("Slue Bird") and collected by A.L. Kroeber in February 1908',
       },
       '12B': {
-        id: 'option.pahmaPortfolioSeriesTypes.12B',
-        defaultMessage: 'Keeling series 12B: Mohave (1908)— Mohave songs of the Chiyere ("Birds") cycle, sung (or told) by Guy Howard and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12B',
+        defaultMessage: 'Keeling Series 12B: Mohave (1908)— Mohave songs of the Chiyere ("Birds") cycle, sung (or told) by Guy Howard and collected by A.L. Kroeber in March 1908',
       },
       '12C': {
-        id: 'option.pahmaPortfolioSeriesTypes.12C',
-        defaultMessage: 'Keeling series 12C: Mohave (1908)— Mohave songs of the Tumanpa Vanyume cycle, sung by Bill Mellon (Hispanyemehevik) and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12C',
+        defaultMessage: 'Keeling Series 12C: Mohave (1908)— Mohave songs of the Tumanpa Vanyume cycle, sung by Bill Mellon (Hispanyemehevik) and collected by A.L. Kroeber in March 1908',
       },
       '12D': {
-        id: 'option.pahmaPortfolioSeriesTypes.12D',
-        defaultMessage: 'Keeling series 12D: Mohave (1908)— Mohave songs of the Kapeta ("Turtle") cycle sung by Kwathiheingehamalye ("Doctor\'s Sack") and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12D',
+        defaultMessage: 'Keeling Series 12D: Mohave (1908)— Mohave songs of the Kapeta ("Turtle") cycle sung by Kwathiheingehamalye ("Doctor\'s Sack") and collected by A.L. Kroeber in March 1908',
       },
       '12E': {
-        id: 'option.pahmaPortfolioSeriesTypes.12E',
-        defaultMessage: 'Keeling series 12E: Mohave (1908)— Mohave songs of the Vinimulya-hapacha cycle, sung by Kutene and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12E',
+        defaultMessage: 'Keeling Series 12E: Mohave (1908)— Mohave songs of the Vinimulya-hapacha cycle, sung by Kutene and collected by A.L. Kroeber in March 1908',
       },
       '12F': {
-        id: 'option.pahmaPortfolioSeriesTypes.12F',
-        defaultMessage: 'Keeling series 12F: Mohave (1908)— Mohave songs of the Yellaka ("Goose") cycle, sung by Hakwe and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12F',
+        defaultMessage: 'Keeling Series 12F: Mohave (1908)— Mohave songs of the Yellaka ("Goose") cycle, sung by Hakwe and collected by A.L. Kroeber in March 1908',
       },
       '12G': {
-        id: 'option.pahmaPortfolioSeriesTypes.12G',
-        defaultMessage: 'Keeling series 12G: Mohave (1908)— Mohave songs of the Yellaka ("Goose") cycle, sung by Ashpashakam and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12G',
+        defaultMessage: 'Keeling Series 12G: Mohave (1908)— Mohave songs of the Yellaka ("Goose") cycle, sung by Ashpashakam and collected by A.L. Kroeber in March 1908',
       },
       '12H': {
-        id: 'option.pahmaPortfolioSeriesTypes.12H',
-        defaultMessage: 'Keeling series 12H: Mohave (1908)— Mohave songs of the Nyohaiva cycle, sung by Ashpashakam and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12H',
+        defaultMessage: 'Keeling Series 12H: Mohave (1908)— Mohave songs of the Nyohaiva cycle, sung by Ashpashakam and collected by A.L. Kroeber in March 1908',
       },
       '12I': {
-        id: 'option.pahmaPortfolioSeriesTypes.12I',
-        defaultMessage: 'Keeling series 12I: Mohave (1908)— Three recordings of Mohave flute music performed by Chiyerekavasuk or by Guy Howard and collected by A.L. Kroeber in March 1908',
+        id: 'option.pahmaPortfolioSeries.12I',
+        defaultMessage: 'Keeling Series 12I: Mohave (1908)— Three recordings of Mohave flute music performed by Chiyerekavasuk or by Guy Howard and collected by A.L. Kroeber in March 1908',
       },
       13: {
-        id: 'option.pahmaPortfolioSeriesTypes.13',
-        defaultMessage: 'Keeling series 13: Yuki (1907)',
+        id: 'option.pahmaPortfolioSeries.13',
+        defaultMessage: 'Keeling Series 13: Yuki (1907)',
       },
       14: {
-        id: 'option.pahmaPortfolioSeriesTypes.14',
-        defaultMessage: 'Keeling series 14: Northeastern Pomo (1907)',
+        id: 'option.pahmaPortfolioSeries.14',
+        defaultMessage: 'Keeling Series 14: Northeastern Pomo (1907)',
       },
       15: {
-        id: 'option.pahmaPortfolioSeriesTypes.15',
-        defaultMessage: 'Keeling series 15: Wasco (1907)',
+        id: 'option.pahmaPortfolioSeries.15',
+        defaultMessage: 'Keeling Series 15: Wasco (1907)',
       },
       16: {
-        id: 'option.pahmaPortfolioSeriesTypes.16',
-        defaultMessage: 'Keeling series 16: Klamath Lake (1907)',
+        id: 'option.pahmaPortfolioSeries.16',
+        defaultMessage: 'Keeling Series 16: Klamath Lake (1907)',
       },
       17: {
-        id: 'option.pahmaPortfolioSeriesTypes.17',
-        defaultMessage: 'Keeling series 17: Northern Paiute (1907)',
+        id: 'option.pahmaPortfolioSeries.17',
+        defaultMessage: 'Keeling Series 17: Northern Paiute (1907)',
       },
       18: {
-        id: 'option.pahmaPortfolioSeriesTypes.18',
-        defaultMessage: 'Keeling series 18: Modoc (1907)',
+        id: 'option.pahmaPortfolioSeries.18',
+        defaultMessage: 'Keeling Series 18: Modoc (1907)',
       },
       '19A': {
-        id: 'option.pahmaPortfolioSeriesTypes.19A',
-        defaultMessage: 'Keeling series 19A: Mohave (1908)— Songs of the Ath\'i ("Salt") cycle, sung by an Indian identified as "Doctor Sack\'s half-brother" (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19A',
+        defaultMessage: 'Keeling Series 19A: Mohave (1908)— Songs of the Ath\'i ("Salt") cycle, sung by an Indian identified as "Doctor Sack\'s half-brother" (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       '19B': {
-        id: 'option.pahmaPortfolioSeriesTypes.19B',
-        defaultMessage: 'Keeling series 19B: Mohave (1908)— Songs of the "Frog" cycle, sung by Ateyeg (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19B',
+        defaultMessage: 'Keeling Series 19B: Mohave (1908)— Songs of the "Frog" cycle, sung by Ateyeg (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       '19C': {
-        id: 'option.pahmaPortfolioSeriesTypes.19C',
-        defaultMessage: 'Keeling series 19C: Mohave (1908)— Songs of the Akwaka ("Deer") cycle, sung by Kunalye (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19C',
+        defaultMessage: 'Keeling Series 19C: Mohave (1908)— Songs of the Akwaka ("Deer") cycle, sung by Kunalye (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       '19D': {
-        id: 'option.pahmaPortfolioSeriesTypes.19D',
-        defaultMessage: 'Keeling series 19D: Mohave (1908)— Songs of the Ohwera cycle, sung by Kupahwai (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19D',
+        defaultMessage: 'Keeling Series 19D: Mohave (1908)— Songs of the Ohwera cycle, sung by Kupahwai (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       '19E': {
-        id: 'option.pahmaPortfolioSeriesTypes.19E',
-        defaultMessage: 'Keeling series 19E: Mohave (1908)— Songs of the Alysa cycle, sung by Kunalye (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19E',
+        defaultMessage: 'Keeling Series 19E: Mohave (1908)— Songs of the Alysa cycle, sung by Kunalye (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       '19F': {
-        id: 'option.pahmaPortfolioSeriesTypes.19F',
-        defaultMessage: 'Keeling series 19F: Mohave (1908)— Songs of the Chuhuecha cycle, sung by Achora Hanyava (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19F',
+        defaultMessage: 'Keeling Series 19F: Mohave (1908)— Songs of the Chuhuecha cycle, sung by Achora Hanyava (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       '19G': {
-        id: 'option.pahmaPortfolioSeriesTypes.19G',
-        defaultMessage: 'Keeling series 19G: Mohave (1908)— Songs of the Tumanpa Uta\'uta cycle, sung by Achora Hanyava (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19G',
+        defaultMessage: 'Keeling Series 19G: Mohave (1908)— Songs of the Tumanpa Uta\'uta cycle, sung by Achora Hanyava (Mohave) and collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       '19H': {
-        id: 'option.pahmaPortfolioSeriesTypes.19H',
-        defaultMessage: 'Keeling series 19H: Mohave (1908)— Recording of Chiyerekavasuk or "Bluebird\' (Mohave) collected by Leslie Wilbur for A.L. Kroeber in 1908',
+        id: 'option.pahmaPortfolioSeries.19H',
+        defaultMessage: 'Keeling Series 19H: Mohave (1908)— Recording of Chiyerekavasuk or "Bluebird" (Mohave) collected by Leslie Wilbur for A.L. Kroeber in 1908',
       },
       20: {
-        id: 'option.pahmaPortfolioSeriesTypes.20',
-        defaultMessage: 'Keeling series 20: Northern Sierra Miwok (1908)',
+        id: 'option.pahmaPortfolioSeries.20',
+        defaultMessage: 'Keeling Series 20: Northern Sierra Miwok (1908)',
       },
       21: {
-        id: 'option.pahmaPortfolioSeriesTypes.21',
-        defaultMessage: 'Keeling series 21: Central Pomo (1908)',
+        id: 'option.pahmaPortfolioSeries.21',
+        defaultMessage: 'Keeling Series 21: Central Pomo (1908)',
       },
       22: {
-        id: 'option.pahmaPortfolioSeriesTypes.22',
-        defaultMessage: 'Keeling series 22: Sioux (1908)',
+        id: 'option.pahmaPortfolioSeries.22',
+        defaultMessage: 'Keeling Series 22: Sioux (1908)',
       },
       23: {
-        id: 'option.pahmaPortfolioSeriesTypes.23',
-        defaultMessage: 'Keeling series 23: Diegueño (1906)',
+        id: 'option.pahmaPortfolioSeries.23',
+        defaultMessage: 'Keeling Series 23: Diegueño (1906)',
       },
       24: {
-        id: 'option.pahmaPortfolioSeriesTypes.24',
-        defaultMessage: 'Keeling series 24: Luiseño (1906)',
+        id: 'option.pahmaPortfolioSeries.24',
+        defaultMessage: 'Keeling Series 24: Luiseño (1906)',
       },
       25: {
-        id: 'option.pahmaPortfolioSeriesTypes.25',
-        defaultMessage: 'Keeling series 25: Papago (1909)',
+        id: 'option.pahmaPortfolioSeries.25',
+        defaultMessage: 'Keeling Series 25: Papago (1909)',
       },
       26: {
-        id: 'option.pahmaPortfolioSeriesTypes.26',
-        defaultMessage: 'Keeling series 26: Hupa (1901)',
+        id: 'option.pahmaPortfolioSeries.26',
+        defaultMessage: 'Keeling Series 26: Hupa (1901)',
       },
       27: {
-        id: 'option.pahmaPortfolioSeriesTypes.27',
-        defaultMessage: 'Keeling series 27: Wailaki (1901)',
+        id: 'option.pahmaPortfolioSeries.27',
+        defaultMessage: 'Keeling Series 27: Wailaki (1901)',
       },
       28: {
-        id: 'option.pahmaPortfolioSeriesTypes.28',
-        defaultMessage: 'Keeling series 28: Hupa (1901)',
+        id: 'option.pahmaPortfolioSeries.28',
+        defaultMessage: 'Keeling Series 28: Hupa (1901)',
       },
       29: {
-        id: 'option.pahmaPortfolioSeriesTypes.29',
-        defaultMessage: 'Keeling series 29: Nongatl (1907)',
+        id: 'option.pahmaPortfolioSeries.29',
+        defaultMessage: 'Keeling Series 29: Nongatl (1907)',
       },
       30: {
-        id: 'option.pahmaPortfolioSeriesTypes.30',
-        defaultMessage: 'Keeling series 30: Whilkut (1908)',
+        id: 'option.pahmaPortfolioSeries.30',
+        defaultMessage: 'Keeling Series 30: Whilkut (1908)',
       },
       31: {
-        id: 'option.pahmaPortfolioSeriesTypes.31',
-        defaultMessage: 'Keeling series 31: Chilula and Hupa (1908)',
+        id: 'option.pahmaPortfolioSeries.31',
+        defaultMessage: 'Keeling Series 31: Chilula and Hupa (1908)',
       },
       32: {
-        id: 'option.pahmaPortfolioSeriesTypes.32',
-        defaultMessage: 'Keeling series 32: Hupa (1905)',
+        id: 'option.pahmaPortfolioSeries.32',
+        defaultMessage: 'Keeling Series 32: Hupa (1905)',
       },
       33: {
-        id: 'option.pahmaPortfolioSeriesTypes.33',
-        defaultMessage: 'Keeling series 33: Hupa (1902)',
+        id: 'option.pahmaPortfolioSeries.33',
+        defaultMessage: 'Keeling Series 33: Hupa (1902)',
       },
       34: {
-        id: 'option.pahmaPortfolioSeriesTypes.34',
-        defaultMessage: 'Keeling series 34: Tolowa (1903)',
+        id: 'option.pahmaPortfolioSeries.34',
+        defaultMessage: 'Keeling Series 34: Tolowa (1903)',
       },
       35: {
-        id: 'option.pahmaPortfolioSeriesTypes.35',
-        defaultMessage: 'Keeling series 35: Yurok (1909)',
+        id: 'option.pahmaPortfolioSeries.35',
+        defaultMessage: 'Keeling Series 35: Yurok (1909)',
       },
       36: {
-        id: 'option.pahmaPortfolioSeriesTypes.36',
-        defaultMessage: 'Keeling series 36: Yurok (1909)',
+        id: 'option.pahmaPortfolioSeries.36',
+        defaultMessage: 'Keeling Series 36: Yurok (1909)',
       },
       37: {
-        id: 'option.pahmaPortfolioSeriesTypes.37',
-        defaultMessage: 'Keeling series 37: Bannock (1908)',
+        id: 'option.pahmaPortfolioSeries.37',
+        defaultMessage: 'Keeling Series 37: Bannock (1908)',
       },
       38: {
-        id: 'option.pahmaPortfolioSeriesTypes.38',
-        defaultMessage: 'Keeling series 38: Shoshone (1908)',
+        id: 'option.pahmaPortfolioSeries.38',
+        defaultMessage: 'Keeling Series 38: Shoshone (1908)',
       },
       39: {
-        id: 'option.pahmaPortfolioSeriesTypes.39',
-        defaultMessage: 'Keeling series 39: Chukchi of Siberia (1909)',
+        id: 'option.pahmaPortfolioSeries.39',
+        defaultMessage: 'Keeling Series 39: Chukchi of Siberia (1909)',
       },
       40: {
-        id: 'option.pahmaPortfolioSeriesTypes.40',
-        defaultMessage: 'Keeling series 40: Southeastern Pomo (1902)',
+        id: 'option.pahmaPortfolioSeries.40',
+        defaultMessage: 'Keeling Series 40: Southeastern Pomo (1902)',
       },
       41: {
-        id: 'option.pahmaPortfolioSeriesTypes.41',
-        defaultMessage: 'Keeling series 41: Yurok (1908)',
+        id: 'option.pahmaPortfolioSeries.41',
+        defaultMessage: 'Keeling Series 41: Yurok (1908)',
       },
       42: {
-        id: 'option.pahmaPortfolioSeriesTypes.42',
-        defaultMessage: 'Keeling series 42: Pomo (1909)',
+        id: 'option.pahmaPortfolioSeries.42',
+        defaultMessage: 'Keeling Series 42: Pomo (1909)',
       },
       43: {
-        id: 'option.pahmaPortfolioSeriesTypes.43',
-        defaultMessage: 'Keeling series 43: Yokuts (1909)',
+        id: 'option.pahmaPortfolioSeries.43',
+        defaultMessage: 'Keeling Series 43: Yokuts (1909)',
       },
       44: {
-        id: 'option.pahmaPortfolioSeriesTypes.44',
-        defaultMessage: 'Keeling series 44: Hupa (1902)',
+        id: 'option.pahmaPortfolioSeries.44',
+        defaultMessage: 'Keeling Series 44: Hupa (1902)',
       },
       45: {
-        id: 'option.pahmaPortfolioSeriesTypes.45',
-        defaultMessage: 'Keeling series 45: Japan (n.d)',
+        id: 'option.pahmaPortfolioSeries.45',
+        defaultMessage: 'Keeling Series 45: Japan (n.d.)',
       },
       46: {
-        id: 'option.pahmaPortfolioSeriesTypes.46',
-        defaultMessage: 'Keeling series 46: Wintun (1909)',
+        id: 'option.pahmaPortfolioSeries.46',
+        defaultMessage: 'Keeling Series 46: Wintun (1909)',
       },
       47: {
-        id: 'option.pahmaPortfolioSeriesTypes.47',
-        defaultMessage: 'Keeling series 47: Wintun (1909 and 1910)',
+        id: 'option.pahmaPortfolioSeries.47',
+        defaultMessage: 'Keeling Series 47: Wintun (1909 and 1910)',
       },
       48: {
-        id: 'option.pahmaPortfolioSeriesTypes.48',
-        defaultMessage: 'Keeling series 48: Northern Paiute (1910)',
+        id: 'option.pahmaPortfolioSeries.48',
+        defaultMessage: 'Keeling Series 48: Northern Paiute (1910)',
       },
       49: {
-        id: 'option.pahmaPortfolioSeriesTypes.49',
-        defaultMessage: 'Keeling series 49: Hupa (n.d)',
+        id: 'option.pahmaPortfolioSeries.49',
+        defaultMessage: 'Keeling Series 49: Hupa (n.d.)',
       },
       50: {
-        id: 'option.pahmaPortfolioSeriesTypes.50',
-        defaultMessage: 'Keeling series 50: Ntlakapanuk and Chinook Jargon (n.d)',
+        id: 'option.pahmaPortfolioSeries.50',
+        defaultMessage: 'Keeling Series 50: Ntlakapanuk and Chinook Jargon (n.d.)',
       },
       51: {
-        id: 'option.pahmaPortfolioSeriesTypes.51',
-        defaultMessage: 'Keeling series 51: Maidu (1902)',
+        id: 'option.pahmaPortfolioSeries.51',
+        defaultMessage: 'Keeling Series 51: Maidu (1902)',
       },
       '52A': {
-        id: 'option.pahmaPortfolioSeriesTypes.52A',
-        defaultMessage: 'Keeling series 52A: Mohave (1910)— Songs of the Tumanpa cycle sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
+        id: 'option.pahmaPortfolioSeries.52A',
+        defaultMessage: 'Keeling Series 52A: Mohave (1910)— Songs of the Tumanpa cycle sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
       },
       '52B': {
-        id: 'option.pahmaPortfolioSeriesTypes.52B',
-        defaultMessage: 'Keeling series 52B: Mohave (1910)— Doctoring songs sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
+        id: 'option.pahmaPortfolioSeries.52B',
+        defaultMessage: 'Keeling Series 52B: Mohave (1910)— Doctoring songs sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
       },
       '52C': {
-        id: 'option.pahmaPortfolioSeriesTypes.52C',
-        defaultMessage: 'Keeling series 52C: Mohave (1910)— Mohave songs of the Ath\'l ("Salt") cycle sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
+        id: 'option.pahmaPortfolioSeries.52C',
+        defaultMessage: 'Keeling Series 52C: Mohave (1910)— Mohave songs of the Ath\'l ("Salt") cycle sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
       },
       '52D': {
-        id: 'option.pahmaPortfolioSeriesTypes.52D',
-        defaultMessage: 'Keeling series 52D: Mohave (1910)— Mohave songs of the Chuhuecha cycle sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
+        id: 'option.pahmaPortfolioSeries.52D',
+        defaultMessage: 'Keeling Series 52D: Mohave (1910)— Mohave songs of the Chuhuecha cycle sung by Achora Hanyava (Mohave) and recorded by A.L. Kroeber in December 1910',
       },
       53: {
-        id: 'option.pahmaPortfolioSeriesTypes.53',
-        defaultMessage: 'Keeling series 53: Salinan (1910)',
+        id: 'option.pahmaPortfolioSeries.53',
+        defaultMessage: 'Keeling Series 53: Salinan (1910)',
       },
       54: {
-        id: 'option.pahmaPortfolioSeriesTypes.54',
-        defaultMessage: 'Keeling series 54: laluit of Marshall islands (1911)',
+        id: 'option.pahmaPortfolioSeries.54',
+        defaultMessage: 'Keeling Series 54: laluit of Marshall Islands (1911)',
       },
       55: {
-        id: 'option.pahmaPortfolioSeriesTypes.55',
-        defaultMessage: 'Keeling series 55: Yana/Yahi (1911)',
+        id: 'option.pahmaPortfolioSeries.55',
+        defaultMessage: 'Keeling Series 55: Yana/Yahi (1911)',
       },
       56: {
-        id: 'option.pahmaPortfolioSeriesTypes.56',
-        defaultMessage: 'Keeling series 56: Northern Yana (1911)',
+        id: 'option.pahmaPortfolioSeries.56',
+        defaultMessage: 'Keeling Series 56: Northern Yana (1911)',
       },
       57: {
-        id: 'option.pahmaPortfolioSeriesTypes.57',
-        defaultMessage: 'Keeling series 57: Yana/Yahi (1911)',
+        id: 'option.pahmaPortfolioSeries.57',
+        defaultMessage: 'Keeling Series 57: Yana/Yahi (1911)',
       },
       58: {
-        id: 'option.pahmaPortfolioSeriesTypes.58',
-        defaultMessage: 'Keeling series 58: Northern Yana (1911)',
+        id: 'option.pahmaPortfolioSeries.58',
+        defaultMessage: 'Keeling Series 58: Northern Yana (1911)',
       },
       59: {
-        id: 'option.pahmaPortfolioSeriesTypes.59',
-        defaultMessage: 'Keeling series 59: Yana/Yahi (1912)',
+        id: 'option.pahmaPortfolioSeries.59',
+        defaultMessage: 'Keeling Series 59: Yana/Yahi (1912)',
       },
       60: {
-        id: 'option.pahmaPortfolioSeriesTypes.60',
-        defaultMessage: 'Keeling series 60: Yana/Yahi (1912)',
+        id: 'option.pahmaPortfolioSeries.60',
+        defaultMessage: 'Keeling Series 60: Yana/Yahi (1912)',
       },
       61: {
-        id: 'option.pahmaPortfolioSeriesTypes.61',
-        defaultMessage: 'Keeling series 61: Yuki (1912)',
+        id: 'option.pahmaPortfolioSeries.61',
+        defaultMessage: 'Keeling Series 61: Yuki (1912)',
       },
       62: {
-        id: 'option.pahmaPortfolioSeriesTypes.62',
-        defaultMessage: 'Keeling series 62: Experimental recordings (n.d)',
+        id: 'option.pahmaPortfolioSeries.62',
+        defaultMessage: 'Keeling Series 62: Experimental Recordings (n.d.)',
       },
       63: {
-        id: 'option.pahmaPortfolioSeriesTypes.63',
-        defaultMessage: 'Keeling series 63: Central Sierra Miwok (1913)',
+        id: 'option.pahmaPortfolioSeries.63',
+        defaultMessage: 'Keeling Series 63: Central Sierra Miwok (1913)',
       },
       64: {
-        id: 'option.pahmaPortfolioSeriesTypes.64',
-        defaultMessage: 'Keeling series 64: Experimental recording (n.d)',
+        id: 'option.pahmaPortfolioSeries.64',
+        defaultMessage: 'Keeling Series 64: Experimental Recording (n.d.)',
       },
       65: {
-        id: 'option.pahmaPortfolioSeriesTypes.65',
-        defaultMessage: 'Keeling series 65: Athabaskan (1913)',
+        id: 'option.pahmaPortfolioSeries.65',
+        defaultMessage: 'Keeling Series 65: Athabaskan (1913)',
       },
       66: {
-        id: 'option.pahmaPortfolioSeriesTypes.66',
-        defaultMessage: 'Keeling series 66: Yana/Yahi (1914)',
+        id: 'option.pahmaPortfolioSeries.66',
+        defaultMessage: 'Keeling Series 66: Yana/Yahi (1914)',
       },
       67: {
-        id: 'option.pahmaPortfolioSeriesTypes.67',
-        defaultMessage: 'Keeling series 67: Central Sierra Miwok (1914)',
+        id: 'option.pahmaPortfolioSeries.67',
+        defaultMessage: 'Keeling Series 67: Central Sierra Miwok (1914)',
       },
       68: {
-        id: 'option.pahmaPortfolioSeriesTypes.68',
-        defaultMessage: 'Keeling series 68: Northern Paiute (1914)',
+        id: 'option.pahmaPortfolioSeries.68',
+        defaultMessage: 'Keeling Series 68: Northern Paiute (1914)',
       },
       69: {
-        id: 'option.pahmaPortfolioSeriesTypes.69',
-        defaultMessage: 'Keeling series 69: Owens Valley Paiute (1915)',
+        id: 'option.pahmaPortfolioSeries.69',
+        defaultMessage: 'Keeling Series 69: Owens Valley Paiute (1915)',
       },
       70: {
-        id: 'option.pahmaPortfolioSeriesTypes.70',
-        defaultMessage: 'Keeling series 70: Central and Southern Sierra Miwok (1908)',
+        id: 'option.pahmaPortfolioSeries.70',
+        defaultMessage: 'Keeling Series 70: Central and Southern Sierra Miwok (1908)',
       },
       71: {
-        id: 'option.pahmaPortfolioSeriesTypes.71',
-        defaultMessage: 'Keeling series 71: North Fork Mono (1916)',
+        id: 'option.pahmaPortfolioSeries.71',
+        defaultMessage: 'Keeling Series 71: North Fork Mono (1916)',
       },
       72: {
-        id: 'option.pahmaPortfolioSeriesTypes.72',
-        defaultMessage: 'Keeling series 72: Cahuilla (1918)',
+        id: 'option.pahmaPortfolioSeries.72',
+        defaultMessage: 'Keeling Series 72: Cahuilla (1918)',
       },
       73: {
-        id: 'option.pahmaPortfolioSeriesTypes.73',
-        defaultMessage: 'Keeling series 73: Western Mono (1926)',
+        id: 'option.pahmaPortfolioSeries.73',
+        defaultMessage: 'Keeling Series 73: Western Mono (1926)',
       },
       74: {
-        id: 'option.pahmaPortfolioSeriesTypes.74',
-        defaultMessage: 'Keeling series 74: Papago (1919)',
+        id: 'option.pahmaPortfolioSeries.74',
+        defaultMessage: 'Keeling Series 74: Papago (1919)',
       },
       75: {
-        id: 'option.pahmaPortfolioSeriesTypes.75',
-        defaultMessage: 'Keeling series 75: Eastern Porno (1919)',
+        id: 'option.pahmaPortfolioSeries.75',
+        defaultMessage: 'Keeling Series 75: Eastern Porno (1919)',
       },
       76: {
-        id: 'option.pahmaPortfolioSeriesTypes.76',
-        defaultMessage: 'Keeling series 76: Eskimo (1907-1908)',
+        id: 'option.pahmaPortfolioSeries.76',
+        defaultMessage: 'Keeling Series 76: Eskimo (1907-1908)',
       },
       77: {
-        id: 'option.pahmaPortfolioSeriesTypes.77',
-        defaultMessage: 'Keeling series 77: Northern Paiute (1913)',
+        id: 'option.pahmaPortfolioSeries.77',
+        defaultMessage: 'Keeling Series 77: Northern Paiute (1913)',
       },
       78: {
-        id: 'option.pahmaPortfolioSeriesTypes.78',
-        defaultMessage: 'Keeling series 78: Wiyot (1923)',
+        id: 'option.pahmaPortfolioSeries.78',
+        defaultMessage: 'Keeling Series 78: Wiyot (1923)',
       },
       79: {
-        id: 'option.pahmaPortfolioSeriesTypes.79',
-        defaultMessage: 'Keeling series 79: Snoqualemie (1923)',
+        id: 'option.pahmaPortfolioSeries.79',
+        defaultMessage: 'Keeling Series 79: Snoqualemie (1923)',
       },
       80: {
-        id: 'option.pahmaPortfolioSeriesTypes.80',
-        defaultMessage: 'Keeling series 80: Yuki (1902 and 1912)',
+        id: 'option.pahmaPortfolioSeries.80',
+        defaultMessage: 'Keeling Series 80: Yuki (1902 and 1912)',
       },
       81: {
-        id: 'option.pahmaPortfolioSeriesTypes.81',
-        defaultMessage: 'Keeling series 81: Hopi and Navajo (1925)',
+        id: 'option.pahmaPortfolioSeries.81',
+        defaultMessage: 'Keeling Series 81: Hopi and Navajo (1925)',
       },
       82: {
-        id: 'option.pahmaPortfolioSeriesTypes.82',
-        defaultMessage: 'Keeling series 82: Nomlaki (1925)',
+        id: 'option.pahmaPortfolioSeries.82',
+        defaultMessage: 'Keeling Series 82: Nomlaki (1925)',
       },
       83: {
-        id: 'option.pahmaPortfolioSeriesTypes.83',
-        defaultMessage: 'Keeling series 83: Wiyot (n.d)',
+        id: 'option.pahmaPortfolioSeries.83',
+        defaultMessage: 'Keeling Series 83: Wiyot (n.d.)',
       },
       84: {
-        id: 'option.pahmaPortfolioSeriesTypes.84',
-        defaultMessage: 'Keeling series 84: Northern Wintun (1929)',
+        id: 'option.pahmaPortfolioSeries.84',
+        defaultMessage: 'Keeling Series 84: Northern Wintun (1929)',
       },
       85: {
-        id: 'option.pahmaPortfolioSeriesTypes.85',
-        defaultMessage: 'Keeling series 85: Otomi of Mexico (1929)',
+        id: 'option.pahmaPortfolioSeries.85',
+        defaultMessage: 'Keeling Series 85: Otomi of Mexico (1929)',
       },
       86: {
-        id: 'option.pahmaPortfolioSeriesTypes.86',
-        defaultMessage: 'Keeling series 86: Southern Athabaskan (1929)',
+        id: 'option.pahmaPortfolioSeries.86',
+        defaultMessage: 'Keeling Series 86: Southern Athabaskan (1929)',
       },
       87: {
-        id: 'option.pahmaPortfolioSeriesTypes.87',
-        defaultMessage: 'Keeling series 87: Coast Miwok (1932)',
+        id: 'option.pahmaPortfolioSeries.87',
+        defaultMessage: 'Keeling Series 87: Coast Miwok (1932)',
       },
       88: {
-        id: 'option.pahmaPortfolioSeriesTypes.88',
-        defaultMessage: 'Keeling series 88: Yavapai (1932)',
+        id: 'option.pahmaPortfolioSeries.88',
+        defaultMessage: 'Keeling Series 88: Yavapai (1932)',
       },
       89: {
-        id: 'option.pahmaPortfolioSeriesTypes.89',
-        defaultMessage: 'Keeling series 89: Eastern Porno (1926 and 1927)',
+        id: 'option.pahmaPortfolioSeries.89',
+        defaultMessage: 'Keeling Series 89: Eastern Porno (1926 and 1927)',
       },
       90: {
-        id: 'option.pahmaPortfolioSeriesTypes.90',
-        defaultMessage: 'Keeling series 90: Eastern Porno (1927 and 1929)',
+        id: 'option.pahmaPortfolioSeries.90',
+        defaultMessage: 'Keeling Series 90: Eastern Porno (1927 and 1929)',
       },
       91: {
-        id: 'option.pahmaPortfolioSeriesTypes.91',
-        defaultMessage: 'Keeling series 91: Karok (1926 and 1927)',
+        id: 'option.pahmaPortfolioSeries.91',
+        defaultMessage: 'Keeling Series 91: Karok (1926 and 1927)',
       },
       92: {
-        id: 'option.pahmaPortfolioSeriesTypes.92',
-        defaultMessage: 'Keeling series 92: Yurok (1926-1932)',
+        id: 'option.pahmaPortfolioSeries.92',
+        defaultMessage: 'Keeling Series 92: Yurok (1926-1932)',
       },
       93: {
-        id: 'option.pahmaPortfolioSeriesTypes.93',
-        defaultMessage: 'Keeling series 93: Maidu (1931)',
+        id: 'option.pahmaPortfolioSeries.93',
+        defaultMessage: 'Keeling Series 93: Maidu (1931)',
       },
       94: {
-        id: 'option.pahmaPortfolioSeriesTypes.94',
-        defaultMessage: 'Keeling series 94: Sierra Miwok (1927)',
+        id: 'option.pahmaPortfolioSeries.94',
+        defaultMessage: 'Keeling Series 94: Sierra Miwok (1927)',
       },
       95: {
-        id: 'option.pahmaPortfolioSeriesTypes.95',
-        defaultMessage: 'Keeling series 95: Navajo (1928)',
+        id: 'option.pahmaPortfolioSeries.95',
+        defaultMessage: 'Keeling Series 95: Navajo (1928)',
       },
       96: {
-        id: 'option.pahmaPortfolioSeriesTypes.96',
-        defaultMessage: 'Keeling series 96: Santa Clara Pueblo (1926)',
+        id: 'option.pahmaPortfolioSeries.96',
+        defaultMessage: 'Keeling Series 96: Santa Clara Pueblo (1926)',
       },
       97: {
-        id: 'option.pahmaPortfolioSeriesTypes.97',
-        defaultMessage: 'Keeling series 97: Papago (1928)',
+        id: 'option.pahmaPortfolioSeries.97',
+        defaultMessage: 'Keeling Series 97: Papago (1928)',
       },
       98: {
-        id: 'option.pahmaPortfolioSeriesTypes.98',
-        defaultMessage: 'Keeling series 98: Sioux (1928)',
+        id: 'option.pahmaPortfolioSeries.98',
+        defaultMessage: 'Keeling Series 98: Sioux (1928)',
       },
       99: {
-        id: 'option.pahmaPortfolioSeriesTypes.99',
-        defaultMessage: 'Keeling series 99: Blackfoot (1926 and 1927)',
+        id: 'option.pahmaPortfolioSeries.99',
+        defaultMessage: 'Keeling Series 99: Blackfoot (1926 and 1927)',
       },
       100: {
-        id: 'option.pahmaPortfolioSeriesTypes.100',
-        defaultMessage: 'Keeling series 100: Crow (1926-1927)',
+        id: 'option.pahmaPortfolioSeries.100',
+        defaultMessage: 'Keeling Series 100: Crow (1926-1927)',
       },
       101: {
-        id: 'option.pahmaPortfolioSeriesTypes.101',
-        defaultMessage: 'Keeling series 101: Crow (1927)',
+        id: 'option.pahmaPortfolioSeries.101',
+        defaultMessage: 'Keeling Series 101: Crow (1927)',
       },
       102: {
-        id: 'option.pahmaPortfolioSeriesTypes.102',
-        defaultMessage: 'Keeling series 102: Mono Lake Paiute (1927-1928)',
+        id: 'option.pahmaPortfolioSeries.102',
+        defaultMessage: 'Keeling Series 102: Mono Lake Paiute (1927-1928)',
       },
       103: {
-        id: 'option.pahmaPortfolioSeriesTypes.103',
-        defaultMessage: 'Keeling series 103: Owens Valley Paiute and Mono Lake Paiute (1927-1928)',
+        id: 'option.pahmaPortfolioSeries.103',
+        defaultMessage: 'Keeling Series 103: Owens Valley Paiute and Mono Lake Paiute (1927-1928)',
       },
       104: {
-        id: 'option.pahmaPortfolioSeriesTypes.104',
-        defaultMessage: 'Keeling series 104: Northern Paiute (1938)',
+        id: 'option.pahmaPortfolioSeries.104',
+        defaultMessage: 'Keeling Series 104: Northern Paiute (1938)',
       },
       105: {
-        id: 'option.pahmaPortfolioSeriesTypes.105',
-        defaultMessage: 'Keeling series 105: Washo (1938)',
+        id: 'option.pahmaPortfolioSeries.105',
+        defaultMessage: 'Keeling Series 105: Washo (1938)',
       },
       106: {
-        id: 'option.pahmaPortfolioSeriesTypes.106',
-        defaultMessage: 'Keeling series 106: Uintah Ute (1938)',
+        id: 'option.pahmaPortfolioSeries.106',
+        defaultMessage: 'Keeling Series 106: Uintah Ute (1938)',
       },
       107: {
-        id: 'option.pahmaPortfolioSeriesTypes.107',
-        defaultMessage: 'Keeling series 107: Washo (1938)',
+        id: 'option.pahmaPortfolioSeries.107',
+        defaultMessage: 'Keeling Series 107: Washo (1938)',
       },
       108: {
-        id: 'option.pahmaPortfolioSeriesTypes.108',
-        defaultMessage: 'Keeling series 108: Northern Paiute (1938)',
+        id: 'option.pahmaPortfolioSeries.108',
+        defaultMessage: 'Keeling Series 108: Northern Paiute (1938)',
       },
       109: {
-        id: 'option.pahmaPortfolioSeriesTypes.109',
-        defaultMessage: 'Keeling series 109: Shoshone (1938)',
+        id: 'option.pahmaPortfolioSeries.109',
+        defaultMessage: 'Keeling Series 109: Shoshone (1938)',
       },
       110: {
-        id: 'option.pahmaPortfolioSeriesTypes.110',
-        defaultMessage: 'Keeling series 110: Chukchansi Yokuts (1949)',
+        id: 'option.pahmaPortfolioSeries.110',
+        defaultMessage: 'Keeling Series 110: Chukchansi Yokuts (1949)',
       },
       111: {
-        id: 'option.pahmaPortfolioSeriesTypes.111',
-        defaultMessage: 'Keeling series 111: Coast Miwok (n.d)',
+        id: 'option.pahmaPortfolioSeries.111',
+        defaultMessage: 'Keeling Series 111: Coast Miwok (n.d.)',
       },
       112: {
-        id: 'option.pahmaPortfolioSeriesTypes.112',
-        defaultMessage: 'Keeling series 112: Yuman/Maricopa (1929-1932)',
+        id: 'option.pahmaPortfolioSeries.112',
+        defaultMessage: 'Keeling Series 112: Yuman/Maricopa (1929-1932)',
       },
       113: {
-        id: 'option.pahmaPortfolioSeriesTypes.113',
-        defaultMessage: 'Keeling series 113: miscellaneous',
+        id: 'option.pahmaPortfolioSeries.113',
+        defaultMessage: 'Keeling Series 113: Miscellaneous',
       },
     }),
   },
-  pahmaSexCategories: {
+  pahmaSexes: {
     values: [
       'male',
       'probable-male',
@@ -1326,23 +1149,23 @@ export default {
     ],
     messages: defineMessages({
       'probable-male': {
-        id: 'option.pahmaSexCategories.probable-male',
+        id: 'option.pahmaSexes.probable-male',
         defaultMessage: 'probable male',
       },
       'possible-male': {
-        id: 'option.pahmaSexCategories.possible-male',
+        id: 'option.pahmaSexes.possible-male',
         defaultMessage: 'possible male',
       },
       'probable-female': {
-        id: 'option.pahmaSexCategories.probable-female',
+        id: 'option.pahmaSexes.probable-female',
         defaultMessage: 'probable female',
       },
       'possible-female': {
-        id: 'option.pahmaSexCategories.possible-female',
+        id: 'option.pahmaSexes.possible-female',
         defaultMessage: 'possible female',
       },
       'not-applicable': {
-        id: 'option.pahmaSexCategories.not-applicable',
+        id: 'option.pahmaSexes.not-applicable',
         defaultMessage: 'not applicable',
       },
     }),
@@ -1400,14 +1223,14 @@ export default {
       },
     }),
   },
-  pahmaTechnicalAttributeMeasurementTypes: {
+  pahmaTechnicalAttributeMeasurements: {
     values: [
       '33',
       '45',
       '78',
     ],
   },
-  pahmaTechnicalMeasurementUnits: {
+  pahmaTechnicalAttributeMeasurementUnits: {
     values: [
       'rpm',
     ],
@@ -1453,7 +1276,7 @@ export default {
       },
     }),
   },
-  pahmaContentEventNameTypes: {
+  pahmaContentEventTypes: {
     values: [
       'ceremony',
       'classVisit',
@@ -1470,32 +1293,32 @@ export default {
     ],
     messages: defineMessages({
       classVisit: {
-        id: 'option.pahmaContentEventNameTypes.classVisit',
+        id: 'option.pahmaContentEventTypes.classVisit',
         defaultMessage: 'class visit',
       },
       healingDoctoring: {
-        id: 'option.pahmaContentEventNameTypes.healingDoctoring',
+        id: 'option.pahmaContentEventTypes.healingDoctoring',
         defaultMessage: 'healing/doctoring',
       },
       memberEvent: {
-        id: 'option.pahmaContentEventNameTypes.memberEvent',
+        id: 'option.pahmaContentEventTypes.memberEvent',
         defaultMessage: 'member event',
       },
       nagpraConsultation: {
-        id: 'option.pahmaContentEventNameTypes.nagpraConsultation',
+        id: 'option.pahmaContentEventTypes.nagpraConsultation',
         defaultMessage: 'NAGPRA consultation',
       },
       researchVisit: {
-        id: 'option.pahmaContentEventNameTypes.researchVisit',
+        id: 'option.pahmaContentEventTypes.researchVisit',
         defaultMessage: 'research visit',
       },
       tribalVisit: {
-        id: 'option.pahmaContentEventNameTypes.tribalVisit',
+        id: 'option.pahmaContentEventTypes.tribalVisit',
         defaultMessage: 'tribal visit',
       },
     }),
   },
-  pahmaInscriptionScriptTypes: {
+  pahmaScripts: {
     values: [
       'beneventanScript',
       'blackletter',
@@ -1521,92 +1344,92 @@ export default {
     ],
     messages: defineMessages({
       beneventanScript: {
-        id: 'option.pahmaInscriptionScriptTypes.beneventanScript',
-        defaultMessage: 'beneventan script',
+        id: 'option.pahmaScripts.beneventanScript',
+        defaultMessage: 'Beneventan script',
       },
       blackletter: {
-        id: 'option.pahmaInscriptionScriptTypes.blackletter',
-        defaultMessage: 'black letter',
+        id: 'option.pahmaScripts.blackletter',
+        defaultMessage: 'blackletter',
       },
       carolingianMiniscule: {
-        id: 'option.pahmaInscriptionScriptTypes.carolingianMiniscule',
+        id: 'option.pahmaScripts.carolingianMiniscule',
         defaultMessage: 'Carolingian miniscule',
       },
       chanceryHand: {
-        id: 'option.pahmaInscriptionScriptTypes.chanceryHand',
+        id: 'option.pahmaScripts.chanceryHand',
         defaultMessage: 'chancery hand',
       },
       courtHand: {
-        id: 'option.pahmaInscriptionScriptTypes.courtHand',
+        id: 'option.pahmaScripts.courtHand',
         defaultMessage: 'court hand',
       },
       germanicMiniscule: {
-        id: 'option.pahmaInscriptionScriptTypes.germanicMiniscule',
+        id: 'option.pahmaScripts.germanicMiniscule',
         defaultMessage: 'Germanic miniscule',
       },
       gothicScript: {
-        id: 'option.pahmaInscriptionScriptTypes.gothicScript',
-        defaultMessage: 'gothic script',
+        id: 'option.pahmaScripts.gothicScript',
+        defaultMessage: 'Gothic script',
       },
       unspecifiedHandwriting: {
-        id: 'option.pahmaInscriptionScriptTypes.unspecifiedHandwriting',
-        defaultMessage: 'unspecified handwriting',
+        id: 'option.pahmaScripts.unspecifiedHandwriting',
+        defaultMessage: 'handwriting (unspecified)',
       },
       humanistMiniscule: {
-        id: 'option.pahmaInscriptionScriptTypes.humanistMiniscule',
+        id: 'option.pahmaScripts.humanistMiniscule',
         defaultMessage: 'humanist miniscule',
       },
       insularScript: {
-        id: 'option.pahmaInscriptionScriptTypes.insularScript',
+        id: 'option.pahmaScripts.insularScript',
         defaultMessage: 'insular script',
       },
       libraryHand: {
-        id: 'option.pahmaInscriptionScriptTypes.libraryHand',
+        id: 'option.pahmaScripts.libraryHand',
         defaultMessage: 'library hand',
       },
       merovingianScript: {
-        id: 'option.pahmaInscriptionScriptTypes.merovingianScript',
+        id: 'option.pahmaScripts.merovingianScript',
         defaultMessage: 'Merovingian script',
       },
       palmerMethod: {
-        id: 'option.pahmaInscriptionScriptTypes.palmerMethod',
+        id: 'option.pahmaScripts.palmerMethod',
         defaultMessage: 'Palmer method',
       },
       romanCursive: {
-        id: 'option.pahmaInscriptionScriptTypes.romanCursive',
+        id: 'option.pahmaScripts.romanCursive',
         defaultMessage: 'Roman cursive',
       },
       roundHand: {
-        id: 'option.pahmaInscriptionScriptTypes.roundHand',
+        id: 'option.pahmaScripts.roundHand',
         defaultMessage: 'round hand',
       },
       uncialScript: {
-        id: 'option.pahmaInscriptionScriptTypes.uncialScript',
+        id: 'option.pahmaScripts.uncialScript',
         defaultMessage: 'uncial script',
       },
       secretaryHand: {
-        id: 'option.pahmaInscriptionScriptTypes.secretaryHand',
+        id: 'option.pahmaScripts.secretaryHand',
         defaultMessage: 'secretary hand',
       },
       rusticCapitals: {
-        id: 'option.pahmaInscriptionScriptTypes.rusticCapitals',
+        id: 'option.pahmaScripts.rusticCapitals',
         defaultMessage: 'rustic capitals',
       },
       spencerianMethod: {
-        id: 'option.pahmaInscriptionScriptTypes.spencerianMethod',
+        id: 'option.pahmaScripts.spencerianMethod',
         defaultMessage: 'Spencerian method',
       },
       squareCapitals: {
-        id: 'option.pahmaInscriptionScriptTypes.squareCapitals',
+        id: 'option.pahmaScripts.squareCapitals',
         defaultMessage: 'square capitals',
       },
       visigothicScript: {
-        id: 'option.pahmaInscriptionScriptTypes.visigothicScript',
+        id: 'option.pahmaScripts.visigothicScript',
         defaultMessage: 'Visigothic script',
       },
     }),
   },
-  pahmaInscriptionDescriptionTypes: {
+  pahmaInscriptionTypes: {
     values: [
       'brand',
       'decoration',
@@ -1624,32 +1447,32 @@ export default {
     ],
     messages: defineMessages({
       estateStamp: {
-        id: 'option.pahmaInscriptionDescriptionTypes.estateStamp',
+        id: 'option.pahmaInscriptionTypes.estateStamp',
         defaultMessage: 'estate stamp',
       },
       exLibris: {
-        id: 'option.pahmaInscriptionDescriptionTypes.exLibris',
+        id: 'option.pahmaInscriptionTypes.exLibris',
         defaultMessage: 'ex libris',
       },
       incisedMark: {
-        id: 'option.pahmaInscriptionDescriptionTypes.incisedMark',
+        id: 'option.pahmaInscriptionTypes.incisedMark',
         defaultMessage: 'incised mark',
       },
       makersMark: {
-        id: 'option.pahmaInscriptionDescriptionTypes.makersMark',
+        id: 'option.pahmaInscriptionTypes.makersMark',
         defaultMessage: 'maker\'s mark',
       },
       mementoMori: {
-        id: 'option.pahmaInscriptionDescriptionTypes.mementoMori',
+        id: 'option.pahmaInscriptionTypes.mementoMori',
         defaultMessage: 'memento mori',
       },
       monumentalInscription: {
-        id: 'option.pahmaInscriptionDescriptionTypes.monumentalInscription',
+        id: 'option.pahmaInscriptionTypes.monumentalInscription',
         defaultMessage: 'monumental inscription',
       },
     }),
   },
-  pahmaObjProductionOrgRoles: {
+  pahmaProdOrgRoles: {
     values: [
       'maker',
       'manufacturer',
@@ -1753,7 +1576,7 @@ export default {
       },
     }),
   },
-  assocCulturalContextTypes: {
+  pahmaAssocCulturalContextTypes: {
     values: [
       'descendedFrom',
       'exampleOf',
@@ -1766,35 +1589,35 @@ export default {
     ],
     messages: defineMessages({
       descendedFrom: {
-        id: 'option.assocCulturalContextTypes.descendedFrom',
+        id: 'option.pahmaAssocCulturalContextTypes.descendedFrom',
         defaultMessage: 'descended from',
       },
       exampleOf: {
-        id: 'option.assocCulturalContextTypes.exampleOf',
+        id: 'option.pahmaAssocCulturalContextTypes.exampleOf',
         defaultMessage: 'example of',
       },
       inspiredBy: {
-        id: 'option.assocCulturalContextTypes.inspiredBy',
+        id: 'option.pahmaAssocCulturalContextTypes.inspiredBy',
         defaultMessage: 'inspired by',
       },
       relatedTo: {
-        id: 'option.assocCulturalContextTypes.relatedTo',
+        id: 'option.pahmaAssocCulturalContextTypes.relatedTo',
         defaultMessage: 'related to',
       },
       similarTo: {
-        id: 'option.assocCulturalContextTypes.similarTo',
+        id: 'option.pahmaAssocCulturalContextTypes.similarTo',
         defaultMessage: 'typologically similar to',
       },
       identicalTo: {
-        id: 'option.assocCulturalContextTypes.identicalTo',
+        id: 'option.pahmaAssocCulturalContextTypes.identicalTo',
         defaultMessage: 'typologically identical to',
       },
       influencedBy: {
-        id: 'option.assocCulturalContextTypes.influencedBy',
+        id: 'option.pahmaAssocCulturalContextTypes.influencedBy',
         defaultMessage: 'influenced by',
       },
       reminiscentOf: {
-        id: 'option.assocCulturalContextTypes.reminiscentOf',
+        id: 'option.pahmaAssocCulturalContextTypes.reminiscentOf',
         defaultMessage: 'reminiscent of',
       },
     }),
@@ -2087,7 +1910,7 @@ export default {
       },
     }),
   },
-  pahmaAccessRestrictionTypes: {
+  accessRestrictionTypes: {
     values: [
       'displayVisualRestriction',
       'handlingGenderRestriction',
@@ -2134,7 +1957,7 @@ export default {
       },
     }),
   },
-  pahmaAccessLevels: {
+  accessRestrictionLevels: {
     values: [
       'preference',
       'recommendation',

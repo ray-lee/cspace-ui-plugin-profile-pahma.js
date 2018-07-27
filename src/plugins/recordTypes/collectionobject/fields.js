@@ -21,13 +21,28 @@ export default (configContext) => {
   } = configContext.config;
 
   const {
+    DATA_TYPE_DATE,
     DATA_TYPE_FLOAT,
     DATA_TYPE_INT,
   } = configContext.dataTypes;
 
   const {
+    lodash,
     Immutable,
   } = configContext.lib;
+
+
+  // Make a copy of dimension extension fields, but make measuredPartGroupList not cloneable. This
+  // config can't be done in the dimension extension itself, because measuredPartGroupList should
+  // remain cloneable in other record types (e.g. media).
+
+  const customizedDimensionFields = lodash.merge({}, extensions.dimension.fields, {
+    measuredPartGroupList: {
+      [config]: {
+        cloneable: false,
+      },
+    },
+  });
 
   return {
     document: {
@@ -35,12 +50,20 @@ export default (configContext) => {
         compute: args => computeSortableObjectNumber(args, Immutable),
       },
       'ns2:collectionobjects_common': {
+        objectNumber: {
+          [config]: {
+            view: {
+              type: TextInput,
+              props: null,
+            },
+          },
+        },
         responsibleDepartments: {
           responsibleDepartment: {
             [config]: {
               view: {
                 props: {
-                  source: 'pahmaResponsibleDepartments',
+                  source: 'pahmaDepartments',
                 },
               },
             },
@@ -58,6 +81,7 @@ export default (configContext) => {
         },
         recordStatus: {
           [config]: {
+            defaultValue: 'minimalInProgress',
             view: {
               props: {
                 source: 'pahmaRecordStatuses',
@@ -65,7 +89,15 @@ export default (configContext) => {
             },
           },
         },
+        briefDescriptions: {
+          [config]: {
+            cloneable: false,
+          },
+        },
         titleGroupList: {
+          [config]: {
+            cloneable: false,
+          },
           titleGroup: {
             titleLanguage: {
               [config]: {
@@ -93,12 +125,16 @@ export default (configContext) => {
           },
         },
         objectNameList: {
+          [config]: {
+            cloneable: false,
+          },
           objectNameGroup: {
             objectNameCurrency: {
               [config]: {
+                defaultValue: 'current',
                 view: {
                   props: {
-                    source: 'pahmaObjectNameCurrencies',
+                    source: 'pahmaNameCurrencies',
                   },
                 },
               },
@@ -108,7 +144,7 @@ export default (configContext) => {
                 defaultValue: 'whole',
                 view: {
                   props: {
-                    source: 'pahmaObjectNameLevels',
+                    source: 'pahmaNameLevels',
                   },
                 },
               },
@@ -117,7 +153,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'pahmaObjectNameSystems',
+                    source: 'pahmaNameSystems',
                   },
                 },
               },
@@ -127,7 +163,7 @@ export default (configContext) => {
                 defaultValue: 'simple',
                 view: {
                   props: {
-                    source: 'pahmaObjectNameTypes',
+                    source: 'pahmaNameTypes',
                   },
                 },
               },
@@ -141,9 +177,10 @@ export default (configContext) => {
         },
         sex: {
           [config]: {
+            cloneable: false,
             view: {
               props: {
-                source: 'pahmaSexCategories',
+                source: 'pahmaSexes',
               },
             },
           },
@@ -175,7 +212,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'concept/material_ca',
+                    source: 'concept/material',
                   },
                 },
               },
@@ -209,7 +246,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'pahmaTechnicalAttributeMeasurementTypes',
+                    source: 'pahmaTechnicalAttributeMeasurements',
                   },
                 },
               },
@@ -218,13 +255,14 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'pahmaTechnicalMeasurementUnits',
+                    source: 'pahmaTechnicalAttributeMeasurementUnits',
                   },
                 },
               },
             },
           },
         },
+        ...customizedDimensionFields,
         contentLanguages: {
           contentLanguage: {
             [config]: {
@@ -263,7 +301,7 @@ export default (configContext) => {
               view: {
                 type: AutocompleteInput,
                 props: {
-                  source: 'concept/local,concept/archculture',
+                  source: 'concept/ethculture,concept/archculture',
                 },
               },
             },
@@ -300,7 +338,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'pahmaContentEventNameTypes',
+                    source: 'pahmaContentEventTypes',
                   },
                 },
               },
@@ -312,9 +350,8 @@ export default (configContext) => {
             inscriptionContentInscriber: {
               [config]: {
                 view: {
-                  type: AutocompleteInput,
                   props: {
-                    source: 'person/local,organization/local,concept/local,concept/archculture',
+                    source: 'person/local,organization/local,concept/ethculture,concept/archculture',
                   },
                 },
               },
@@ -337,9 +374,8 @@ export default (configContext) => {
             inscriptionContentScript: {
               [config]: {
                 view: {
-                  type: OptionPickerInput,
                   props: {
-                    source: 'pahmaInscriptionScriptTypes',
+                    source: 'pahmaScripts',
                   },
                 },
               },
@@ -372,7 +408,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'person/local,organization/local,concept/local,concept/archculture',
+                    source: 'person/local,organization/local,concept/ethculture,concept/archculture',
                   },
                 },
               },
@@ -391,7 +427,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'pahmaInscriptionDescriptionTypes',
+                    source: 'pahmaInscriptionTypes',
                   },
                 },
               },
@@ -453,7 +489,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'concept/local,concept/archculture',
+                    source: 'concept/ethculture,concept/archculture',
                   },
                 },
               },
@@ -491,7 +527,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'pahmaObjProductionOrgRoles',
+                    source: 'pahmaProdOrgRoles',
                   },
                 },
               },
@@ -538,8 +574,8 @@ export default (configContext) => {
             assocConcept: {
               [config]: {
                 view: {
-                  type: TextInput, // TO DO: fix using deep merge
-                  props: null, // TO DO: fix?
+                  type: TextInput,
+                  props: null,
                 },
               },
             },
@@ -562,7 +598,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'concept/local,concept/archculture',
+                    source: 'concept/ethculture,concept/archculture',
                   },
                 },
               },
@@ -572,7 +608,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'assocCulturalContextTypes',
+                    source: 'pahmaAssocCulturalContextTypes',
                   },
                 },
               },
@@ -600,7 +636,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'concept/local,concept/archculture',
+                    source: 'concept/ethculture,concept/archculture',
                   },
                 },
               },
@@ -671,7 +707,7 @@ export default (configContext) => {
               view: {
                 type: AutocompleteInput,
                 props: {
-                  source: 'concept/local',
+                  source: 'concept/ethculture',
                 },
               },
             },
@@ -725,33 +761,12 @@ export default (configContext) => {
             },
           },
         },
-        referenceGroupList: {
-          referenceGroup: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_common.referenceGroup.name',
-                  defaultMessage: 'Bibliographic reference',
-                },
-              }),
-            },
-            reference: {
-              [config]: {
-                view: {
-                  props: {
-                    source: 'citation/local',
-                  },
-                },
-              },
-            },
-          },
-        },
         fieldCollectionSources: {
           fieldCollectionSource: {
             [config]: {
               view: {
                 props: {
-                  source: 'person/local,concept/local',
+                  source: 'person/local,concept/ethculture',
                 },
               },
             },
@@ -774,7 +789,7 @@ export default (configContext) => {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.collectionobjects_common.pahmaObjectStatus.name',
+                  id: 'field.collectionobjects_pahma.pahmaObjectStatus.name',
                   defaultMessage: 'Object status',
                 },
               }),
@@ -806,6 +821,7 @@ export default (configContext) => {
         },
         inventoryCount: {
           [config]: {
+            cloneable: false,
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_pahma.inventoryCount.name',
@@ -836,12 +852,6 @@ export default (configContext) => {
         },
         pahmaEthnographicFileCodeList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_pahma.pahmaEthnographicFileCodeList.name',
-                defaultMessage: 'Ethnographic file code',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -849,8 +859,8 @@ export default (configContext) => {
           pahmaEthnographicFileCode: {
             [config]: {
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_pahma.pahmaEthnographicFileCodeList.fullName',
+                name: {
+                  id: 'field.collectionobjects_pahma.pahmaEthnographicFileCodeList.name',
                   defaultMessage: 'Ethnographic file code',
                 },
               }),
@@ -953,7 +963,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'pahmaPortfolioSeriesTypes',
+                source: 'pahmaPortfolioSeries',
               },
             },
           },
@@ -976,12 +986,6 @@ export default (configContext) => {
         },
         pahmaCollectionList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_pahma.pahmaCollectionList.name',
-                defaultMessage: 'Collection',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -989,8 +993,8 @@ export default (configContext) => {
           pahmaCollection: {
             [config]: {
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_pahma.pahmaCollection.fullName',
+                name: {
+                  id: 'field.collectionobjects_pahma.pahmaCollection.name',
                   defaultMessage: 'Collection',
                 },
               }),
@@ -1004,23 +1008,27 @@ export default (configContext) => {
             },
           },
         },
-        pahmaFieldCollectionDate: {
+        pahmaFieldCollectionDateGroupList: {
           [config]: {
-            messages: defineMessages({
-              fullName: {
-                id: 'field.collectionobjects_pahma.pahmaFieldCollectionDate.fullName',
-                defaultMessage: 'Field collection date',
-              },
-              name: {
-                id: 'field.collectionobjects_pahma.pahmaFieldCollectionDate.name',
-                defaultMessage: 'Field collection date',
-              },
-            }),
             view: {
-              type: StructuredDateInput,
+              type: CompoundInput,
             },
           },
-          ...extensions.structuredDate.fields,
+          pahmaFieldCollectionDateGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_pahma.pahmaFieldCollectionDateGroup.name',
+                  defaultMessage: 'Field collection date',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: StructuredDateInput,
+              },
+            },
+            ...extensions.structuredDate.fields,
+          },
         },
         ownershipHistoryGroupList: {
           [config]: {
@@ -1059,7 +1067,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'person/local,organization/local,concept/local',
+                    source: 'person/local,organization/local,concept/ethculture',
                   },
                 },
               },
@@ -1068,11 +1076,11 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.collectionobjects_common.ownershipDateGroup.fullName',
+                    id: 'field.collectionobjects_pahma.ownershipDateGroup.fullName',
                     defaultMessage: 'Previous ownership date',
                   },
                   name: {
-                    id: 'field.collectionobjects_common.ownershipDateGroup.name',
+                    id: 'field.collectionobjects_pahma.ownershipDateGroup.name',
                     defaultMessage: 'Date',
                   },
                 }),
@@ -1169,11 +1177,11 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_pahma.ownershipPriceAmount.fullName',
-                    defaultMessage: 'Previous ownership price (currency)',
+                    defaultMessage: 'Previous ownership price (amount)',
                   },
                   name: {
                     id: 'field.collectionobjects_pahma.ownershipPriceAmount.name',
-                    defaultMessage: 'Price (currency)',
+                    defaultMessage: 'Price (amount)',
                   },
                 }),
                 view: {
@@ -1202,6 +1210,7 @@ export default (configContext) => {
         },
         ageEstimateGroupList: {
           [config]: {
+            cloneable: false,
             view: {
               type: CompoundInput,
             },
@@ -1301,12 +1310,6 @@ export default (configContext) => {
         },
         pahmaFieldCollectionPlaceList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_pahma.pahmaFieldCollectionPlaceList.name',
-                defaultMessage: 'Field collection place',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -1314,8 +1317,8 @@ export default (configContext) => {
           pahmaFieldCollectionPlace: {
             [config]: {
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_pahma.pahmaFieldCollectionPlace.fullName',
+                name: {
+                  id: 'field.collectionobjects_pahma.pahmaFieldCollectionPlace.name',
                   defaultMessage: 'Field collection place',
                 },
               }),
@@ -1344,12 +1347,6 @@ export default (configContext) => {
         },
         pahmaNagpraCodeLegacyList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_pahma.pahmaNagpraCodeLegacyList.name',
-                defaultMessage: 'Grave association code',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -1358,11 +1355,12 @@ export default (configContext) => {
             [config]: {
               defaultValue: 'noCode',
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_pahma.pahmaNagpraCodeLegacy.fullName',
+                name: {
+                  id: 'field.collectionobjects_pahma.pahmaNagpraCodeLegacy.name',
                   defaultMessage: 'Grave association code',
                 },
               }),
+              repeating: true,
               view: {
                 type: OptionPickerInput,
                 props: {
@@ -1381,9 +1379,6 @@ export default (configContext) => {
               },
             }),
             searchTransform: transformSortableObjectNumberSearch,
-            searchView: {
-              type: TextInput,
-            },
             view: {
               type: TextInput,
             },
@@ -1420,14 +1415,32 @@ export default (configContext) => {
             },
           },
         },
+        contentWorks: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          contentWork: {
+            [config]: {
+              repeating: true,
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_anthropology.contentWork.name',
+                  defaultMessage: 'Work depicted',
+                },
+              }),
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'work/local',
+                },
+              },
+            },
+          },
+        },
         culturalCareNoteList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_anthropology.culturalCareNoteList.name',
-                defaultMessage: 'Cultural care note',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -1436,8 +1449,8 @@ export default (configContext) => {
             [config]: {
               repeating: true,
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_anthropology.culturalCareNote.fullName',
+                name: {
+                  id: 'field.collectionobjects_anthropology.culturalCareNote.name',
                   defaultMessage: 'Cultural care note',
                 },
               }),
@@ -1462,7 +1475,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.collectionobjects_anthropology.accessRestrictionGroup.name',
-                  defaultMessage: 'Access limitations',
+                  defaultMessage: 'Access limitation',
                 },
               }),
               view: {
@@ -1477,7 +1490,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionType.fullName',
-                    defaultMessage: 'Access restriction type',
+                    defaultMessage: 'Access limitation type',
                   },
                   name: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionType.name',
@@ -1487,7 +1500,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'pahmaAccessRestrictionTypes',
+                    source: 'accessRestrictionTypes',
                   },
                 },
               },
@@ -1497,7 +1510,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionLevel.fullName',
-                    defaultMessage: 'Access restriction level',
+                    defaultMessage: 'Access limitation level',
                   },
                   name: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionLevel.name',
@@ -1507,7 +1520,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'pahmaAccessLevels',
+                    source: 'accessRestrictionLevels',
                   },
                 },
               },
@@ -1517,7 +1530,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionDetails.fullName',
-                    defaultMessage: 'Access restriction Detail',
+                    defaultMessage: 'Access limitation detail',
                   },
                   name: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionDetails.name',
@@ -1534,7 +1547,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionRequestor.fullName',
-                    defaultMessage: 'Access restriction requestor (person)',
+                    defaultMessage: 'Access limitation requestor (person)',
                   },
                   name: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionRequestor.name',
@@ -1554,7 +1567,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionOnBehalfOf.fullName',
-                    defaultMessage: 'Access restriction on behalf of (organization)',
+                    defaultMessage: 'Access limitation on behalf of (organization)',
                   },
                   name: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionOnBehalfOf.name',
@@ -1571,10 +1584,11 @@ export default (configContext) => {
             },
             accessRestrictionDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionDate.fullName',
-                    defaultMessage: 'Access restriction date',
+                    defaultMessage: 'Access limitation date',
                   },
                   name: {
                     id: 'field.collectionobjects_anthropology.accessRestrictionDate.name',
@@ -1587,16 +1601,9 @@ export default (configContext) => {
               },
             },
           },
-
         },
         nagpraInventoryNameList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_anthropology.nagpraInventoryName.name',
-                defaultMessage: 'NAGPRA inventory',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -1605,8 +1612,8 @@ export default (configContext) => {
             [config]: {
               defaultValue: 'notOnAnInventory',
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_pahma.nagpraInventoryName.fullName',
+                name: {
+                  id: 'field.collectionobjects_anthropology.nagpraInventoryName.name',
                   defaultMessage: 'NAGPRA inventory',
                 },
               }),
@@ -1622,12 +1629,6 @@ export default (configContext) => {
         },
         nagpraApplicabilityList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_anthropology.nagpraApplicabilityList.name',
-                defaultMessage: 'Museum\'s NAGPRA category det.',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -1636,8 +1637,8 @@ export default (configContext) => {
             [config]: {
               defaultValue: 'nonNagpra',
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_anthropology.nagpraApplicability.fullName',
+                name: {
+                  id: 'field.collectionobjects_anthropology.nagpraApplicability.name',
                   defaultMessage: 'Museum\'s NAGPRA category det.',
                 },
               }),
@@ -1653,12 +1654,6 @@ export default (configContext) => {
         },
         nagpraCulturalDeterminationList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_anthropology.nagpraCulturalDeterminationList.name',
-                defaultMessage: 'NAGPRA cultural determination',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -1666,8 +1661,8 @@ export default (configContext) => {
           nagpraCulturalDetermination: {
             [config]: {
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_anthropology.nagpraCulturalDetermination.fullName',
+                name: {
+                  id: 'field.collectionobjects_anthropology.nagpraCulturalDetermination.name',
                   defaultMessage: 'NAGPRA cultural determination',
                 },
               }),
@@ -1683,12 +1678,6 @@ export default (configContext) => {
         },
         repatriationNoteList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_anthropology.repatriationNoteList.name',
-                defaultMessage: 'Repatriation code',
-              },
-            }),
             view: {
               type: CompoundInput,
             },
@@ -1696,9 +1685,9 @@ export default (configContext) => {
           repatriationNote: {
             [config]: {
               messages: defineMessages({
-                fullName: {
-                  id: 'field.collectionobjects_anthropology.repatriationNote.fullName',
-                  defaultMessage: 'Repatriation code',
+                name: {
+                  id: 'field.collectionobjects_anthropology.repatriationNote.name',
+                  defaultMessage: 'Repatriation note',
                 },
               }),
               repeating: true,

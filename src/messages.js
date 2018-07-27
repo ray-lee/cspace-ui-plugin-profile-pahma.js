@@ -13,6 +13,11 @@ export default {
   'footer.feedback': 'Contact UC Berkeley CollectionSpace support',
   'footer.feedbackUrl': 'mailto:cspace-support@lists.berkeley.edu',
 
+  'createPage.procedure': 'Actions',
+  'record.procedure.name': 'Action',
+  'record.procedure.collectionName': 'Actions',
+  'record.authority.collectionName': 'Authority Terms',
+
   // acquisition
 
   'record.aquisition.name': 'Accession',
@@ -28,12 +33,21 @@ export default {
   'field.collectionobjects_common.objectNumber.name': 'Museum number',
   'field.collectionobjects_common.numberOfObjects.name': 'Number of pieces',
   'field.collectionobjects_common.comment.name': 'Object comment',
-  'field.collectionobjects_common.assocPeopleGroup.name': 'Associated cultural group',
+  'field.collectionobjects_common.materialComponentNote.fullName': 'Material note',
+  'field.collectionobjects_common.materialComponentNote.name': 'Note',
+  'field.collectionobjects_common.computedCurrentLocation.name': 'Current storage location',
+  'field.collectionobjects_common.fieldCollectionSource.name': 'Field collection source (person or cultural group)',
+  // TODO: Make the parenthetical a separate prop
+  'field.collectionobjects_common.assocPeopleGroup.name': 'Associated cultural group (excl. production culture and culture depicted)',
+  'field.collectionobjects_common.assocPeople.fullName': 'Associated cultural group',
   'field.collectionobjects_common.assocPeople.name': 'Cultural group',
   'field.collectionobjects_common.sex.name': 'Sex determination',
   'field.collectionobjects_common.responsibleDepartment.name': 'Responsible collection manager',
   'field.collectionobjects_common.phase.name': 'Phase or biological age group',
   'field.collectionobjects_common.form.name': 'Form (as stored)',
+  'field.collectionobjects_naturalhistory.taxon.fullName': 'Taxonomic name',
+  'field.collectionobjects_naturalhistory.taxon.name': 'Name',
+  'field.collectionobjects_naturalhistory.identKind.name': 'Kind',
   'field.collectionobjects_common.contentActivity.name': 'Activity depicted',
   'field.collectionobjects_common.contentConcept.name': 'Concept depicted',
   'field.collectionobjects_common.contentDateGroup.name': 'Date depicted',
@@ -48,9 +62,17 @@ export default {
   'field.collectionobjects_common.collection.name': 'Object type',
   'field.collectionobjects_common.inscriptionContentMethod.name': 'Inscription method',
   'field.collectionobjects_common.inscriptionContentPosition.name': 'Inscription position',
+  // TODO: Make the parenthetical a separate prop
+  'field.collectionobjects_common.assocObjectGroup.name': 'Associated object (excl. cataloged or depicted objects)',
+  // TODO: Make the parenthetical a separate prop
+  'field.collectionobjects_common.assocPersonGroup.name': 'Associated person (excl. makers, owners)',
+  // TODO: Make the parenthetical a separate prop
+  'field.collectionobjects_common.assocPlaceGroup.name': 'Associated place (excl. field collection place, production place and place depicted)',
+  'field.collectionobjects_common.assocEventPeople.name': 'Associated event cultural group',
   'field.collectionobjects_common.objectProductionPeopleGroup.name': 'Production cultural group',
   'field.collectionobjects_common.objectProductionPeople.fullName': 'Production cultural group',
   'field.collectionobjects_common.objectProductionPeople.name': 'Cultural group',
+  'field.collectionobjects_naturalhistory.reference.name': 'Reference',
   'panel.collectionobject.content': 'Content Depicted',
   'panel.collectionobject.reference': 'Bibliographic Reference Information',
 
