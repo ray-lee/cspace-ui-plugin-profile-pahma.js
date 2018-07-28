@@ -1988,4 +1988,38 @@ export default {
       },
     }),
   },
+  objectParentTypes: {
+    values: [
+      'component',
+      'set',
+      'derivative',
+      'separable-part',
+      'non-separable-part',
+      'recto',
+      'verso',
+    ],
+    messages: defineMessages({
+      component: {
+        id: 'option.objectParentTypes.component',
+        defaultMessage: 'main record',
+      },
+    }),
+  },
+  objectChildTypes: {
+    values: [
+      'component',
+      'set',
+      'derivative',
+      'separable-part',
+      'non-separable-part',
+      'recto',
+      'verso',
+    ],
+    messages: defineMessages({
+      component: {
+        id: 'option.objectChildTypes.component',
+        defaultMessage: 'component',
+      },
+    }),
+  },
 };
