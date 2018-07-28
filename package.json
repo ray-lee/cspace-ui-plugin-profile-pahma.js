@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-pahma",
-  "version": "0.0.2",
+  "version": "1.0.0-rc.1",
   "description": "PAHMA profile plugin for the CollectionSpace UI",
   "author": "",
   "license": "ECL-2.0",
@@ -41,7 +41,7 @@
     "test-selenium": "wdio wdio.conf.js"
   },
   "dependencies": {
-    "cspace-ui-plugin-ext-ucbnh-collectionobject": "0.0.2",
+    "cspace-ui-plugin-ext-ucbnh-collectionobject": "0.0.3",
     "cspace-ui-plugin-record-taxon": "^0.0.9",
     "react-intl": "^2.3.0"
   },
@@ -61,7 +61,7 @@
     "chai-immutable": "^1.6.0",
     "coveralls": "^3.0.2",
     "cross-env": "^2.0.0",
-    "cspace-ui": "^1.0.0-rc.37",
+    "cspace-ui": "^1.0.0-rc.38",
     "css-loader": "^0.28.9",
     "eslint": "^3.2.2",
     "eslint-config-airbnb": "^12.0.0",
