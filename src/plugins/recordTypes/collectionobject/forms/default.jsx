@@ -123,6 +123,20 @@ const template = (configContext) => {
           </Field>
         </Field>
 
+        <Field name="taxonomicIdentGroupList" subpath="ns2:collectionobjects_naturalhistory">
+          <Field name="taxonomicIdentGroup">
+            <Field name="taxon" />
+            <Field name="qualifier" />
+            <Field name="identBy" />
+            <Field name="identDateGroup" />
+            <Field name="institution" />
+            <Field name="identKind" />
+            <Field name="reference" />
+            <Field name="refPage" />
+            <Field name="notes" />
+          </Field>
+        </Field>
+
         <Field name="titleGroupList">
           <Field name="titleGroup">
             <Panel>
@@ -321,26 +335,6 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="desc" collapsible collapsed>
-        <Row>
-          <Field name="forms">
-            <Field name="form" />
-          </Field>
-
-          <Field name="copyNumber" />
-          <Field name="editionNumber" />
-
-          <Col>
-            <Field name="styles">
-              <Field name="style" />
-            </Field>
-          </Col>
-
-          <Col>
-            <Field name="colors">
-              <Field name="color" />
-            </Field>
-          </Col>
-        </Row>
 
         <Field name="physicalDescription" />
         <Field name="distinguishingFeatures" />
@@ -355,43 +349,6 @@ const template = (configContext) => {
             </Field>
           </Col>
         </Row>
-
-
-        <Panel name="bio" collapsible collapsed>
-          <Cols>
-            <Col>
-              <Row>
-                <Field name="sex" />
-                <Field name="phase" />
-              </Row>
-            </Col>
-
-            <Col>
-              <Field name="ageEstimateGroupList" subpath="ns2:collectionobjects_pahma">
-                <Field name="ageEstimateGroup">
-                  <Field name="ageEstimate" />
-                  <Field name="ageEstimateQualifier" />
-                  <Field name="ageEstimateUnit" />
-                  <Field name="ageEstimateNote" />
-                </Field>
-              </Field>
-            </Col>
-          </Cols>
-
-          <Field name="taxonomicIdentGroupList" subpath="ns2:collectionobjects_naturalhistory">
-            <Field name="taxonomicIdentGroup">
-              <Field name="taxon" />
-              <Field name="qualifier" />
-              <Field name="identBy" />
-              <Field name="identDateGroup" />
-              <Field name="institution" />
-              <Field name="identKind" />
-              <Field name="reference" />
-              <Field name="refPage" />
-              <Field name="notes" />
-            </Field>
-          </Field>
-        </Panel>
 
         <Panel name="content" collapsible collapsed>
           <Field name="contentDescription" />

@@ -30,6 +30,7 @@ export default {
 
   // collection object
 
+  'field.collectionobjects_common.briefDescription.name': 'Description',
   'field.collectionobjects_common.objectNumber.name': 'Museum number',
   'field.collectionobjects_common.numberOfObjects.name': 'Number of pieces',
   'field.collectionobjects_common.comment.name': 'Object comment',
