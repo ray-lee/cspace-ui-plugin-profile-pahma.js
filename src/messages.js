@@ -76,6 +76,8 @@ export default {
   'field.collectionobjects_naturalhistory.reference.name': 'Reference',
   'panel.collectionobject.content': 'Content Depicted',
   'panel.collectionobject.reference': 'Bibliographic Reference Information',
+  'column.collectionobject.default.objectNumber': 'Museum number',
+  'column.collectionobject.narrow.objectNumber': 'Number',
 
   // concept
 
