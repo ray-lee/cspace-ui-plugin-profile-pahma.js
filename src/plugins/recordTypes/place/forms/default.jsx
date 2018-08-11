@@ -40,11 +40,11 @@ const template = (configContext) => {
                 <Field name="termPrefForLang" />
               </Row>
 
-              <InputTable name="nameDetail">
+              <Row>
                 <Field name="nameAbbrev" />
                 <Field name="nameNote" />
                 <Field name="nameDateGroup" />
-              </InputTable>
+              </Row>
 
               <InputTable name="termSource">
                 <Field name="termSource" />
