@@ -321,6 +321,10 @@ export default (configContext) => {
         inventoryAnalyst: {
           [config]: {
             messages: defineMessages({
+              fullName: {
+                id: 'field.osteology_common.inventoryAnalyst.fullName',
+                defaultMessage: 'Inventory analyst',
+              },
               name: {
                 id: 'field.osteology_common.inventoryAnalyst.name',
                 defaultMessage: 'Analyst',
@@ -339,6 +343,10 @@ export default (configContext) => {
           [config]: {
             dataType: DATA_TYPE_DATE,
             messages: defineMessages({
+              fullName: {
+                id: 'field.osteology_common.inventoryDate.fullName',
+                defaultMessage: 'Inventory date',
+              },
               name: {
                 id: 'field.osteology_common.inventoryDate.name',
                 defaultMessage: 'Date',
