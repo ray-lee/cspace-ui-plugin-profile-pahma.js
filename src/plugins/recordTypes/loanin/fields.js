@@ -78,8 +78,8 @@ export default (configContext) => {
             view: {
               type: StructuredDateInput,
             },
-            ...extensions.structuredDate.fields,
           },
+          ...extensions.structuredDate.fields,
         },
         loanReturnDateGroup: {
           [config]: {
@@ -96,8 +96,8 @@ export default (configContext) => {
             view: {
               type: StructuredDateInput,
             },
-            ...extensions.structuredDate.fields,
           },
+          ...extensions.structuredDate.fields,
         },
       },
     },
