@@ -72,4 +72,21 @@ export default {
       servicePath: 'urn:cspace:name(objectname)',
     },
   },
+  objectclass: {
+    messages: defineMessages({
+      name: {
+        id: 'vocab.concept.objectclass.name',
+        description: 'The name of the vocabulary.',
+        defaultMessage: 'Object Class',
+      },
+      collectionName: {
+        id: 'vocab.concept.objectclass.collectionName',
+        description: 'The name of a collection of records from the vocabulary.',
+        defaultMessage: 'Object Classes',
+      },
+    }),
+    serviceConfig: {
+      servicePath: 'urn:cspace:name(objectclass)',
+    },
+  },
 };
