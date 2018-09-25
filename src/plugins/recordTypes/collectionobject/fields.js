@@ -1384,6 +1384,67 @@ export default (configContext) => {
             },
           },
         },
+        objectClassList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          objectClassGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_common.objectClassGroup.name',
+                  defaultMessage: 'Object class',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            objectClassName: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_common.objectClassName.fullName',
+                    defaultMessage: 'Object class name',
+                  },
+                  name: {
+                    id: 'field.collectionobjects_common.objectClassName.name',
+                    defaultMessage: 'Name',
+                  },
+                }),
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'concept/objectclass'
+                  }
+                },
+              },
+            },
+            objectClassNote: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_common.objectClassNote.fullName',
+                    defaultMessage: 'Object class note',
+                  },
+                  name: {
+                    id: 'field.collectionobjects_common.objectClassNote.name',
+                    defaultMessage: 'Note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+          },
+        },
       },
       'ns2:collectionobjects_anthropology': {
         [config]: {
