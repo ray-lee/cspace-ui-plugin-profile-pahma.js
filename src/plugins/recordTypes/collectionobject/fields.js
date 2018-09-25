@@ -1421,8 +1421,8 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'concept/objectclass'
-                  }
+                    source: 'concept/objectclass',
+                  },
                 },
               },
             },
