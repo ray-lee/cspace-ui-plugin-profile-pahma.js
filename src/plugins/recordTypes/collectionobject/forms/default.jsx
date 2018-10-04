@@ -63,7 +63,7 @@ const template = (configContext) => {
           <Field name="computedCrate" subpath="ns2:collectionobjects_anthropology" />
         </Row>
 
-        <Field name="objectClassList" subpath="ns2:collectionobjects_pahma">
+        <Field name="objectClassGroupList" subpath="ns2:collectionobjects_pahma">
           <Field name="objectClassGroup">
             <Field name="objectClassName" />
             <Field name="objectClassNote" />

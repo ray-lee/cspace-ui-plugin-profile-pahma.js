@@ -1384,7 +1384,7 @@ export default (configContext) => {
             },
           },
         },
-        objectClassList: {
+        objectClassGroupList: {
           [config]: {
             view: {
               type: CompoundInput,
@@ -1394,7 +1394,7 @@ export default (configContext) => {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.collectionobjects_common.objectClassGroup.name',
+                  id: 'field.collectionobjects_pahma.objectClassGroup.name',
                   defaultMessage: 'Object class',
                 },
               }),
@@ -1410,11 +1410,11 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.collectionobjects_common.objectClassName.fullName',
+                    id: 'field.collectionobjects_pahma.objectClassName.fullName',
                     defaultMessage: 'Object class name',
                   },
                   name: {
-                    id: 'field.collectionobjects_common.objectClassName.name',
+                    id: 'field.collectionobjects_pahma.objectClassName.name',
                     defaultMessage: 'Name',
                   },
                 }),
@@ -1430,11 +1430,11 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.collectionobjects_common.objectClassNote.fullName',
+                    id: 'field.collectionobjects_pahma.objectClassNote.fullName',
                     defaultMessage: 'Object class note',
                   },
                   name: {
-                    id: 'field.collectionobjects_common.objectClassNote.name',
+                    id: 'field.collectionobjects_pahma.objectClassNote.name',
                     defaultMessage: 'Note',
                   },
                 }),
