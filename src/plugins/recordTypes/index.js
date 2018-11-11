@@ -1,4 +1,5 @@
 import acquisition from './acquisition';
+import all from './all';
 import citation from './citation';
 import claim from './claim';
 import collectionobject from './collectionobject';
@@ -24,6 +25,7 @@ import conditioncheck from './conditioncheck';
 
 export default [
   acquisition,
+  all,
   citation,
   claim,
   collectionobject,
