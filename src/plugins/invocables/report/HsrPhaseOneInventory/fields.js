@@ -22,7 +22,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.report.HsrPhaseOneInventory.Start Location.name',
-              defaultMessage: 'Start location'
+              defaultMessage: 'Start location',
             },
           }),
           required: true,
@@ -36,7 +36,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.report.HsrPhaseOneInventory.End Location.name',
-              defaultMessage: 'End location'
+              defaultMessage: 'End location',
             },
           }),
           required: true,

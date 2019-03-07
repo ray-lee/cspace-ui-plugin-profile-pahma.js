@@ -10,7 +10,7 @@ const template = (configContext) => {
   } = configContext.recordComponents;
 
   return (
-    <Field name="params"> 
+    <Field name="params">
       <Field name="Start Location" />
       <Field name="End Location" />
     </Field>

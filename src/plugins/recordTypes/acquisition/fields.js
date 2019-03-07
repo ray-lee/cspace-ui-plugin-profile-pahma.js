@@ -29,6 +29,14 @@ export default (configContext) => {
             },
           },
         },
+        acquisitionAuthorizerDate: {
+          [config]: {
+            dataType: null,
+            view: {
+              type: TextInput,
+            },
+          },
+        },
         acquisitionMethod: {
           [config]: {
             view: {

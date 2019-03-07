@@ -26,7 +26,7 @@ export default (configContext) => {
             },
           }),
           view: {
-            type: TextInput
+            type: TextInput,
           },
         },
       },
