@@ -1,4 +1,5 @@
 import { defineMessages } from 'react-intl';
+import { undoFormatting } from './utils';
 
 export default (configContext) => {
   const {
@@ -7,6 +8,9 @@ export default (configContext) => {
 
   return {
     default: {
+      objectNumber: {
+        sortBy: 'collectionobjects_pahma:sortableObjectNumber',
+      },
       'objectName|title|taxon': {
         // If it's a taxon, it will need to be formatted as a ref name.
         formatValue: value => formatRefName(value) || value,
@@ -24,6 +28,9 @@ export default (configContext) => {
       },
     },
     narrow: {
+      objectNumber: {
+        sortBy: 'collectionobjects_pahma:sortableObjectNumber',
+      },
       'objectName|title|taxon': {
         // If it's a taxon, it will need to be formatted as a ref name.
         formatValue: value => formatRefName(value) || value,
