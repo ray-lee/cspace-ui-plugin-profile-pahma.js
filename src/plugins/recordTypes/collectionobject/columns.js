@@ -1,5 +1,4 @@
 import { defineMessages } from 'react-intl';
-import { undoFormatting } from './utils';
 
 export default (configContext) => {
   const {
