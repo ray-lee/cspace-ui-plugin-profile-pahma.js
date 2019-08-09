@@ -4,6 +4,8 @@ services:
 language: node_js
 node_js:
   - "8"
+services:
+  - xvfb
 script:
   - npm run check
 after_success:
