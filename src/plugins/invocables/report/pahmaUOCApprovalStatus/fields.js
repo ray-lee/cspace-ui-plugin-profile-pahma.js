@@ -30,7 +30,7 @@ export default (configContext) => {
             type: OptionPickerInput,
             props: {
               source: 'uocApprovalStatusMIMETypes',
-            }
+            },
           },
         },
       },

@@ -36,14 +36,14 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-                id: 'field.pahmaUOCRequesterbyObject.ObjectNumber.name',
-                defaultMessage: 'ObjectNumber',
-              },
-            }),
-            view: {
-              type: AutocompleteInput,
-              props: {
-                source: 'person/local,person/shared,organization/local,organization/shared',
+              id: 'field.pahmaUOCRequesterbyObject.ObjectNumber.name',
+              defaultMessage: 'ObjectNumber',
+            },
+          }),
+          view: {
+            type: AutocompleteInput,
+            props: {
+              source: 'person/local,person/shared,organization/local,organization/shared',
             },
           },
         },
