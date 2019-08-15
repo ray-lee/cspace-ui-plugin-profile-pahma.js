@@ -11,7 +11,9 @@ const template = (configContext) => {
 
   return (
     <Field name="document">
-      <Field name="object_csid" />
+      <Field name="Requester" />
+      <Field name="ObjectNumber" />
+      <Field name="OutputMIME" />
     </Field>
   );
 };
@@ -19,7 +21,7 @@ const template = (configContext) => {
 export default configContext => ({
   messages: defineMessages({
     name: {
-      id: 'form.report.ComponentCheckSubReport.default.name',
+      id: 'form.report.pahmaUOCRequesterbyObject.default.name',
       defaultMessage: 'Standard Template',
     },
   }),

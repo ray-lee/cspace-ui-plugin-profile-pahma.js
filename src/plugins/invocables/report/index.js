@@ -3,9 +3,10 @@ import SystematicInventoryUI from './SystematicInventoryUI';
 import ComponentCheck from './ComponentCheck';
 import HsrPhaseOneInventory from './HsrPhaseOneInventory';
 import govholdings from './govholdings';
-import ComponentCheckSubReport from './ComponentCheckSubReport';
 import SystematicInventoryHSR from './SystematicInventoryHSR';
 import pahmaUOCApprovalStatus from './pahmaUOCApprovalStatus';
+import keyinfobyloc from './keyinfobyloc';
+import pahmaUOCRequesterbyObject from './pahmaUOCRequesterbyObject';
 
 export default [
   SystematicInventory,
@@ -13,7 +14,8 @@ export default [
   ComponentCheck,
   HsrPhaseOneInventory,
   govholdings,
-  ComponentCheckSubReport,
+  keyinfobyloc,
   SystematicInventoryHSR,
   pahmaUOCApprovalStatus,
+  pahmaUOCRequesterbyObject,
 ];
