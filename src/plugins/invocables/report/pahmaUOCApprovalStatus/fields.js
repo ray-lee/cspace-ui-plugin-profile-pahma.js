@@ -6,7 +6,6 @@ export default (configContext) => {
     OptionPickerInput,
     TermPickerInput,
     DateInput,
-    TextInput,
     AutocompleteInput,
   } = configContext.inputComponents;
 
@@ -48,7 +47,11 @@ export default (configContext) => {
             },
           }),
           view: {
-            type: TextInput,
+            type: AutocompleteInput,
+            props: {
+              source: 'person/local,person/shared,organization/local,organization/shared',
+              showQuickAdd: false,
+            },
           },
         },
       },
@@ -64,6 +67,7 @@ export default (configContext) => {
             type: AutocompleteInput,
             props: {
               source: 'person/local,person/shared,organization/local,organization/shared',
+              showQuickAdd: false,
             },
           },
         },
