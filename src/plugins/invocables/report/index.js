@@ -6,7 +6,7 @@ import govholdings from './govholdings';
 import SystematicInventoryHSR from './SystematicInventoryHSR';
 import pahmaUOCApprovalStatus from './pahmaUOCApprovalStatus';
 import keyinfobyloc from './keyinfobyloc';
-import pahmaUOCRequesterbyObject from './pahmaUOCRequesterbyObject';
+import pahmaUOCbyRequesterObject from './pahmaUOCbyRequesterObject';
 
 export default [
   SystematicInventory,
@@ -17,5 +17,5 @@ export default [
   keyinfobyloc,
   SystematicInventoryHSR,
   pahmaUOCApprovalStatus,
-  pahmaUOCRequesterbyObject,
+  pahmaUOCbyRequesterObject,
 ];
