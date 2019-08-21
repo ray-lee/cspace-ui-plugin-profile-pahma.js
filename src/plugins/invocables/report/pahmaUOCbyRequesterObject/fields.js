@@ -23,15 +23,12 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUOCRequesterbyObject.Requester.name',
+              id: 'field.pahmaUOCbyRequesterObject.Requester.name',
               defaultMessage: 'Requester',
             },
           }),
           view: {
-            type: AutocompleteInput,
-            props: {
-              source: 'person/local,person/shared,organization/local,organization/shared',
-            },
+            type: TextInput,
           },
         },
       },
@@ -39,12 +36,16 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUOCRequesterbyObject.ObjectNumber.name',
+              id: 'field.pahmaUOCbyRequesterObject.ObjectNumber.name',
               defaultMessage: 'ObjectNumber',
             },
           }),
           view: {
-            type: TextInput,
+            type: AutocompleteInput,
+            props: {
+              source: 'concept/activity,concept/archculture,concept/ethculture,concept/ethusecode,concept/material,concept/objectclass,concept/objectname',
+              showQuickAdd: false,
+            },
           },
         },
       },
@@ -53,7 +54,7 @@ export default (configContext) => {
           defaultValue: 'application/pdf',
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUOCRequesterbyObject.OutputMIME.name',
+              id: 'field.pahmaUOCbyRequesterObject.OutputMIME.name',
               defaultMessage: 'Output format',
             },
           }),
