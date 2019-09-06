@@ -28,7 +28,11 @@ export default (configContext) => {
             },
           }),
           view: {
-            type: TextInput,
+            type: AutocompleteInput,
+            props: {
+              source: 'concept/activity,concept/archculture,concept/ethculture,concept/ethusecode,concept/material,concept/objectclass,concept/objectname',
+              showQuickAdd: false,
+            },
           },
         },
       },
@@ -37,15 +41,11 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.pahmaUOCbyRequesterObject.ObjectNumber.name',
-              defaultMessage: 'ObjectNumber',
+              defaultMessage: 'Object number',
             },
           }),
           view: {
-            type: AutocompleteInput,
-            props: {
-              source: 'concept/activity,concept/archculture,concept/ethculture,concept/ethusecode,concept/material,concept/objectclass,concept/objectname',
-              showQuickAdd: false,
-            },
+            type: TextInput,
           },
         },
       },
