@@ -21,7 +21,6 @@ module.exports = () => ({
   prettyUrls: true,
   relationMemberPerm: 'R',
   structDateOptionListNames: ['dateQualifiers', 'dateera', 'datecertainty', 'datequalifier'],
-  structDateVocabNames: [],
   tenantId: '15',
   pluginInfo: {
     cspaceUIPluginProfilePAHMA: {
