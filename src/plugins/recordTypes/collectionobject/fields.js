@@ -1362,9 +1362,9 @@ export default (configContext) => {
               }),
               repeating: true,
               view: {
-                type: OptionPickerInput,
+                type: TermPickerInput,
                 props: {
-                  source: 'pahmaNagpraCodeLegacyCategories',
+                  source: 'pahmaNagpraCodeLegacies',
                 },
               },
             },
@@ -1680,9 +1680,9 @@ export default (configContext) => {
               }),
               repeating: true,
               view: {
-                type: OptionPickerInput,
+                type: TermPickerInput,
                 props: {
-                  source: 'pahmaInventoryNames',
+                  source: 'nagpraPahmaInventoryNames',
                 },
               },
             },
@@ -1705,9 +1705,9 @@ export default (configContext) => {
               }),
               repeating: true,
               view: {
-                type: OptionPickerInput,
+                type: TermPickerInput,
                 props: {
-                  source: 'nagpraApplicabilityCategories',
+                  source: 'nagpraPahmaApplicabilities',
                 },
               },
             },
