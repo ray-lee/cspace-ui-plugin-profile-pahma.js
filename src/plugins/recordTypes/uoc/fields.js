@@ -26,7 +26,7 @@ export default (configContext) => {
           service: {
             ns: 'http://collectionspace.org/services/uoc/local/pahma',
           },
-      },
+        },
         collectionRegion: {
           [config]: {
             messages: defineMessages({
