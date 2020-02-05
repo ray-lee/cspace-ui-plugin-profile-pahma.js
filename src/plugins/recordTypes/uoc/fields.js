@@ -2,29 +2,13 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
-    CompoundInput,
-    DateInput,
     TextInput,
-    AutocompleteInput,
-    IDGeneratorInput,
     TermPickerInput,
-    CheckboxInput,
   } = configContext.inputComponents;
 
   const {
     configKey: config,
   } = configContext.configHelpers;
-
-  const {
-    DATA_TYPE_DATE,
-    DATA_TYPE_INT,
-    DATA_TYPE_FLOAT,
-    DATA_TYPE_BOOL,
-  } = configContext.dataTypes;
-
-  const {
-    extensions,
-  } = configContext.config;
 
   return {
     document: {
@@ -42,7 +26,7 @@ export default (configContext) => {
           service: {
             ns: 'http://collectionspace.org/services/uoc/local/pahma',
           },
-        },
+      },
         collectionRegion: {
           [config]: {
             messages: defineMessages({
