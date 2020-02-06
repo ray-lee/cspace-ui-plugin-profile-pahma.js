@@ -202,4 +202,5 @@ export default {
   'field.uoc_common.dateRequested.name': 'Date of request',
   'field.uoc_common.hoursSpent.name': 'Hours for project',
   'field.uoc_common.staffHours.name': 'Hours for project',
+  'field.uoc_common.subcollection.name': 'Subcollection or region',
 };
