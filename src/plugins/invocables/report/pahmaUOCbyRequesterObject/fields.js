@@ -30,7 +30,7 @@ export default (configContext) => {
           view: {
             type: AutocompleteInput,
             props: {
-              source: 'concept/activity,concept/archculture,concept/ethculture,concept/ethusecode,concept/material,concept/objectclass,concept/objectname',
+              source: 'person/local,organization/local',
               showQuickAdd: false,
             },
           },
