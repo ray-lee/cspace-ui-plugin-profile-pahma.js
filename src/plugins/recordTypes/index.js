@@ -19,6 +19,7 @@ import osteology from './osteology';
 import person from './person';
 import place from './place';
 import taxon from './taxon';
+import uoc from './uoc';
 import valuation from './valuation';
 import work from './work';
 import conditioncheck from './conditioncheck';
@@ -45,6 +46,7 @@ export default [
   osteology,
   person,
   place,
+  uoc,
   taxon,
   valuation,
   work,

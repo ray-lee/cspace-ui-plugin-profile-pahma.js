@@ -199,4 +199,8 @@ export default {
   'field.uoc_common.method.name': 'Type of use',
   'field.uoc_common.materialType.name': 'Research type',
   'field.uoc_common.useDateGroup.name': 'Visit date',
+  'field.uoc_common.dateRequested.name': 'Date of request',
+  'field.uoc_common.hoursSpent.name': 'Hours for project',
+  'field.uoc_common.staffHours.name': 'Hours for project',
+  'field.uoc_common.subcollection.name': 'Subcollection or region',
 };
