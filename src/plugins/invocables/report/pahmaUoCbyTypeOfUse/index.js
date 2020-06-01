@@ -4,7 +4,7 @@ import forms from './forms';
 export default () => configContext => ({
   invocables: {
     report: {
-      pahmaUOCbyTypeOfUse: {
+      pahmaUoCbyTypeOfUse: {
         fields: fields(configContext),
         forms: forms(configContext),
       },

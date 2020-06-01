@@ -3,8 +3,8 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     CompoundInput,
-    DateInput,
     AutocompleteInput,
+    DateInput,
   } = configContext.inputComponents;
 
   const {
@@ -22,7 +22,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUOCbyTypeOfUse.StaffName.name',
+              id: 'field.pahmaUoCbyTypeOfUse.StaffName.name',
               defaultMessage: 'Staff Name',
             },
           }),
@@ -39,7 +39,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUOCbyTypeOfUse.VisitDateStart.name',
+              id: 'field.pahmaUoCbyTypeOfUse.VisitDateStart.name',
               defaultMessage: 'Visit Date Start',
             },
           }),
@@ -52,7 +52,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUOCbyTypeOfUse.VisitDateEnd.name',
+              id: 'field.pahmaUoCbyTypeOfUse.VisitDateEnd.name',
               defaultMessage: 'Visit Date End',
             },
           }),
