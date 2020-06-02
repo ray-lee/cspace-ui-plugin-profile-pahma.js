@@ -12,8 +12,8 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Field name="StaffName" />
-      <Field name="VisitDateStart" />
-      <Field name="VisitDateEnd" />
+      <Field name="VisitStartDate" />
+      <Field name="VisitEndDate" />
     </Field>
   );
 };

@@ -35,12 +35,12 @@ export default (configContext) => {
           },
         },
       },
-      VisitDateStart: {
+      VisitStartDate: {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUoCbyTypeOfUse.VisitDateStart.name',
-              defaultMessage: 'Visit Date Start',
+              id: 'field.pahmaUoCbyTypeOfUse.VisitStartDate.name',
+              defaultMessage: 'Visit Start Date',
             },
           }),
           view: {
@@ -48,12 +48,12 @@ export default (configContext) => {
           },
         },
       },
-      VisitDateEnd: {
+      VisitEndDate: {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUoCbyTypeOfUse.VisitDateEnd.name',
-              defaultMessage: 'Visit Date End',
+              id: 'field.pahmaUoCbyTypeOfUse.VisitEndDate.name',
+              defaultMessage: 'Visit End Date',
             },
           }),
           view: {
