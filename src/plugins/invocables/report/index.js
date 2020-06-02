@@ -7,6 +7,7 @@ import SystematicInventoryHSR from './SystematicInventoryHSR';
 import pahmaUOCApprovalStatus from './pahmaUOCApprovalStatus';
 import keyinfobyloc from './keyinfobyloc';
 import pahmaUOCbyRequesterObject from './pahmaUOCbyRequesterObject';
+import pahmaUoCbyCollectionType from './pahmaUoCbyCollectionType';
 import pahmaUoCbyStudentVisits from './pahmaUoCbyStudentVisits';
 
 export default [
@@ -19,5 +20,6 @@ export default [
   SystematicInventoryHSR,
   pahmaUOCApprovalStatus,
   pahmaUOCbyRequesterObject,
+  pahmaUoCbyCollectionType,
   pahmaUoCbyStudentVisits,
 ];
