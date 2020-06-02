@@ -22,7 +22,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.pahmaUoCbyStudentVisits.Requester.name',
+              id: 'field.pahmaUoCbyStudentVisits.StaffName.name',
               defaultMessage: 'Staff Name',
             },
           }),
