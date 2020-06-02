@@ -23,7 +23,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.pahmaUoCbyCollectionType.StaffName.name',
-              defaultMessage: 'Staff Name',
+              defaultMessage: 'Staff name',
             },
           }),
           view: {
@@ -40,7 +40,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.pahmaUoCbyCollectionType.VisitStartDate.name',
-              defaultMessage: 'Visit Start Date',
+              defaultMessage: 'Visit start date',
             },
           }),
           view: {
@@ -53,7 +53,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.pahmaUoCbyCollectionType.VisitEndDate.name',
-              defaultMessage: 'Visit End Date',
+              defaultMessage: 'Visit end date',
             },
           }),
           view: {
