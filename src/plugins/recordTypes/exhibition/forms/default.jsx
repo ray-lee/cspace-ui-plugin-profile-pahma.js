@@ -111,11 +111,7 @@ const template = (configContext) => {
           </Field>
         </Field>
 
-        {/*
-          * TODO: Use the identically named fields in exhibitions_common, after data has been
-          * migrated.
-          */}
-        <Field name="exhibitionStatusGroupList" subpath="ns2:exhibitions_pahma">
+        <Field name="exhibitionStatusGroupList">
           <Field name="exhibitionStatusGroup">
             <Field name="exhibitionStatus" />
             <Field name="exhibitionStatusDate" />
