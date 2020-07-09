@@ -165,8 +165,8 @@ const template = (configContext) => {
               </Field>
             </Field>
 
-            <Field name="transferGroupList" subpath="ns2:claims_anthropology">
-              <Field name="transferGroup" >
+            <Field name="anthroTransferGroupList" subpath="ns2:claims_anthropology">
+              <Field name="anthroTransferGroup" >
                 <Field name="transferDate" />
                 <Field name="transferNote" />
               </Field>
