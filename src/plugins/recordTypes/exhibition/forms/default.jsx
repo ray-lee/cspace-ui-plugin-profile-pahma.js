@@ -121,11 +121,7 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="exhibitedObjectInformation" collapsible collapsed>
-        {/*
-          * TODO: Use the identically named fields in exhibitions_common, after data has been
-          * migrated.
-          */}
-        <Field name="exhibitionObjectGroupList" subpath="ns2:exhibitions_pahma">
+        <Field name="exhibitionObjectGroupList">
           <Field name="exhibitionObjectGroup">
             <Field name="exhibitionObjectNumber" />
             <Field name="exhibitionObjectName" />
