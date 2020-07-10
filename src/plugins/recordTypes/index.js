@@ -7,7 +7,6 @@ import concept from './concept';
 import contact from './contact';
 import group from './group';
 import intake from './intake';
-import exhibition from './exhibition';
 import loanin from './loanin';
 import loanout from './loanout';
 import location from './location';
@@ -35,7 +34,6 @@ export default [
   contact,
   group,
   intake,
-  exhibition,
   loanin,
   loanout,
   location,
