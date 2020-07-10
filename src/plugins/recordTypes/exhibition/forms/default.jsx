@@ -79,11 +79,7 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
-        {/*
-          * TODO: Use the identically named fields in exhibitions_common, after data has been
-          * migrated.
-          */}
-        <Field name="galleryRotationGroupList" subpath="ns2:exhibitions_pahma">
+        <Field name="galleryRotationGroupList">
           <Field name="galleryRotationGroup">
             <Field name="galleryRotationName" />
             <Field name="galleryRotationStartDateGroup" />
