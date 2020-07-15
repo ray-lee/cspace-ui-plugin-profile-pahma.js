@@ -1400,17 +1400,17 @@ export default (configContext) => {
             },
           },
         },
-        transferGroupList: {
+        anthroTransferGroupList: {
           [config]: {
             view: {
               type: CompoundInput,
             },
           },
-          transferGroup: {
+          anthroTransferGroupList: {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.claims_anthropology.transferGroup.name',
+                  id: 'field.claims_anthropology.anthroTransferGroup.name',
                   defaultMessage: 'Date of transfer',
                 },
               }),
