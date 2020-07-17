@@ -22,8 +22,21 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="media" collapsible>
+        <Cols>
+          <Col>
+            <Field name="identificationNumber" />
+
+            <Field name="publishToList">
+              <Field name="publishTo" />
+            </Field>
+          </Col>
+
+          <Col>
+            <Field name="approvedForWeb" subpath="ns2:media_pahma" />
+          </Col>
+        </Cols>
+
         <Row>
-          <Field name="identificationNumber" />
           <Field name="approvedForWeb" subpath="ns2:media_pahma" />
         </Row>
         <Field name="description" />
