@@ -50,15 +50,25 @@ export default {
   'field.collectionobjects_naturalhistory.taxon.name': 'Name',
   'field.collectionobjects_naturalhistory.identKind.name': 'Kind',
   'field.collectionobjects_common.contentActivity.name': 'Activity depicted',
+  'field.collectionobjects_common.contentActivity.fullnName': 'Activity depicted',
   'field.collectionobjects_common.contentConcept.name': 'Concept depicted',
+  'field.collectionobjects_common.contentConcept.fullName': 'Concept depicted',
   'field.collectionobjects_common.contentDateGroup.name': 'Date depicted',
+  'field.collectionobjects_common.contentDateGroup.fullName': 'Date depicted',
   'field.collectionobjects_common.contentObjectGroup.name': 'Object depicted',
+  'field.collectionobjects_common.contentObjectGroup.fullName': 'Object depicted',
   'field.collectionobjects_common.contentPeople.name': 'Cultural group depicted',
+  'field.collectionobjects_common.contentPeople.fullName': 'Cultural group depicted',
   'field.collectionobjects_common.contentPerson.name': 'Person depicted',
+  'field.collectionobjects_common.contentPerson.fullName': 'Person depicted',
   'field.collectionobjects_common.contentPlace.name': 'Place depicted',
+  'field.collectionobjects_common.contentPlace.fullName': 'Place depicted',
   'field.collectionobjects_common.contentOrganization.name': 'Organization depicted',
+  'field.collectionobjects_common.contentOrganization.fullName': 'Organization depicted',
   'field.collectionobjects_common.contentEventNameGroup.name': 'Event depicted',
+  'field.collectionobjects_common.contentEventNameGroup.fullName': 'Event depicted',
   'field.collectionobjects_common.contentOtherGroup.name': 'Other depicted',
+  'field.collectionobjects_common.contentOtherGroup.fullName': 'Other depicted',
   'field.collectionobjects_common.usageGroup.name': 'Context of use',
   'field.collectionobjects_common.collection.name': 'Object type',
   'field.collectionobjects_common.inscriptionContentMethod.name': 'Inscription method',
@@ -84,6 +94,7 @@ export default {
   'vocab.concept.activity.collectionName': 'Activities',
   'vocab.concept.material.collectionName': 'Materials',
   'field.concepts_common.historicalStatus.name': 'Current?',
+  'field.concepts_common.historicalStatus.fullName': 'Current term?',
 
   // contact
 
@@ -175,6 +186,7 @@ export default {
   'field.organizations_common.foundingPlace.name': 'Founding place',
   'field.organizations_common.group.name': 'Cultural group',
   'field.organizations_common.contactName.name': 'Related person',
+  'field.organizations_common.contactName.fullName': 'Related person name',
 
   // person
 
@@ -187,6 +199,8 @@ export default {
   'vocab.place.local.name': 'PAHMA',
   'vocab.place.local.collectionName': 'PAHMA Places',
   'field.places_common.historicalStatus.name': 'Current?',
+  'field.places_common.historicalStatus.name': 'Current term name?',
+
 
   // taxon
 
