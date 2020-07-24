@@ -1406,7 +1406,7 @@ export default (configContext) => {
               type: CompoundInput,
             },
           },
-          anthroTransferGroupList: {
+          anthroTransferGroup: {
             [config]: {
               messages: defineMessages({
                 name: {
