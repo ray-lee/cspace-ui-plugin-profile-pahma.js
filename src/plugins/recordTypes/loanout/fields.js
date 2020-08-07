@@ -59,8 +59,8 @@ export default (configContext) => {
       },
       'ns2:loansout_pahma': {
         [config]: {
-          services: {
-            ns: 'loansout_pahma:http://collectionspace.org/services/loanout/local/pahma',
+          service: {
+            ns: 'http://collectionspace.org/services/loanout/local/pahma',
           },
         },
         loanOutDateGroup: {
