@@ -31,10 +31,10 @@ const template = (configContext) => {
               </Field>
             </Field>
 
-            <Field name="claimClaimantGroupList">
-              <Field name="claimClaimantGroup">
-                <Field name="filedBy" />
-                <Field name="filedOnBehalfOf" />
+            <Field name="claimantGroupList">
+              <Field name="claimantGroup">
+                <Field name="claimFiledBy" />
+                <Field name="claimFiledOnBehalfOf" />
                 <Field name="claimantNote" />
               </Field>
             </Field>

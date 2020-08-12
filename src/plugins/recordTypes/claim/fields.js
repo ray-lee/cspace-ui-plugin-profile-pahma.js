@@ -64,17 +64,17 @@ export default (configContext) => {
             },
           },
         },
-        claimClaimantGroupList: {
+        claimantGroupList: {
           [config]: {
             view: {
               type: CompoundInput,
             },
           },
-          claimClaimantGroup: {
+          claimantGroup: {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.claims_common.claimClaimantGroup.name',
+                  id: 'field.claims_common.claimantGroup.name',
                   defaultMessage: 'Claimant',
                 },
               }),
@@ -86,11 +86,11 @@ export default (configContext) => {
                 },
               },
             },
-            filedBy: {
+            claimFiledBy: {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.claims_common.filedBy.name',
+                    id: 'field.claims_common.claimFiledBy.name',
                     defaultMessage: 'Filed by',
                   },
                 }),
@@ -102,15 +102,15 @@ export default (configContext) => {
                 },
               },
             },
-            filedOnBehalfOf: {
+            claimFiledOnBehalfOf: {
               [config]: {
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.claims_common.filedOnBehalfOf.fullName',
+                    id: 'field.claims_common.claimFiledOnBehalfOf.fullName',
                     defaultMessage: 'Filed on behalf of',
                   },
                   name: {
-                    id: 'field.claims_common.filedOnBehalfOf.name',
+                    id: 'field.claims_common.claimFiledOnBehalfOf.name',
                     defaultMessage: 'On behalf of',
                   },
                 }),
