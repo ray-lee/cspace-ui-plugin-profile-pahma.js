@@ -36,9 +36,6 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
-        <Row>
-          <Field name="approvedForWeb" subpath="ns2:media_pahma" />
-        </Row>
         <Field name="description" />
 
         <Panel name="file" collapsible>
