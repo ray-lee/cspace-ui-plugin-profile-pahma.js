@@ -4,6 +4,7 @@
 
 import cspaceUIPluginRecordTaxon from 'cspace-ui-plugin-record-taxon';
 import cspaceUIPluginExtUCBNHCollectionObject from 'cspace-ui-plugin-ext-ucbnh-collectionobject';
+import annotationExtensionPlugin from 'cspace-ui-plugin-ext-annotation';
 import { defineMessages } from 'react-intl';
 import logo from '../images/logo.svg';
 import messages from './messages';
@@ -36,6 +37,7 @@ module.exports = () => ({
   plugins: [
     cspaceUIPluginRecordTaxon(),
     cspaceUIPluginExtUCBNHCollectionObject(),
+    annotationExtensionPlugin(),
     ...plugins.map(plugin => plugin()),
   ],
 });

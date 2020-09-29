@@ -1763,6 +1763,7 @@ export default (configContext) => {
         },
       },
       ...extensions['ucbnh-collectionobject'].fields,
+      ...extensions.annotation.collectionobject.fields,
     },
   };
 };
