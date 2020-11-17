@@ -185,7 +185,7 @@ export default {
   'field.organizations_common.foundingDateGroup.name': 'Founding date',
   'field.organizations_common.foundingPlace.name': 'Founding place',
   'field.organizations_common.group.name': 'Cultural group',
-  "field.organizations_common.contactGroup.name": 'Related person',
+  'field.organizations_common.contactGroup.name': 'Related person',
   'field.organizations_common.contactName.name': 'Name',
   'field.organizations_common.contactName.fullName': 'Related person name',
 
@@ -199,7 +199,6 @@ export default {
 
   'vocab.place.local.name': 'PAHMA',
   'vocab.place.local.collectionName': 'PAHMA Places',
-  'field.places_common.historicalStatus.name': 'Current?',
   'field.places_common.historicalStatus.name': 'Current term name?',
 
 

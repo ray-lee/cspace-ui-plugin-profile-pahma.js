@@ -1345,31 +1345,6 @@ export default (configContext) => {
             },
           },
         },
-        pahmaNagpraCodeLegacyList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          pahmaNagpraCodeLegacy: {
-            [config]: {
-              defaultValue: 'noCode',
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_pahma.pahmaNagpraCodeLegacy.name',
-                  defaultMessage: 'Grave association code',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: TermPickerInput,
-                props: {
-                  source: 'pahmaNagpraCodeLegacies',
-                },
-              },
-            },
-          },
-        },
         sortableObjectNumber: {
           [config]: {
             messages: defineMessages({
@@ -1663,56 +1638,6 @@ export default (configContext) => {
             },
           },
         },
-        nagpraInventoryNameList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          nagpraInventoryName: {
-            [config]: {
-              defaultValue: 'notOnAnInventory',
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_anthropology.nagpraInventoryName.name',
-                  defaultMessage: 'NAGPRA inventory',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: TermPickerInput,
-                props: {
-                  source: 'nagpraPahmaInventoryNames',
-                },
-              },
-            },
-          },
-        },
-        nagpraApplicabilityList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          nagpraApplicability: {
-            [config]: {
-              defaultValue: 'nonNagpra',
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_anthropology.nagpraApplicability.name',
-                  defaultMessage: 'Museum\'s NAGPRA category det.',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: TermPickerInput,
-                props: {
-                  source: 'nagpraPahmaApplicabilities',
-                },
-              },
-            },
-          },
-        },
         nagpraCulturalDeterminationList: {
           [config]: {
             view: {
@@ -1737,33 +1662,10 @@ export default (configContext) => {
             },
           },
         },
-        repatriationNoteList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          repatriationNote: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_anthropology.repatriationNote.name',
-                  defaultMessage: 'Repatriation note',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: TextInput,
-                props: {
-                  multiline: true,
-                },
-              },
-            },
-          },
-        },
       },
       ...extensions['ucbnh-collectionobject'].fields,
       ...extensions.annotation.collectionobject.fields,
+      ...extensions.nagpra.collectionobject.fields,
     },
   };
 };
