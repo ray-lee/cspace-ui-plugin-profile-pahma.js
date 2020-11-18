@@ -48,7 +48,7 @@ export default (configContext) => {
             view: {
               type: TermPickerInput,
               props: {
-                source: 'nagprainventory',
+                source: 'nagpraPahmaInventoryNames',
               },
             },
           },
@@ -72,7 +72,7 @@ export default (configContext) => {
             view: {
               type: TermPickerInput,
               props: {
-                source: 'nagpracategory',
+                source: 'nagpraPahmaApplicabilities',
               },
             },
           },
@@ -96,7 +96,7 @@ export default (configContext) => {
             view: {
               type: TermPickerInput,
               props: {
-                source: 'graveassoccode',
+                source: 'pahmaNagpraCodeLegacies',
               },
             },
           },
