@@ -53,8 +53,8 @@ export default (configContext) => {
       <Field name="nagpraReportFiledGroupList" subpath="ns2:collectionobjects_nagpra">
         <Field name="nagpraReportFiledGroup">
           <Field name="nagpraReportFiled" />
-          <Field name="nagpraReportFiledBy" />
           <Field name="nagpraReportFiledWith" />
+          <Field name="nagpraReportFiledBy" />
           <Field name="nagpraReportFiledDate" />
           <Field name="nagpraReportFiledNote" />
         </Field>

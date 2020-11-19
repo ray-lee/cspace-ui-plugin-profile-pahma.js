@@ -157,7 +157,7 @@ export default (configContext) => {
                 },
                 name: {
                   id: 'field.collectionobjects_nagpra.nagpraDetermCulture.name',
-                  defaultMessage: 'Culture',
+                  defaultMessage: 'Cultural affiliation',
                 },
               }),
               view: {
@@ -262,7 +262,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_nagpra.nagpraReportFiledGroup.name',
-                defaultMessage: 'Reported to National NAGPRA',
+                defaultMessage: 'Reporting history',
               },
             }),
             repeating: true,
@@ -300,7 +300,7 @@ export default (configContext) => {
                 },
                 name: {
                   id: 'field.collectionobjects_nagpra.nagpraReportFiledBy.name',
-                  defaultMessage: 'By',
+                  defaultMessage: 'Filed by',
                 },
               }),
               view: {
@@ -320,7 +320,7 @@ export default (configContext) => {
                 },
                 name: {
                   id: 'field.collectionobjects_nagpra.nagpraReportFiledWith.name',
-                  defaultMessage: 'With',
+                  defaultMessage: 'Filed with',
                 },
               }),
               view: {
