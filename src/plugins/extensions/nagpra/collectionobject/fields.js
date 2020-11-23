@@ -113,7 +113,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_nagpra.nagpraCulturalDetermination.name',
-                defaultMessage: 'NAGPRA cultural determination',
+                defaultMessage: 'PAHMA cultural determination',
               },
             }),
             repeating: true,
