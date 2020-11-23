@@ -1638,30 +1638,6 @@ export default (configContext) => {
             },
           },
         },
-        nagpraCulturalDeterminationList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          nagpraCulturalDetermination: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_anthropology.nagpraCulturalDetermination.name',
-                  defaultMessage: 'PAHMA cultural determination notes',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: TextInput,
-                props: {
-                  multiline: true,
-                },
-              },
-            },
-          },
-        },
       },
       ...extensions['ucbnh-collectionobject'].fields,
       ...extensions.annotation.collectionobject.fields,
