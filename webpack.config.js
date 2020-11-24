@@ -9,6 +9,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const filename = `${library}${isProduction ? '.min' : ''}.js`;
 
 const config = {
+  mode: isProduction ? 'production' : 'development',
   entry: './src/index.js',
   output: {
     filename,
