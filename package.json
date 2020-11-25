@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-pahma",
-  "version": "3.0.0-d.2",
+  "version": "3.0.0-d.3",
   "description": "PAHMA profile plugin for the CollectionSpace UI",
   "author": "",
   "license": "ECL-2.0",
@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "cspace-ui-plugin-ext-annotation": "1.0.0",
-    "cspace-ui-plugin-ext-nagpra": "^1.0.0-d.4",
+    "cspace-ui-plugin-ext-nagpra": "^1.0.0-d.5",
     "cspace-ui-plugin-ext-ucbnh-collectionobject": "2.0.0-rc.4",
     "cspace-ui-plugin-record-taxon": "^0.0.9",
     "react-intl": "^2.3.0"
