@@ -1,16 +1,9 @@
 {
-  "extends": [
-    "airbnb"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
+    "extends": [
+        "airbnb"
+    ],
+    "rules": {
+        "react/require-default-props": "off",
+        "react/jsx-props-no-spreading": "off"
     }
-  },
-  "rules": {
-    // Allow Immutable.List() and Immutable.Map() without new
-    "new-cap": ["error", { "capIsNew": false }],
-    // Allow object propTypes
-    "react/forbid-prop-types": ["error", { "forbid": ["any", "array"] }]
-  }
 }

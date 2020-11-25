@@ -12,11 +12,10 @@
         ]
       }
     }],
-    "@babel/preset-react"
+    "@babel/react"
   ],
   "plugins": [
     "dev-expression",
-    ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }],
     ["react-intl", { "messagesDir": "./build/messages/" }]
   ],
   "env": {
