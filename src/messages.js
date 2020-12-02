@@ -88,6 +88,8 @@ export default {
   'panel.collectionobject.reference': 'Bibliographic Reference Information',
   'column.collectionobject.default.objectNumber': 'Museum number',
   'column.collectionobject.narrow.objectNumber': 'Number',
+  'field.BulkObjectEditBatchJob.responsibleDepartment.name': 'Responsible collection manager',
+  'field.BulkObjectEditBatchJob.numberOfObjects.name': 'Number of pieces',
 
   // concept
 

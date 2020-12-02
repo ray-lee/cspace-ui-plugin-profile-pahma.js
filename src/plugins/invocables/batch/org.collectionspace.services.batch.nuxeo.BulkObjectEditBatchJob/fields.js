@@ -1,10 +1,6 @@
-import { defineMessages } from 'react-intl';
-
 export default (configContext) => {
   const {
-    CompoundInput,
     AutocompleteInput,
-    TextInput,
   } = configContext.inputComponents;
 
   const {
@@ -13,6 +9,7 @@ export default (configContext) => {
 
   return {
     params: {
+      /** the following fields will be added on 6.0-2
       inventoryCount: {
         [config]: {
           messages: defineMessages({
@@ -59,6 +56,46 @@ export default (configContext) => {
               props: {
                 source: 'concept/ethusecode',
               },
+            },
+          },
+        },
+      },
+      */
+      material: {
+        [config]: {
+          view: {
+            type: AutocompleteInput,
+            props: {
+              source: 'concept/material',
+            },
+          },
+        },
+      },
+      responsibleDepartment: {
+        [config]: {
+          view: {
+            props: {
+              source: 'pahmaDepartments',
+            },
+          },
+        },
+      },
+      objectProductionPlace: {
+        [config]: {
+          view: {
+            type: AutocompleteInput,
+            props: {
+              source: 'place/local',
+            },
+          },
+        },
+      },
+      contentPlace: {
+        [config]: {
+          view: {
+            type: AutocompleteInput,
+            props: {
+              source: 'place/local',
             },
           },
         },
