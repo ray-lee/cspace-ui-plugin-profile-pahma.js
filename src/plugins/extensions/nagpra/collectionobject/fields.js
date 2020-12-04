@@ -66,7 +66,19 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_nagpra.nagpraCulturalDetermination.name',
-                defaultMessage: 'PAHMA cultural determination',
+                defaultMessage: 'PAHMA cultural determination notes',
+              },
+            }),
+          },
+        },
+      },
+      repatriationNotes: {
+        repatriationNote: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_nagpra.repatriationNote.name',
+                defaultMessage: 'Repatriation notes',
               },
             }),
           },
@@ -88,7 +100,7 @@ export default (configContext) => {
               }),
               view: {
                 props: {
-                  source: 'concept/archculture',
+                  source: 'person/local,person/shared,organization/local,organization/shared',
                 },
               },
             },
@@ -136,7 +148,7 @@ export default (configContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'person/local,organization/local',
+                  source: 'organization/local',
                 },
               },
             },
