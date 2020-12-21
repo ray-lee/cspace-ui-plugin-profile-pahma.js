@@ -56,12 +56,6 @@ const template = (configContext) => {
               <Field name="briefDescription" />
             </Field>
           </Col>
-
-          <Col>
-            <Field name="abbreviatedDescriptions">
-              <Field name="abbreviatedDescription" />
-            </Field>
-          </Col>
         </Cols>
 
         <Row>
@@ -114,6 +108,10 @@ const template = (configContext) => {
             </Field>
           </Col>
         </Cols>
+
+        <Field name="pahmaAbbreviatedDescriptions" subpath="ns2:collectionobjects_pahma">
+          <Field name="pahmaAbbreviatedDescription" />
+        </Field>
 
         {extensions.annotation.collectionobject.form}
         {extensions.dimension.form}
