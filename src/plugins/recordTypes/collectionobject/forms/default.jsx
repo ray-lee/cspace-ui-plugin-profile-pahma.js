@@ -56,6 +56,12 @@ const template = (configContext) => {
               <Field name="briefDescription" />
             </Field>
           </Col>
+
+          <Col>
+            <Field name="abbreviatedDescriptions">
+              <Field name="abbreviatedDescription" />
+            </Field>
+          </Col>
         </Cols>
 
         <Row>

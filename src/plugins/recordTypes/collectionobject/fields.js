@@ -94,6 +94,30 @@ export default (configContext) => {
             cloneable: false,
           },
         },
+        abbreviatedDescriptions: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          abbreviatedDescription: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_pahma.abbreviatedDescription.name',
+                  defaultMessage: 'Abbreviated description',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: TextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
         titleGroupList: {
           [config]: {
             cloneable: false,
