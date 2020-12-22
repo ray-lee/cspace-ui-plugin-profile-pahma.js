@@ -19,7 +19,7 @@ export default (configContext) => {
           },
         }),
         order: 20,
-        sortBy: 'objectexit_anthropology:newOwnerList/0',
+        sortBy: 'objectexit_anthropology:newOwnerList/0/newOwner', // https://jira.ets.berkeley.edu/jira/browse/CC-1506
         width: 450,
       },
     },
