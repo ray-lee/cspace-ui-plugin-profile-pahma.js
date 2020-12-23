@@ -109,8 +109,11 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
-        {extensions.annotation.collectionobject.form}
+        <Field name="pahmaAbbreviatedDescriptions" subpath="ns2:collectionobjects_pahma">
+          <Field name="pahmaAbbreviatedDescription" />
+        </Field>
 
+        {extensions.annotation.collectionobject.form}
         {extensions.dimension.form}
 
         <Field name="materialGroupList">
@@ -274,43 +277,7 @@ const template = (configContext) => {
         </Row>
       </Panel>
 
-      <Panel name="repatriation" collapsible collapsed>
-        <Cols>
-          <Col>
-            <Cols>
-              <Col>
-                <Field name="nagpraInventoryNameList" subpath="ns2:collectionobjects_anthropology">
-                  <Field name="nagpraInventoryName" />
-                </Field>
-              </Col>
-
-              <Col>
-                <Field name="nagpraApplicabilityList" subpath="ns2:collectionobjects_anthropology">
-                  <Field name="nagpraApplicability" />
-                </Field>
-              </Col>
-            </Cols>
-
-            <Field name="pahmaNagpraCodeLegacyList" subpath="ns2:collectionobjects_pahma">
-              <Field name="pahmaNagpraCodeLegacy" />
-            </Field>
-
-            <Field name="repatriationNoteList" subpath="ns2:collectionobjects_anthropology">
-              <Field name="repatriationNote" />
-            </Field>
-          </Col>
-
-          <Col>
-            <Field
-              name="nagpraCulturalDeterminationList"
-              subpath="ns2:collectionobjects_anthropology"
-            >
-              <Field name="nagpraCulturalDetermination" />
-            </Field>
-
-          </Col>
-        </Cols>
-      </Panel>
+      {extensions.nagpra.collectionobject.form}
 
       <Panel name="cultCare" collapsible collapsed>
         <Cols>

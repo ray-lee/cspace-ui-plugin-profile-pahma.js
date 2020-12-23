@@ -100,15 +100,15 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_anthropology/nagpraInventoryNameList/nagpraInventoryName',
+        path: 'ns2:collectionobjects_nagpra/nagpraInventoryNames/nagpraInventoryName',
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_anthropology/nagpraApplicabilityList/nagpraApplicability',
+        path: 'ns2:collectionobjects_nagpra/nagpraCategories/nagpraCategory',
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_pahma/pahmaNagpraCodeLegacyList/pahmaNagpraCodeLegacy',
+        path: 'ns2:collectionobjects_nagpra/graveAssocCodes/graveAssocCode',
       },
       {
         op: OP_EQ,

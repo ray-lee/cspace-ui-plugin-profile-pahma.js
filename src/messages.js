@@ -208,7 +208,6 @@ export default {
   'field.places_common.historicalStatus.name': 'Current?',
   'field.places_common.historicalStatus.fullName': 'Current term name?',
 
-
   // taxon
 
   'vocab.taxon.local.name': 'PAHMA',
