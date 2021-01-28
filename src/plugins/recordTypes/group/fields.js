@@ -7,7 +7,6 @@ export default (configContext) => {
     configKey: config,
   } = configContext.configHelpers;
 
-
   return {
     document: {
       'ns2:groups_common': {

@@ -99,21 +99,21 @@ const template = (configContext) => {
         <Cols>
           <Col>
             <Field name="dateOfInitialResponseGroupList" subpath="ns2:claims_anthropology">
-              <Field name="dateOfInitialResponseGroup" >
+              <Field name="dateOfInitialResponseGroup">
                 <Field name="initialResponseDate" />
                 <Field name="initialResponseNote" />
               </Field>
             </Field>
 
             <Field name="sentToLocalCommitteeGroupList" subpath="ns2:claims_anthropology">
-              <Field name="sentToLocalCommitteeGroup" >
+              <Field name="sentToLocalCommitteeGroup">
                 <Field name="sentToLocalCommitteeDate" />
                 <Field name="sentToLocalCommitteeNote" />
               </Field>
             </Field>
 
             <Field name="recommendationOfLocalCommitteeGroupList" subpath="ns2:claims_anthropology">
-              <Field name="recommendationOfLocalCommitteeGroup" >
+              <Field name="recommendationOfLocalCommitteeGroup">
                 <Field name="recommendationOfLocalCommitteeDate" />
                 <Field name="recommendationOfLocalCommitteeNote" />
               </Field>
@@ -130,35 +130,35 @@ const template = (configContext) => {
               name="recommendationOfOversightCommitteeGroupList"
               subpath="ns2:claims_anthropology"
             >
-              <Field name="recommendationOfOversightCommitteeGroup" >
+              <Field name="recommendationOfOversightCommitteeGroup">
                 <Field name="recommendationOfOversightCommitteeDate" />
                 <Field name="recommendationOfOversightCommitteeNote" />
               </Field>
             </Field>
 
             <Field name="sentToNationalNagpraGroupList" subpath="ns2:claims_anthropology">
-              <Field name="sentToNationalNagpraGroup" >
+              <Field name="sentToNationalNagpraGroup">
                 <Field name="sentToNationalNagpraDate" />
                 <Field name="sentToNationalNagpraNote" />
               </Field>
             </Field>
 
             <Field name="responseFromNationalNagpraGroupList" subpath="ns2:claims_anthropology">
-              <Field name="responseFromNationalNagpraGroup" >
+              <Field name="responseFromNationalNagpraGroup">
                 <Field name="responseFromNationalNagpraDate" />
                 <Field name="responseFromNationalNagpraNote" />
               </Field>
             </Field>
 
             <Field name="dateOfNationalNagpraApprovalGroupList" subpath="ns2:claims_anthropology">
-              <Field name="dateOfNationalNagpraApprovalGroup" >
+              <Field name="dateOfNationalNagpraApprovalGroup">
                 <Field name="dateOfNationalNagpraApprovalDate" />
                 <Field name="dateOfNationalNagpraApprovalNote" />
               </Field>
             </Field>
 
             <Field name="dateOfThirtyDayNoticeGroupList" subpath="ns2:claims_anthropology">
-              <Field name="dateOfThirtyDayNoticeGroup" >
+              <Field name="dateOfThirtyDayNoticeGroup">
                 <Field name="dateOfThirtyDayNoticeDate" />
                 <Field name="dateOfThirtyDayNoticeType" />
                 <Field name="dateOfThirtyDayNoticeNote" />
@@ -166,7 +166,7 @@ const template = (configContext) => {
             </Field>
 
             <Field name="anthroTransferGroupList" subpath="ns2:claims_anthropology">
-              <Field name="anthroTransferGroup" >
+              <Field name="anthroTransferGroup">
                 <Field name="transferDate" />
                 <Field name="transferNote" />
               </Field>
@@ -285,7 +285,7 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   messages: defineMessages({
     name: {
       id: 'form.conservation.default.name',

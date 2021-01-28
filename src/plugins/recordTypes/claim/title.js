@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     getPart,
   } = configContext.recordDataHelpers;
@@ -13,5 +13,5 @@ export default configContext => (data) => {
   const claimNumber = common ? common.get('claimNumber') : '';
   const claimName = anthro ? anthro.get('claimName') : '';
 
-  return [claimNumber, claimName].filter(part => !!part).join(' – ');
+  return [claimNumber, claimName].filter((part) => !!part).join(' – ');
 };

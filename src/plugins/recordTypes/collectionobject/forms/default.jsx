@@ -42,7 +42,7 @@ const template = (configContext) => {
 
         <Cols>
           <Col>
-            <Field name="pahmaAltNumGroupList" subpath="ns2:collectionobjects_pahma" >
+            <Field name="pahmaAltNumGroupList" subpath="ns2:collectionobjects_pahma">
               <Field name="pahmaAltNumGroup">
                 <Field name="pahmaAltNum" />
                 <Field name="pahmaAltNumType" />
@@ -239,7 +239,7 @@ const template = (configContext) => {
             </Field>
 
             <Field name="objectProductionPlaceGroupList">
-              <Field name="objectProductionPlaceGroup" >
+              <Field name="objectProductionPlaceGroup">
                 <Field name="objectProductionPlace" />
                 <Field name="objectProductionPlaceRole" />
               </Field>
@@ -556,7 +556,7 @@ const template = (configContext) => {
           <Field name="objectHistoryNote" />
 
           <Field name="ownershipHistoryGroupList" subpath="ns2:collectionobjects_pahma">
-            <Field name="ownershipHistoryGroup" >
+            <Field name="ownershipHistoryGroup">
               <Field name="previousOwner" />
               <Field name="ownershipDateGroup" />
               <Field name="ownershipCategory" />
@@ -582,6 +582,6 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   template: template(configContext),
 });

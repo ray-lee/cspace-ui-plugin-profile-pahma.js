@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     getPart,
     deepGet,
@@ -18,5 +18,5 @@ export default configContext => (data) => {
   const exitNumber = common && common.get('exitNumber');
   const newOwner = anthro && getDisplayName(deepGet(anthro, ['newOwnerList', 'newOwner', 0]));
 
-  return [exitNumber, newOwner].filter(part => !!part).join(' – ');
+  return [exitNumber, newOwner].filter((part) => !!part).join(' – ');
 };
