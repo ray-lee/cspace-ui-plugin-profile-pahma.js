@@ -38,8 +38,8 @@ const template = (configContext) => {
               <Field name="acquisitionSource" />
             </Field>
 
-            <Field name="acquisitionDonorGroupList" subpath="ns2:acquisitions_pahma" >
-              <Field name="acquisitionDonorGroup" >
+            <Field name="acquisitionDonorGroupList" subpath="ns2:acquisitions_pahma">
+              <Field name="acquisitionDonorGroup">
                 <Field name="donor" />
                 <Field name="donorAnon" />
               </Field>
@@ -111,6 +111,6 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   template: template(configContext),
 });

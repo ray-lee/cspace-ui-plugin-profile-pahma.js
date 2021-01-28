@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     deepGet,
     getPart,
@@ -17,16 +17,16 @@ export default configContext => (data) => {
 
   const objectNumber = common && common.get('objectNumber');
 
-  const objectName = common &&
-    deepGet(common, ['objectNameList', 'objectNameGroup', 0, 'objectName']);
+  const objectName = common
+    && deepGet(common, ['objectNameList', 'objectNameGroup', 0, 'objectName']);
 
   const title = common && deepGet(common, ['titleGroupList', 'titleGroup', 0, 'title']);
 
-  const taxon = naturalHistory &&
-    deepGet(naturalHistory, ['taxonomicIdentGroupList', 'taxonomicIdentGroup', 0, 'taxon']);
+  const taxon = naturalHistory
+    && deepGet(naturalHistory, ['taxonomicIdentGroupList', 'taxonomicIdentGroup', 0, 'taxon']);
 
   return (
     [objectNumber, (objectName || title || getDisplayName(taxon))]
-      .filter(part => !!part).join(' – ')
+      .filter((part) => !!part).join(' – ')
   );
 };

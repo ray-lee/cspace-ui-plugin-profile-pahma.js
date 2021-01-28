@@ -108,7 +108,7 @@ export default (configContext) => {
             view: {
               type: TextInput,
             },
-            compute: args => computeMovementSummary(args, formatHelpers),
+            compute: (args) => computeMovementSummary(args, formatHelpers),
           },
         },
       },

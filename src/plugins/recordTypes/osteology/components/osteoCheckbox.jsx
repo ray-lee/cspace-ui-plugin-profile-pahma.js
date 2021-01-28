@@ -18,6 +18,7 @@ export default (configContext) => {
 
     return (
       // eslint-disable-next-line jsx-a11y/label-has-for
+      // eslint-disable-next-line jsx-a11y/label-has-associated-control
       <label>
         <input type="checkbox" disabled={!!readOnly} {...remainingProps} />
         <span />

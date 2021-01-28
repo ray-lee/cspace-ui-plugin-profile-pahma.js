@@ -3,7 +3,7 @@ import fields from './fields';
 import forms from './forms';
 import idGenerators from './idGenerators';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   idGenerators,
   recordTypes: {
     loanin: {

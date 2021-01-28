@@ -5,7 +5,7 @@ import forms from './forms';
 import title from './title';
 import idGenerators from './idGenerators';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   idGenerators,
   recordTypes: {
     objectexit: {

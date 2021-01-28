@@ -30,7 +30,6 @@ const template = (configContext) => {
           <Field name="entryReason" />
         </Row>
 
-
         <Cols>
           <Col>
             <Row>
@@ -159,6 +158,6 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   template: template(configContext),
 });

@@ -1,4 +1,4 @@
-const isNumber = n => !isNaN(parseFloat(n)) && isFinite(n);
+const isNumber = (n) => !Number.isNaN(parseFloat(n)) && Number.isFinite(n);
 
 /* eslint-disable max-len */
 const objectNumberPattern = /^([cC](ons|ONS)?[-. ]?)?([A-Za-z]+(-[A-Za-z]+)?)?([-. ])?(\d+)([-. ])?(\d+)?([-. ]+)?(\d+)?([-. ]+)?(.*)$/;
@@ -14,9 +14,9 @@ const makeSortable = (objectNumber) => {
 
   return (
     [3, 6, 8, 10, 12]
-      .map(i => tokens[i])
-      .map(token => (isNumber(token) ? token.padStart(6, '0') : token))
-      .filter(part => !!part)
+      .map((i) => tokens[i])
+      .map((token) => (isNumber(token) ? token.padStart(6, '0') : token))
+      .filter((part) => !!part)
       .join(' ')
       .trim()
   );
@@ -33,5 +33,4 @@ export const computeSortableObjectNumber = ({ data }, Immutable) => {
   });
 };
 
-export const transformSortableObjectNumberSearch = ({ data: objectNumber }) =>
-  makeSortable(objectNumber);
+export const transformSortableObjectNumberSearch = ({ data: objectNumber }) => makeSortable(objectNumber);

@@ -31,7 +31,6 @@ export default (configContext) => {
     Immutable,
   } = configContext.lib;
 
-
   // Make a copy of dimension extension fields, but make measuredPartGroupList not cloneable. This
   // config can't be done in the dimension extension itself, because measuredPartGroupList should
   // remain cloneable in other record types (e.g. media).
@@ -47,7 +46,7 @@ export default (configContext) => {
   return {
     document: {
       [config]: {
-        compute: args => computeSortableObjectNumber(args, Immutable),
+        compute: (args) => computeSortableObjectNumber(args, Immutable),
       },
       'ns2:collectionobjects_common': {
         objectNumber: {

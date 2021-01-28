@@ -34,7 +34,7 @@
     "clean": "rimraf build lib dist coverage errorShots",
     "coverage": "istanbul report --root coverage text && istanbul report --root coverage lcov",
     "devserver": "webpack-dev-server",
-    "lint": "eslint --ext .jsx,.js *.js src test examples",
+    "lint": "eslint --ext .jsx,.js *.js src test",
     "prepare": "npm run clean && npm run build",
     "start": "cross-env NODE_ENV=test karma start",
     "test": "cross-env NODE_ENV=test karma start --singleRun=true",

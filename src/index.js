@@ -40,6 +40,6 @@ export default () => ({
     cspaceUIPluginExtUCBNHCollectionObject(),
     nagpraExtensionPlugin(),
     annotationExtensionPlugin(),
-    ...plugins.map(plugin => plugin()),
+    ...plugins.map((plugin) => plugin()),
   ],
 });
