@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     getPart,
     deepGet,
@@ -18,8 +18,8 @@ export default configContext => (data) => {
   const acquisitionReferenceNumber = common && common.get('acquisitionReferenceNumber');
 
   const donor = pahma && getDisplayName(
-    deepGet(pahma, ['acquisitionDonorGroupList', 'acquisitionDonorGroup', 0, 'donor'])
+    deepGet(pahma, ['acquisitionDonorGroupList', 'acquisitionDonorGroup', 0, 'donor']),
   );
 
-  return [acquisitionReferenceNumber, donor].filter(part => !!part).join(' – ');
+  return [acquisitionReferenceNumber, donor].filter((part) => !!part).join(' – ');
 };

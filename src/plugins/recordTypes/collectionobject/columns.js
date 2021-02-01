@@ -12,7 +12,7 @@ export default (configContext) => {
       },
       'objectName|title|taxon': {
         // If it's a taxon, it will need to be formatted as a ref name.
-        formatValue: value => formatRefName(value) || value,
+        formatValue: (value) => formatRefName(value) || value,
         messages: defineMessages({
           label: {
             id: 'column.collectionobject.default.objectName|title|taxon',
@@ -32,7 +32,7 @@ export default (configContext) => {
       },
       'objectName|title|taxon': {
         // If it's a taxon, it will need to be formatted as a ref name.
-        formatValue: value => formatRefName(value) || value,
+        formatValue: (value) => formatRefName(value) || value,
         messages: defineMessages({
           label: {
             id: 'column.collectionobject.narrow.objectName|title|taxon',
