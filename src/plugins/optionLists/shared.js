@@ -1182,5 +1182,13 @@ export default () => ({
         },
       }),
     },
+    searchResultPagePageSizes: {
+      values: [
+        '20',
+        '40',
+        '100',
+        '500',
+      ],
+    },
   },
 });
