@@ -442,6 +442,7 @@ export default {
       'destructive analysis',
       'discarded',
       'exchanged',
+      'held in trust',
       'intended for repatriation',
       'intended for transfer',
       'irregular Museum number',
