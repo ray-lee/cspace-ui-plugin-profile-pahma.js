@@ -396,6 +396,7 @@ export default {
       'Mixed faunal and human remains',
       'Mounts',
       'NAGPRA-associated Funerary Objects',
+      'NAGPRA unassociated funerary objects',
       'Registration',
     ],
   },
