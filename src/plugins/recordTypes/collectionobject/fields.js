@@ -794,7 +794,7 @@ export default (configContext) => {
               }),
               repeating: true,
               view: {
-                type: OptionPickerInput,
+                type: TermPickerInput,
                 props: {
                   source: 'pahmaObjectStatuses',
                 },
