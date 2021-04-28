@@ -11,7 +11,7 @@ const template = (configContext) => {
 
   return (
     <Field name="document">
-      <Field name="Agency Name" />
+      <Field name="Agency" />
     </Field>
   );
 };
