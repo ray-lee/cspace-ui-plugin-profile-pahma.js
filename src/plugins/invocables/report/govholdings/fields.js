@@ -3,7 +3,7 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     CompoundInput,
-    TextInput,
+    AutocompleteInput,
   } = configContext.inputComponents;
 
   const {
@@ -17,16 +17,20 @@ export default (configContext) => {
           type: CompoundInput,
         },
       },
-      'Agency Name': {
+      'Agency': {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.SystematicInventoryUI.Agency Name.name',
+              id: 'field.report.SystematicInventoryUI.Agency.name',
               defaultMessage: 'Agency name',
             },
           }),
           view: {
-            type: TextInput,
+            type: AutocompleteInput,
+            props: {
+              source: 'organization/local',
+              showQuickAdd: false,
+            },
           },
         },
       },
