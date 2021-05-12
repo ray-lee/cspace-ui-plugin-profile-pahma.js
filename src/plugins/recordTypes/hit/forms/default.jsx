@@ -36,9 +36,19 @@ const template = (configContext) => {
           </Field>
         </Field>
 
+        <Field name="pahmaHitAgreementGroupList" subpath="ns2:hits_pahma">
+          <Field name="pahmaHitAgreementGroup">
+            <Field name="pahmaAgreementStatus" />
+            <Field name="pahmaAgreementStatusDate" />
+            <Field name="pahmaAgreementStatusNote" />
+          </Field>
+        </Field>
+
         <Cols>
           <Col>
-            <Field name="agreementRenewalDate" />
+            <Field name="pahmaAgreementRenewalDates" subpath="ns2:hits_pahma">
+              <Field name="pahmaAgreementRenewalDate" />
+            </Field>
           </Col>
           <Col>
             <Field name="returnDate" />
