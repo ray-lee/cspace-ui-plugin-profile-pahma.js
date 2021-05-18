@@ -121,6 +121,9 @@ export default {
 
   'field.groups_common.responsibleDepartment.name': 'Purpose',
 
+  // hit
+  'field.hits_common.entryNote.name': 'Agreement note',
+
   // loan out
 
   'record.loanout.name': 'Out Loan',
