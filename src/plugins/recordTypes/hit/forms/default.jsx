@@ -36,18 +36,18 @@ const template = (configContext) => {
           </Field>
         </Field>
 
-        <Field name="pahmaHitAgreementGroupList" subpath="ns2:hits_pahma">
-          <Field name="pahmaHitAgreementGroup">
-            <Field name="pahmaAgreementStatus" />
-            <Field name="pahmaAgreementStatusDate" />
-            <Field name="pahmaAgreementStatusNote" />
+        <Field name="agreementGroupList">
+          <Field name="agreementGroup">
+            <Field name="agreementStatus" />
+            <Field name="agreementStatusDate" />
+            <Field name="agreementStatusNote" />
           </Field>
         </Field>
 
         <Cols>
           <Col>
-            <Field name="pahmaAgreementRenewalDates" subpath="ns2:hits_pahma">
-              <Field name="pahmaAgreementRenewalDate" />
+            <Field name="agreementRenewalDates">
+              <Field name="agreementRenewalDate" />
             </Field>
           </Col>
           <Col>
@@ -72,6 +72,40 @@ const template = (configContext) => {
             <Field name="externalApprovalStatus" />
             <Field name="externalApprovalDate" />
             <Field name="externalApprovalNote" />
+          </Field>
+        </Field>
+      </Panel>
+
+      <Panel name="correspondence" collapsible collapsed>
+        <Field name="correspondenceGroupList">
+          <Field name="correspondenceGroup">
+            <Field name="correspondenceDate" />
+            <Field name="correspondenceSender" />
+            <Field name="correspondenceRecipient" />
+            <Field name="correspondenceSummary" />
+            <Field name="correspondenceReference" />
+          </Field>
+        </Field>
+      </Panel>
+
+      <Panel name="cultureCareAndHandling" collapsible collapsed>
+        <Field name="handlingPreferences" />
+        <Field name="handlingLimitationsGroupList">
+          <Field name="handlingLimitationsGroup">
+            <Panel>
+              <Row>
+                <Col>
+                  <Field name="handlingLimitationsType" />
+                  <Field name="handlingLimitationsLevel" />
+                  <Field name="handlingLimitationsDetail" />
+                </Col>
+                <Col>
+                  <Field name="handlingLimitationsRequestor" />
+                  <Field name="handlingLimitationsOnBehalfOf" />
+                  <Field name="handlingLimitationsDate" />
+                </Col>
+              </Row>
+            </Panel>
           </Field>
         </Field>
       </Panel>
@@ -109,41 +143,6 @@ const template = (configContext) => {
           </Field>
         </Field>
       </Panel>
-
-      <Panel name="cultureCareAndHandling" collapsible collapsed>
-        <Field name="handlingPreferences" />
-        <Field name="handlingLimitationsGroupList">
-          <Field name="handlingLimitationsGroup">
-            <Panel>
-              <Row>
-                <Col>
-                  <Field name="handlingLimitationsType" />
-                  <Field name="handlingLimitationsLevel" />
-                  <Field name="handlingLimitationsDetail" />
-                </Col>
-                <Col>
-                  <Field name="handlingLimitationsRequestor" />
-                  <Field name="handlingLimitationsOnBehalfOf" />
-                  <Field name="handlingLimitationsDate" />
-                </Col>
-              </Row>
-            </Panel>
-          </Field>
-        </Field>
-      </Panel>
-
-      <Panel name="correspondence" collapsible collapsed>
-        <Field name="correspondenceGroupList">
-          <Field name="correspondenceGroup">
-            <Field name="correspondenceDate" />
-            <Field name="correspondenceSender" />
-            <Field name="correspondenceRecipient" />
-            <Field name="correspondenceSummary" />
-            <Field name="correspondenceReference" />
-          </Field>
-        </Field>
-      </Panel>
-
     </Field>
   );
 };
