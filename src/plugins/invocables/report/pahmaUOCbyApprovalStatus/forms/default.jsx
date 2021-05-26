@@ -30,7 +30,7 @@ const template = (configContext) => {
 export default (configContext) => ({
   messages: defineMessages({
     name: {
-      id: 'form.report.pahmaUOCApprovalStatus.default.name',
+      id: 'form.report.pahmaUOCbyApprovalStatus.default.name',
       defaultMessage: 'Standard Template',
     },
   }),

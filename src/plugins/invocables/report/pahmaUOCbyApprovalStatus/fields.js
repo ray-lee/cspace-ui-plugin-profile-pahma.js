@@ -23,7 +23,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.pahmaUOCApprovalStatus.AuthBy.name',
+              id: 'field.report.pahmaUOCbyApprovalStatus.AuthBy.name',
               defaultMessage: 'Authorized by',
             },
           }),
@@ -40,7 +40,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.pahmaUOCApprovalStatus.AuthStatus.name',
+              id: 'field.report.pahmaUOCbyApprovalStatus.AuthStatus.name',
               defaultMessage: 'Authorization status',
             },
           }),
@@ -56,7 +56,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.pahmaUOCApprovalStatus.StartDate.name',
+              id: 'field.report.pahmaUOCbyApprovalStatus.StartDate.name',
               defaultMessage: 'Earliest requested date',
             },
           }),
@@ -69,7 +69,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.pahmaUOCApprovalStatus.EndDate.name',
+              id: 'field.report.pahmaUOCbyApprovalStatus.EndDate.name',
               defaultMessage: 'Latest requested date',
             },
           }),

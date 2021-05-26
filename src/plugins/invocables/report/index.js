@@ -4,7 +4,7 @@ import ComponentCheck from './ComponentCheck';
 import HsrPhaseOneInventory from './HsrPhaseOneInventory';
 import govholdings from './govholdings';
 import SystematicInventoryHSR from './SystematicInventoryHSR';
-import pahmaUOCApprovalStatus from './pahmaUOCApprovalStatus';
+import pahmaUOCbyApprovalStatus from './pahmaUOCbyApprovalStatus';
 import keyinfobyloc from './keyinfobyloc';
 import pahmaUOCbyRequesterObject from './pahmaUOCbyRequesterObject';
 import pahmaUoCbyTypeOfUse from './pahmaUoCbyTypeOfUse';
@@ -19,7 +19,7 @@ export default [
   govholdings,
   keyinfobyloc,
   SystematicInventoryHSR,
-  pahmaUOCApprovalStatus,
+  pahmaUOCbyApprovalStatus,
   pahmaUOCbyRequesterObject,
   pahmaUoCbyTypeOfUse,
   pahmaUoCbyCollectionType,
