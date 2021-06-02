@@ -5,6 +5,7 @@ export default (configContext) => {
     DateInput,
     StructuredDateInput,
     TermPickerInput,
+    CheckboxInput,
   } = configContext.inputComponents;
 
   const {
@@ -13,6 +14,7 @@ export default (configContext) => {
 
   const {
     DATA_TYPE_STRUCTURED_DATE,
+    DATA_TYPE_BOOL,
   } = configContext.dataTypes;
 
   const {
@@ -98,6 +100,20 @@ export default (configContext) => {
             },
           },
           ...extensions.structuredDate.fields,
+        },
+        loanApprovedForPublic: {
+          [config]: {
+            dataType: DATA_TYPE_BOOL,
+            messages: defineMessages({
+              name: {
+                id: 'field.media_pahma.loanApprovedForPublic.name',
+                defaultMessage: 'Not approved for public',
+              },
+            }),
+            view: {
+              type: CheckboxInput,
+            },
+          },
         },
       },
     },
