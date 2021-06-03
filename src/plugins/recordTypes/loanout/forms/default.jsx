@@ -19,7 +19,7 @@ const template = (configContext) => {
         <Row>
           <Field name="loanOutNumber" />
           <Field name="loanPurpose" />
-          <Field name="loanApprovedForPublic" subpath="ns2:loansout_pahma" />
+          <Field name="loanNotApprovedForPublic" subpath="ns2:loansout_pahma" />
         </Row>
 
         <InputTable name="lender">

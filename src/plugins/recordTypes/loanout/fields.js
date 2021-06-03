@@ -101,12 +101,12 @@ export default (configContext) => {
           },
           ...extensions.structuredDate.fields,
         },
-        loanApprovedForPublic: {
+        loanNotApprovedForPublic: {
           [config]: {
             dataType: DATA_TYPE_BOOL,
             messages: defineMessages({
               name: {
-                id: 'field.media_pahma.loanApprovedForPublic.name',
+                id: 'field.media_pahma.loanNotApprovedForPublic.name',
                 defaultMessage: 'Not approved for public',
               },
             }),
