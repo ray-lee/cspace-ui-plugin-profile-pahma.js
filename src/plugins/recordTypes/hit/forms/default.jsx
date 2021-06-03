@@ -58,7 +58,7 @@ const template = (configContext) => {
         <Field name="entryNote" />
         <Field name="internalApprovalGroupList">
           <Field name="internalApprovalGroup">
-            <Field name="internalApprovalGroup" />
+            <Field name="internalApprovalGroupName" />
             <Field name="internalApprovalIndividual" />
             <Field name="internalApprovalStatus" />
             <Field name="internalApprovalDate" />
@@ -67,7 +67,7 @@ const template = (configContext) => {
         </Field>
         <Field name="externalApprovalGroupList">
           <Field name="externalApprovalGroup">
-            <Field name="externalApprovalGroup" />
+            <Field name="externalApprovalGroupName" />
             <Field name="externalApprovalIndividual" />
             <Field name="externalApprovalStatus" />
             <Field name="externalApprovalDate" />
