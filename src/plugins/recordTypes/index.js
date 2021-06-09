@@ -8,7 +8,6 @@ import concept from './concept';
 import contact from './contact';
 import group from './group';
 import hit from './hit';
-import intake from './intake';
 import loanin from './loanin';
 import loanout from './loanout';
 import location from './location';
@@ -37,7 +36,6 @@ export default [
   contact,
   group,
   hit,
-  intake,
   loanin,
   loanout,
   location,
