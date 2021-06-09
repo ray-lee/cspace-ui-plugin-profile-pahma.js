@@ -33,6 +33,11 @@
   <script>
     cspaceUI({
       serverUrl: 'http://localhost:8180',
+      recordTypes: {
+        intake: {
+          disabled: true,
+        },
+      },
       plugins: [
         cspaceUIPluginProfilePAHMA(),
       ],
