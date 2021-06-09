@@ -24,7 +24,7 @@ const template = (configContext) => {
             <Field name="hitNumber" />
           </Col>
           <Col>
-            <Field name="entryDate" />
+            <Field name="agreementDate" subpath="ns2:hits_pahma" />
           </Col>
         </Cols>
         <Field name="hitDepositorGroupList">
