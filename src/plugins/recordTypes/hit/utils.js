@@ -8,7 +8,8 @@ export const computeAgreementDate = ({ recordData }, formatRefName, Immutable) =
   const agreeementDates = groupData
     .filter((group) => formatRefName(group.get('agreementStatus')) === 'agreed'
       && group.get('agreementStatusDate') !== ''
-      && group.get('agreementStatusDate') !== null)
+      && group.get('agreementStatusDate') !== null
+      && group.get('agreementStatusDate') !== undefined)
     .map((group) => new Date(group.get('agreementStatusDate')))
     .sort((d1, d2) => d1 - d2);
 
