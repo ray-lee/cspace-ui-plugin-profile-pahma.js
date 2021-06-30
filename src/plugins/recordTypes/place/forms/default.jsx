@@ -109,6 +109,37 @@ const template = (configContext) => {
         {extensions.address.form}
       </Panel>
 
+      <Panel name="assertions" collapsible collapsed>
+        <Field name="assertionGroupList" subpath="ns2:places_anthro">
+          <Field name="assertionGroup">
+            <Panel>
+              <Field name="assertionName" />
+              <Field name="assertionDescription" />
+
+              <Panel name="assertionInfo" collapsible>
+                <Field name="assertionSourceGroupList">
+                  <Field name="assertionSourceGroup">
+                    <Field name="assertionSourceBy" />
+                    <Field name="assertionSourceDate" />
+                    <Field name="assertionSourceNote" />
+                  </Field>
+                </Field>
+
+                <Field name="assertionRelatedRecords" />
+
+                <Field name="assertionReferenceGroupList">
+                  <Field name="assertionReferenceGroup">
+                    <Field name="assertionReference" />
+                    <Field name="assertionReferenceNote" />
+                  </Field>
+                </Field>
+              </Panel>
+
+            </Panel>
+          </Field>
+        </Field>
+      </Panel>
+
       <Panel name="localityInfo" collapsible collapsed>
         <Row>
           <Field name="vCoordinates" />
