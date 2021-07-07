@@ -8,6 +8,7 @@ export default (configContext) => {
     TextInput,
     TermPickerInput,
     StructuredDateInput,
+    RichTextInput,
   } = configContext.inputComponents;
 
   const {
@@ -497,6 +498,452 @@ export default (configContext) => {
             }),
             view: {
               type: TextInput,
+            },
+          },
+        },
+      },
+      'ns2:places_anthro': {
+        [config]: {
+          service: {
+            ns: 'http://collectionspace.org/services/place/domain/anthro',
+          },
+        },
+        assertionGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          assertionGroup: {
+            [config]: {
+              repeating: true,
+              view: {
+                type: CompoundInput,
+              },
+            },
+            assertionName: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.places_anthro.assertionName.name',
+                    defaultMessage: 'Assertion name',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'anthroassertionnames',
+                  },
+                },
+              },
+            },
+            assertionDescription: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.places_anthro.assertionDescription.name',
+                    defaultMessage: 'Assertion description',
+                  },
+                }),
+                view: {
+                  type: RichTextInput,
+                  props: {
+                    multiline: true,
+                  },
+                },
+              },
+            },
+            assertionSourceGroupList: {
+              [config]: {
+                view: {
+                  type: CompoundInput,
+                },
+              },
+              assertionSourceGroup: {
+                [config]: {
+                  messages: defineMessages({
+                    name: {
+                      id: 'field.places_anthro.assertionSourceGroup.name',
+                      defaultMessage: 'Assertion source',
+                    },
+                  }),
+                  repeating: true,
+                  view: {
+                    type: CompoundInput,
+                    props: {
+                      tabular: true,
+                    },
+                  },
+                },
+                assertionSourceBy: {
+                  [config]: {
+                    messages: defineMessages({
+                      name: {
+                        id: 'field.places_anthro.assertionSourceBy.name',
+                        defaultMessage: 'By',
+                      },
+                      fullName: {
+                        id: 'field.places_anthro.assertionSourceBy.fullName',
+                        defaultMessage: 'Assertion by',
+                      },
+                    }),
+                    view: {
+                      type: AutocompleteInput,
+                      props: {
+                        source: 'person/local,person/shared,person/ulan,organization/local,organization/shared,organization/ulan',
+                      },
+                    },
+                  },
+                },
+                assertionSourceDate: {
+                  [config]: {
+                    messages: defineMessages({
+                      fullName: {
+                        id: 'field.places_anthro.assertionSourceDate.fullName',
+                        defaultMessage: 'Assertion source date',
+                      },
+                      name: {
+                        id: 'field.places_anthro.assertionSourceDate.name',
+                        defaultMessage: 'Date',
+                      },
+                    }),
+                    view: {
+                      type: DateInput,
+                    },
+                  },
+                },
+                assertionSourceNote: {
+                  [config]: {
+                    messages: defineMessages({
+                      fullName: {
+                        id: 'field.places_anthro.assertionSourceNote.fullName',
+                        defaultMessage: 'Assertion source note',
+                      },
+                      name: {
+                        id: 'field.places_anthro.assertionSourceNote.name',
+                        defaultMessage: 'Note',
+                      },
+                    }),
+                    view: {
+                      type: TextInput,
+                    },
+                  },
+                },
+              },
+            },
+            assertionRelatedRecords: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.places_anthro.assertionRelatedRecords.name',
+                    defaultMessage: 'Museum records',
+                  },
+                }),
+                view: {
+                  type: RichTextInput,
+                  props: {
+                    multiline: true,
+                  },
+                },
+              },
+            },
+            assertionReferenceGroupList: {
+              [config]: {
+                view: {
+                  type: CompoundInput,
+                },
+              },
+              assertionReferenceGroup: {
+                [config]: {
+                  messages: defineMessages({
+                    name: {
+                      id: 'field.places_anthro.assertionReferenceGroup.name',
+                      defaultMessage: 'References',
+                    },
+                  }),
+                  repeating: true,
+                  view: {
+                    type: CompoundInput,
+                    props: {
+                      tabular: true,
+                    },
+                  },
+                },
+                assertionReference: {
+                  [config]: {
+                    messages: defineMessages({
+                      fullName: {
+                        id: 'field.places_anthro.assertionReference.fullName',
+                        defaultMessage: 'Assertion reference name',
+                      },
+                      name: {
+                        id: 'field.places_anthro.assertionReference.name',
+                        defaultMessage: 'Name',
+                      },
+                    }),
+                    view: {
+                      type: AutocompleteInput,
+                      props: {
+                        source: 'citation/local,citation/worldcat',
+                      },
+                    },
+                  },
+                },
+                assertionReferenceNote: {
+                  [config]: {
+                    messages: defineMessages({
+                      fullName: {
+                        id: 'field.places_anthro.assertionReferenceNote.fullName',
+                        defaultMessage: 'Assertion refence note',
+                      },
+                      name: {
+                        id: 'field.places_anthro.assertionReferenceNote.name',
+                        defaultMessage: 'Note',
+                      },
+                    }),
+                    view: {
+                      type: TextInput,
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+        basicInfoList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          basicInfo: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_anthro.basicInfo.name',
+                  defaultMessage: 'Basic information',
+                },
+              }),
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        nagpraHistoryList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          nagpraHistory: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_anthro.nagpraHistory.name',
+                  defaultMessage: 'NAGPRA inventory history',
+                },
+              }),
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        backgroundSummaryList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          backgroundSummary: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_anthro.backgroundSummary.name',
+                  defaultMessage: 'Background and records summary',
+                },
+              }),
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        landOwnershipInfoList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          landOwnershipInfo: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_anthro.landOwnershipInfo.name',
+                  defaultMessage: 'Land ownership information',
+                },
+              }),
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        museumRecordsList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          museumRecords: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_anthro.museumRecordsList.name',
+                  defaultMessage: 'Museum records',
+                },
+              }),
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        manuscriptGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          manuscriptGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_anthro.manuscriptGroup.name',
+                  defaultMessage: 'Unpublished manuscripts',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            manuscriptReferences: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.places_anthro.manuscriptReferences.name',
+                    defaultMessage: 'Reference',
+                  },
+                  fullName: {
+                    id: 'field.places_anthro.manuscriptReferences.fullName',
+                    defaultMessage: 'Unpublished manuscript reference',
+                  },
+                }),
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'citation/local,',
+                  },
+                },
+              },
+            },
+            manuscriptNote: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.places_anthro.manuscriptNote.fullName',
+                    defaultMessage: 'Unpublished manuscript note',
+                  },
+                  name: {
+                    id: 'field.places_anthro.manuscriptNote.name',
+                    defaultMessage: 'Note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+          },
+        },
+        reportRefGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          reportRefGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_anthro.reportRefGroup.name',
+                  defaultMessage: 'Published reports',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            reportReferences: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.places_anthro.reportReferences.name',
+                    defaultMessage: 'Reference',
+                  },
+                  fullName: {
+                    id: 'field.places_anthro.reportReferences.fullName',
+                    defaultMessage: 'Report reference',
+                  },
+                }),
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'citation/local',
+                  },
+                },
+              },
+            },
+            reportNote: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.places_anthro.reportNote.fullName',
+                    defaultMessage: 'Published reports note',
+                  },
+                  name: {
+                    id: 'field.places_anthro.reportNote.name',
+                    defaultMessage: 'Note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
             },
           },
         },
