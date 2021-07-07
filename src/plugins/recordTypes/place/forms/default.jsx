@@ -109,6 +109,24 @@ const template = (configContext) => {
         {extensions.address.form}
       </Panel>
 
+      <Panel name="background" collapsible collapsed>
+        <Field name="basicInfoList" subpath="ns2:places_anthro">
+          <Field name="basicInfo" />
+        </Field>
+
+        <Field name="nagpraHistoryList" subpath="ns2:places_anthro">
+          <Field name="nagpraHistory" />
+        </Field>
+
+        <Field name="backgroundSummaryList" subpath="ns2:places_anthro">
+          <Field name="backgroundSummary" />
+        </Field>
+
+        <Field name="landOwnershipInfoList" subpath="ns2:places_anthro">
+          <Field name="landOwnershipInfo" />
+        </Field>
+      </Panel>
+
       <Panel name="assertions" collapsible collapsed>
         <Field name="assertionGroupList" subpath="ns2:places_anthro">
           <Field name="assertionGroup">
@@ -136,6 +154,26 @@ const template = (configContext) => {
               </Panel>
 
             </Panel>
+          </Field>
+        </Field>
+      </Panel>
+
+      <Panel name="consultedDocs" collapsible collapsed>
+        <Field name="museumRecordsList" subpath="ns2:places_anthro">
+          <Field name="museumRecords" />
+        </Field>
+
+        <Field name="manuscriptGroupList" subpath="ns2:places_anthro">
+          <Field name="manuscriptGroup">
+            <Field name="manuscriptReferences" />
+            <Field name="manuscriptNote" />
+          </Field>
+        </Field>
+
+        <Field name="reportRefGroupList" subpath="ns2:places_anthro">
+          <Field name="reportRefGroup">
+            <Field name="reportReferences" />
+            <Field name="reportNote" />
           </Field>
         </Field>
       </Panel>
