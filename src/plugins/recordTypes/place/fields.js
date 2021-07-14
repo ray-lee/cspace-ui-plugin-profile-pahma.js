@@ -8,7 +8,6 @@ export default (configContext) => {
     TextInput,
     TermPickerInput,
     StructuredDateInput,
-    RichTextInput,
   } = configContext.inputComponents;
 
   const {
@@ -546,7 +545,7 @@ export default (configContext) => {
                   },
                 }),
                 view: {
-                  type: RichTextInput,
+                  type: TextInput,
                   props: {
                     multiline: true,
                   },
@@ -640,7 +639,7 @@ export default (configContext) => {
                   },
                 }),
                 view: {
-                  type: RichTextInput,
+                  type: TextInput,
                   props: {
                     multiline: true,
                   },
@@ -725,7 +724,7 @@ export default (configContext) => {
                 },
               }),
               view: {
-                type: RichTextInput,
+                type: TextInput,
                 props: {
                   multiline: true,
                 },
@@ -748,7 +747,7 @@ export default (configContext) => {
                 },
               }),
               view: {
-                type: RichTextInput,
+                type: TextInput,
                 props: {
                   multiline: true,
                 },
@@ -771,7 +770,7 @@ export default (configContext) => {
                 },
               }),
               view: {
-                type: RichTextInput,
+                type: TextInput,
                 props: {
                   multiline: true,
                 },
@@ -794,7 +793,7 @@ export default (configContext) => {
                 },
               }),
               view: {
-                type: RichTextInput,
+                type: TextInput,
                 props: {
                   multiline: true,
                 },
@@ -817,7 +816,7 @@ export default (configContext) => {
                 },
               }),
               view: {
-                type: RichTextInput,
+                type: TextInput,
                 props: {
                   multiline: true,
                 },

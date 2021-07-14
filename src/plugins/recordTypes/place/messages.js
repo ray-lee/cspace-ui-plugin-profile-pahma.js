@@ -8,7 +8,7 @@ export default {
     },
     assertions: {
       id: 'panel.place.assertions',
-      defaultMessage: 'Assertions',
+      defaultMessage: 'Cultural Affiliation Lines of Evidence',
     },
     background: {
       id: 'panel.place.background',
