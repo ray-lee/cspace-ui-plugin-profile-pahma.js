@@ -1346,6 +1346,7 @@ export default (configContext) => {
         },
         sortableObjectNumber: {
           [config]: {
+            cloneable: false,
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_pahma.sortableObjectNumber.name',
