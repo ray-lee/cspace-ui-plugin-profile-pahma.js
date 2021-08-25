@@ -5,7 +5,7 @@ const objectNumberPattern = /^([cC](ons|ONS)?[-. ]?)?([A-Za-z]+(-[A-Za-z]+)?)?([
 //                            1    2                   3         4              5         6    7         8     9          10    11         12
 /* eslint-disable max-len */
 
-const makeSortable = (objectNumber) => {
+export const makeSortable = (objectNumber) => {
   const tokens = objectNumberPattern.exec(objectNumber);
 
   if (!tokens) {
@@ -23,6 +23,10 @@ const makeSortable = (objectNumber) => {
 };
 
 export const computeSortableObjectNumber = ({ data }, Immutable) => {
+  if (!data || data === undefined) {
+    return '';
+  }
+
   const commonData = data.get('ns2:collectionobjects_common');
   const objectNumber = commonData.get('objectNumber');
 
@@ -33,5 +37,4 @@ export const computeSortableObjectNumber = ({ data }, Immutable) => {
   });
 };
 
-export const transformSortableObjectNumberSearch = ({ data: objectNumber }) =>
-  makeSortable(objectNumber);
+export const transformSortableObjectNumberSearch = ({ data: objectNumber }) => makeSortable(objectNumber);
