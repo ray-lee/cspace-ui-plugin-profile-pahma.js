@@ -1662,6 +1662,26 @@ export default (configContext) => {
             },
           },
         },
+        archeologicalProvenienceList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          archeologicalProvenience: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_anthropology.archeologicalProvenience.name',
+                  defaultMessage: 'Archeological provenience',
+                },
+              }),
+              view: {
+                type: TextInput,
+              },
+            },
+          },
+        },
       },
       ...extensions['ucbnh-collectionobject'].fields,
       ...extensions.annotation.collectionobject.fields,

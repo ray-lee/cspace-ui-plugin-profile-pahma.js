@@ -207,6 +207,10 @@ const template = (configContext) => {
               <Field name="pahmaFieldCollectionPlace" />
             </Field>
 
+            <Field name="archeologicalProvenienceList" subpath="ns2:collectionobjects_anthropology">
+              <Field name="archeologicalProvenience" />
+            </Field>
+
             <Field name="pahmaFieldLocVerbatim" subpath="ns2:collectionobjects_pahma" />
 
             <Field name="fieldCollectionSources">
