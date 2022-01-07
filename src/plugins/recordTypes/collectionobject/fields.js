@@ -811,7 +811,7 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: OptionPickerInput,
+              type: TermPickerInput,
               props: {
                 source: 'pahmaTmsLegacyDepartments',
               },
