@@ -38,6 +38,7 @@ export default (configContext) => {
               <Field name="dimensionNote" />
             </Field>
           </Field>
+          <Field name="measuredPartNote" />
         </Panel>
       </Field>
     </Field>
