@@ -1670,6 +1670,7 @@ export default (configContext) => {
           },
           archeologicalProvenience: {
             [config]: {
+              repeating: true,
               messages: defineMessages({
                 name: {
                   id: 'field.collectionobjects_anthropology.archeologicalProvenience.name',
