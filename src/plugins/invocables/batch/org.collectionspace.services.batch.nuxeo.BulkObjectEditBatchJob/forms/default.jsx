@@ -24,6 +24,7 @@ const template = (configContext) => {
         <Col>
           <Field name="objectProductionPerson" />
           <Field name="objectProductionPlace" />
+          <Field name="publishTo" />
         </Col>
 
         <Col>
