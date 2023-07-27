@@ -1544,58 +1544,6 @@ export default {
       },
     }),
   },
-  pahmaAssocPeopleTypes: {
-    values: [
-      'gatheredCollectedBy',
-      'inspiredBy',
-      'nagpraCulturalAffiliation',
-      'traditionalMakers',
-      'inTheStyleOf',
-      'attributedMakers',
-      'made by',
-      'traditionallyMadeBy',
-      'usedButNotMadeBy',
-      'usedButNotMadeByAttributed',
-    ],
-    messages: defineMessages({
-      gatheredCollectedBy: {
-        id: 'option.pahmaAssocPeopleTypes.gatheredCollectedBy',
-        defaultMessage: 'gathered/collected by',
-      },
-      inspiredBy: {
-        id: 'option.pahmaAssocPeopleTypes.inspiredBy',
-        defaultMessage: 'inspired by',
-      },
-      nagpraCulturalAffiliation: {
-        id: 'option.pahmaAssocPeopleTypes.nagpraCulturalAffiliation',
-        defaultMessage: 'NAGPRA cultural affiliation',
-      },
-      traditionalMakers: {
-        id: 'option.pahmaAssocPeopleTypes.traditionalMakers',
-        defaultMessage: 'traditional makers',
-      },
-      inTheStyleOf: {
-        id: 'option.pahmaAssocPeopleTypes.inTheStyleOf',
-        defaultMessage: 'in the style of',
-      },
-      attributedMakers: {
-        id: 'option.pahmaAssocPeopleTypes.attributedMakers',
-        defaultMessage: 'made by (attributed)',
-      },
-      traditionallyMadeBy: {
-        id: 'option.pahmaAssocPeopleTypes.traditionallyMadeBy',
-        defaultMessage: 'traditionally made by',
-      },
-      usedButNotMadeBy: {
-        id: 'option.pahmaAssocPeopleTypes.usedButNotMadeBy',
-        defaultMessage: 'used, but not made, by',
-      },
-      usedButNotMadeByAttributed: {
-        id: 'option.pahmaAssocPeopleTypes.usedButNotMadeByAttributed',
-        defaultMessage: 'used, but not made, by (attributed)',
-      },
-    }),
-  },
   pahmaAssocEventTypes: {
     values: [
       'ceremony',
