@@ -643,9 +643,9 @@ export default (configContext) => {
             assocPeopleType: {
               [config]: {
                 view: {
-                  type: OptionPickerInput,
+                  type: TermPickerInput,
                   props: {
-                    source: 'pahmaAssocPeopleTypes',
+                    source: 'assocpeople',
                   },
                 },
               },
