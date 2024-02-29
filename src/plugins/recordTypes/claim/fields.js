@@ -9,6 +9,7 @@ export default (configContext) => {
     IDGeneratorInput,
     OptionPickerInput,
     StructuredDateInput,
+    TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
 
@@ -758,9 +759,9 @@ export default (configContext) => {
                   },
                 }),
                 view: {
-                  type: OptionPickerInput,
+                  type: TermPickerInput,
                   props: {
-                    source: 'pahmaInventoryNames',
+                    source: 'nagpraPahmaInventoryNames',
                   },
                 },
               },
