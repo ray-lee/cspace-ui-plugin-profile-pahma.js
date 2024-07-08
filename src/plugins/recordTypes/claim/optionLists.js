@@ -9,6 +9,7 @@ export default {
       'ufo',
       'sacredObject',
       'objectOfCulturalPatrimony',
+      'agencyControlledSite',
       'nonNagpra',
       'needsFurtherResearch',
       'unknown',
@@ -37,6 +38,10 @@ export default {
       objectOfCulturalPatrimony: {
         id: 'option.anthroClaimTypes.objectOfCulturalPatrimony',
         defaultMessage: 'object of cultural patrimony',
+      },
+      agencyControlledSite: {
+        id: 'option.anthroClaimTypes.agencyControlledSite',
+        defaultMessage: 'agency-controlled site',
       },
       nonNagpra: {
         id: 'option.anthroClaimTypes.nonNagpra',
