@@ -17,7 +17,7 @@ export default (configContext) => {
           type: CompoundInput,
         },
       },
-      'Agency': {
+      Agency: {
         [config]: {
           messages: defineMessages({
             name: {

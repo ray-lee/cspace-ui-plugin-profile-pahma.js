@@ -26,7 +26,7 @@ describe('utils', () => {
         },
       });
 
-      const computedResult = computeSortableObjectNumber({data}, Immutable);
+      const computedResult = computeSortableObjectNumber({ data }, Immutable);
       sortableData.should.eql(computedResult);
     });
 
@@ -46,7 +46,7 @@ describe('utils', () => {
         },
       });
 
-      const computedResult = computeSortableObjectNumber({data}, Immutable);
+      const computedResult = computeSortableObjectNumber({ data }, Immutable);
       sortableData.should.eql(computedResult);
     });
   });
