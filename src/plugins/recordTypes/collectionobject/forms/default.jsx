@@ -29,7 +29,6 @@ const template = (configContext) => {
         <Row>
           <Field name="objectNumber" />
           <Field name="pahmaTmsLegacyDepartment" subpath="ns2:collectionobjects_pahma" />
-          <Field name="numberOfObjects" />
           <Field name="inventoryCount" subpath="ns2:collectionobjects_pahma" />
           <Field name="isComponent" subpath="ns2:collectionobjects_pahma" />
 
@@ -42,6 +41,16 @@ const template = (configContext) => {
 
         <Cols>
           <Col>
+            <Field name="objectCountGroupList">
+              <Field name="objectCountGroup">
+                <Field name="objectCount" />
+                <Field name="objectCountType" />
+                <Field name="objectCountCountedBy" />
+                <Field name="objectCountDate" />
+                <Field name="objectCountNote" />
+              </Field>
+            </Field>
+
             <Field name="pahmaAltNumGroupList" subpath="ns2:collectionobjects_pahma">
               <Field name="pahmaAltNumGroup">
                 <Field name="pahmaAltNum" />
