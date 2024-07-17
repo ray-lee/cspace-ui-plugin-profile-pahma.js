@@ -818,20 +818,6 @@ export default (configContext) => {
             },
           },
         },
-        inventoryCount: {
-          [config]: {
-            cloneable: false,
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_pahma.inventoryCount.name',
-                defaultMessage: 'Count note',
-              },
-            }),
-            view: {
-              type: TextInput,
-            },
-          },
-        },
         isComponent: {
           [config]: {
             defaultValue: 'no',

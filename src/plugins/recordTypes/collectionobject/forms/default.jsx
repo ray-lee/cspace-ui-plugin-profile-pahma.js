@@ -29,7 +29,6 @@ const template = (configContext) => {
         <Row>
           <Field name="objectNumber" />
           <Field name="pahmaTmsLegacyDepartment" subpath="ns2:collectionobjects_pahma" />
-          <Field name="inventoryCount" subpath="ns2:collectionobjects_pahma" />
           <Field name="isComponent" subpath="ns2:collectionobjects_pahma" />
 
           <Col>
