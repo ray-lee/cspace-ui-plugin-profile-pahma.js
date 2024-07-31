@@ -24,6 +24,7 @@ export default (configContext) => {
     DATA_TYPE_DATE,
     DATA_TYPE_FLOAT,
     DATA_TYPE_INT,
+    DATA_TYPE_STRUCTURED_DATE,
   } = configContext.dataTypes;
 
   const {
@@ -1001,6 +1002,7 @@ export default (configContext) => {
           },
           pahmaFieldCollectionDateGroup: {
             [config]: {
+              dataType: DATA_TYPE_STRUCTURED_DATE,
               messages: defineMessages({
                 name: {
                   id: 'field.collectionobjects_pahma.pahmaFieldCollectionDateGroup.name',
@@ -1008,6 +1010,9 @@ export default (configContext) => {
                 },
               }),
               repeating: true,
+              searchView: {
+                type: DateInput,
+              },
               view: {
                 type: StructuredDateInput,
               },
