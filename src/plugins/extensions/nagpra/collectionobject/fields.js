@@ -85,7 +85,7 @@ export default (configContext) => {
               }),
               view: {
                 props: {
-                  source: 'person/local,person/shared,organization/local,organization/shared',
+                  source: 'concept/ethculture,person/local,person/shared,organization/local,organization/shared',
                 },
               },
             },
