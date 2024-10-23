@@ -1,6 +1,7 @@
 import acquisition from './acquisition';
 import all from './all';
 import blob from './blob';
+import chronology from './chronology';
 import citation from './citation';
 import claim from './claim';
 import collectionobject from './collectionobject';
@@ -28,6 +29,7 @@ export default [
   acquisition,
   all,
   blob,
+  chronology,
   citation,
   claim,
   collectionobject,
